@@ -16,6 +16,23 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
+<!-- =============================================================
+     Google Analytics 4
+     Lansmandan önce: G-XXXXXXXXXX placeholder'ını GA4 Measurement
+     ID'nizle değiştirin (Admin → Data Streams → Web → Measurement ID)
+     ============================================================= -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX', {
+    'page_title': 'Net Up — Landing',
+    'send_page_view': true,
+    'anonymize_ip': true
+  });
+</script>
+
 <style>
 :root {
   --purple-900: #2E1A6B;
@@ -1191,8 +1208,8 @@ a { color: inherit; text-decoration: none; }
       <p class="section-sub">Sabah, derste, parkta — Neto her zaman seninle. Sen de aç: günde 10 dakika, netin her gün biraz daha artıyor.</p>
     </div>
     <div class="video-wrap">
-      <video id="showcaseVideo" src="assets/reels-v3.mp4" controls playsinline preload="metadata" poster="assets/video-poster.png">
-        Tarayıcınız video etiketini desteklemiyor. <a href="assets/reels-v3.mp4" style="color:#fff">Videoyu indir</a>.
+      <video id="showcaseVideo" src="assets/reels_v3.mp4" controls playsinline preload="metadata" poster="assets/video-poster.png">
+        Tarayıcınız video etiketini desteklemiyor. <a href="assets/reels_v3.mp4" style="color:#fff">Videoyu indir</a>.
       </video>
     </div>
   </div>
@@ -1386,6 +1403,84 @@ document.querySelectorAll('#navLinks a').forEach(a => {
       v.load();
     }
   }, true);
+})();
+
+// =============================================================
+// GA4 event tracking — store clicks, video play, CTA clicks
+// =============================================================
+(function() {
+  if (typeof gtag !== 'function') return;
+
+  // Store button tıklamaları (Google Play + App Store)
+  document.querySelectorAll('a[href*="play.google.com"], a[href*="apps.apple.com"]').forEach(function(link) {
+    link.addEventListener('click', function() {
+      var store = link.href.indexOf('apple.com') > -1 ? 'app_store' : 'google_play';
+      var location = link.closest('.hero') ? 'hero' : (link.closest('.final-cta') ? 'final_cta' : 'other');
+      gtag('event', 'store_click', {
+        'event_category': 'cta',
+        'event_label': store + '_' + location,
+        'store': store,
+        'location': location
+      });
+    });
+  });
+
+  // Video play (showcase Reels v3)
+  var video = document.getElementById('showcaseVideo');
+  if (video) {
+    var played = false;
+    video.addEventListener('play', function() {
+      if (played) return;
+      played = true;
+      gtag('event', 'video_play', {
+        'event_category': 'engagement',
+        'event_label': 'reels_v3_showcase'
+      });
+    });
+    video.addEventListener('ended', function() {
+      gtag('event', 'video_complete', {
+        'event_category': 'engagement',
+        'event_label': 'reels_v3_showcase'
+      });
+    });
+  }
+
+  // Pro CTA tıklaması ("İndir ve ilk hafta ücretsiz dene")
+  document.querySelectorAll('.pro-card a, .pro-card .btn').forEach(function(el) {
+    el.addEventListener('click', function() {
+      gtag('event', 'pro_cta_click', {
+        'event_category': 'pricing',
+        'event_label': 'pro_card_button'
+      });
+    });
+  });
+
+  // Scroll milestones (sayfa derinliği takibi)
+  var milestones = [25, 50, 75, 100];
+  var hit = {};
+  window.addEventListener('scroll', function() {
+    var scrolled = (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight * 100;
+    milestones.forEach(function(m) {
+      if (!hit[m] && scrolled >= m) {
+        hit[m] = true;
+        gtag('event', 'scroll_depth', {
+          'event_category': 'engagement',
+          'event_label': m + '_percent',
+          'percent': m
+        });
+      }
+    });
+  }, { passive: true });
+
+  // Outbound link tıklamaları (gizlilik, hesap silme, e-mail)
+  document.querySelectorAll('a[href^="https://yusufoksuznetup.github.io/netup-"], a[href^="mailto:"]').forEach(function(link) {
+    link.addEventListener('click', function() {
+      gtag('event', 'outbound_click', {
+        'event_category': 'navigation',
+        'event_label': link.href
+      });
+    });
+  });
 })();
 
 // IntersectionObserver reveal animation
