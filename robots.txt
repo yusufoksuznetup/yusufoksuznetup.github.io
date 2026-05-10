@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Crawl delay yok — modern Google ihmal eder
+# Tüm content public, hiçbir disallow yok
+
+Sitemap: https://netup.website/sitemap.xml
