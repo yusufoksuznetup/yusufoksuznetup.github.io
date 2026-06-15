@@ -629,6 +629,42 @@ a { color: inherit; text-decoration: none; }
   color: var(--ink-500);
 }
 
+/* === SUBJECTS / 6 DERS === */
+.subjects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.subject-pill {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 18px 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.subject-pill:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--purple-400);
+}
+.subject-emoji {
+  width: 46px; height: 46px;
+  border-radius: 12px;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 24px;
+  background: var(--purple-50);
+  flex-shrink: 0;
+}
+.subject-pill .subj-name { font-size: 16px; font-weight: 700; color: var(--ink-900); display: block; }
+.subject-pill .subj-count { font-size: 13px; color: var(--purple-600); font-weight: 600; }
+.subjects-note { text-align: center; margin-top: 22px; font-size: 14px; color: var(--ink-500); }
+.subjects-note strong { color: var(--purple-600); }
+@media (max-width: 768px) { .subjects-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .subjects-grid { grid-template-columns: 1fr; } }
+
 /* === HOW IT WORKS === */
 .how {
   background: linear-gradient(180deg, var(--purple-50) 0%, transparent 100%);
@@ -1177,6 +1213,26 @@ a { color: inherit; text-decoration: none; }
         <p>Türkçe, Matematik, Fen, İnkılap, Din ve İngilizce — 8.500+ soru, tümü MEB müfredatına birebir uyumlu, Türkiye sınav sistemine özel kalibre.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ======================== SUBJECTS / 6 DERS ======================== -->
+<section class="section" id="dersler">
+  <div class="container">
+    <div class="section-head center">
+      <span class="section-eyebrow">İçerik</span>
+      <h2 class="section-title">LGS'nin 6 dersi de burada.</h2>
+      <p class="section-sub">Tüm LGS dersleri tek uygulamada — hepsi MEB müfredatına birebir uyumlu.</p>
+    </div>
+    <div class="subjects-grid">
+      <div class="subject-pill"><div class="subject-emoji">📖</div><div><span class="subj-name">Türkçe</span><span class="subj-count">binlerce soru</span></div></div>
+      <div class="subject-pill"><div class="subject-emoji">🔢</div><div><span class="subj-name">Matematik</span><span class="subj-count">binlerce soru</span></div></div>
+      <div class="subject-pill"><div class="subject-emoji">🔬</div><div><span class="subj-name">Fen Bilimleri</span><span class="subj-count">binlerce soru</span></div></div>
+      <div class="subject-pill"><div class="subject-emoji">🏛️</div><div><span class="subj-name">T.C. İnkılap Tarihi</span><span class="subj-count">yüzlerce soru</span></div></div>
+      <div class="subject-pill"><div class="subject-emoji">🕌</div><div><span class="subj-name">Din Kültürü</span><span class="subj-count">yüzlerce soru</span></div></div>
+      <div class="subject-pill"><div class="subject-emoji">🌍</div><div><span class="subj-name">İngilizce</span><span class="subj-count">yüzlerce soru</span></div></div>
+    </div>
+    <p class="subjects-note">📈 Soru bankası <strong>her gün büyüyor</strong> — düzenli olarak yeni sorular ekleniyor.</p>
   </div>
 </section>
 
