@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Net Up – Uygulamayı Aç</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #2D0F7F, #5B2ECC, #7C4DFF);
+      font-family: 'Nunito', sans-serif;
+      color: #fff;
+      padding: 24px;
+    }
+    .card {
+      background: rgba(255,255,255,0.12);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 28px;
+      padding: 40px 32px;
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+    .logo { font-size: 48px; margin-bottom: 12px; }
+    h1 { font-size: 26px; font-weight: 900; margin-bottom: 8px; }
+    .subtitle { font-size: 15px; color: rgba(255,255,255,0.7); margin-bottom: 32px; line-height: 1.5; }
+    .spinner {
+      width: 48px; height: 48px;
+      border: 4px solid rgba(255,255,255,0.2);
+      border-top-color: #fff;
+      border-radius: 50%;
+      animation: spin 0.9s linear infinite;
+      margin: 0 auto 20px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .btn {
+      display: inline-block;
+      background: #FF6B35;
+      color: #fff;
+      font-family: 'Nunito', sans-serif;
+      font-size: 16px;
+      font-weight: 900;
+      padding: 16px 32px;
+      border-radius: 16px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom: 12px;
+      transition: opacity 0.15s;
+    }
+    .btn:hover { opacity: 0.88; }
+    .store-links { display: flex; gap: 12px; margin-top: 20px; justify-content: center; flex-wrap: wrap; }
+    .store-links a {
+      background: rgba(0,0,0,0.3);
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .hidden { display: none; }
+    .error-icon { font-size: 48px; margin-bottom: 12px; }
+  </style>
+</head>
+<body>
+<div class="card">
+
+  <!-- Yükleniyor (mobil – uygulama açılmaya çalışılıyor) -->
+  <div id="state-loading">
+    <div class="spinner"></div>
+    <h1>Açılıyor…</h1>
+    <p class="subtitle">Net Up uygulamasına yönlendiriliyorsun.</p>
+  </div>
+
+  <!-- Uygulama açıldı (mobil, uygulama kurulu) -->
+  <div id="state-success" class="hidden">
+    <div class="logo">✅</div>
+    <h1>Hoş geldin!</h1>
+    <p class="subtitle">Net Up açıldı. Kaldığın yerden devam et.</p>
+  </div>
+
+  <!-- Mobil – uygulama kurulu değil -->
+  <div id="state-no-app" class="hidden">
+    <div class="error-icon">📱</div>
+    <h1>Uygulamayı yükle</h1>
+    <p class="subtitle">Net Up'ı yükle ve LGS'ye günde birkaç soruyla hazırlanmaya başla.</p>
+    <div class="store-links">
+      <a href="https://play.google.com/store/apps/details?id=com.netup.app">Google Play</a>
+      <a href="https://apps.apple.com/app/id6768393770">App Store</a>
+    </div>
+  </div>
+
+  <!-- Masaüstü -->
+  <div id="state-desktop" class="hidden">
+    <div class="logo">📚</div>
+    <h1>Telefonundan aç</h1>
+    <p class="subtitle">Net Up bir telefon uygulamasıdır. Aşağıdan indir, telefonundan giriş yap.</p>
+    <div class="store-links">
+      <a href="https://play.google.com/store/apps/details?id=com.netup.app">Google Play</a>
+      <a href="https://apps.apple.com/app/id6768393770">App Store</a>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  var isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+  function show(id) {
+    ['state-loading','state-success','state-no-app','state-desktop'].forEach(function(s) {
+      document.getElementById(s).classList.add('hidden');
+    });
+    document.getElementById(id).classList.remove('hidden');
+  }
+
+  if (!isMobile) {
+    // Masaüstü – store linklerini göster
+    show('state-desktop');
+  } else {
+    // Mobil – uygulamayı açmayı dene (token yok, sadece uygulamayı aç)
+    var appUrl = 'com.netup.app://open';
+
+    var appOpened = false;
+    document.addEventListener('visibilitychange', function() {
+      if (document.hidden) {
+        appOpened = true;
+        show('state-success');
+      }
+    });
+
+    window.location.href = appUrl;
+
+    // 2,5 saniye sonra hâlâ buradaysak uygulama yok
+    setTimeout(function() {
+      if (!appOpened) {
+        show('state-no-app');
+      }
+    }, 2500);
+  }
+</script>
+</body>
+</html>
