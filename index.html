@@ -710,6 +710,28 @@ a { color: inherit; text-decoration: none; }
 .subject-pill .subj-count { font-size: 13px; color: var(--purple-600); font-weight: 600; }
 .subjects-note { text-align: center; margin-top: 22px; font-size: 14px; color: var(--ink-500); }
 .subjects-note strong { color: var(--purple-600); }
+
+/* === KONU ANLATIMI (SEO ders sayfalari) === */
+.ders-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+.ders-kart {
+  display: block; background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius-lg); padding: 30px 28px; text-decoration: none;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.ders-kart:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--purple-400); }
+.ders-kart .ders-et { display: block; font-size: 12.5px; font-weight: 700; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--purple-600); margin-bottom: 8px; }
+.ders-kart h3 { font-size: 22px; font-weight: 700; color: var(--ink-900); margin-bottom: 8px; letter-spacing: -0.01em; }
+.ders-kart p { font-size: 15px; line-height: 1.6; color: var(--ink-500); }
+.konu-liste { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 26px; }
+.konu-liste a {
+  font-size: 14px; font-weight: 600; color: var(--purple-700); background: #F5F3FF;
+  border: 1px solid #E8E5F2; border-radius: 999px; padding: 8px 15px; text-decoration: none;
+  transition: background .15s ease, border-color .15s ease;
+}
+.konu-liste a:hover { background: #EDE9FE; border-color: var(--purple-400); }
+.konu-baslik { font-size: 15px; font-weight: 700; color: var(--ink-700); margin: 26px 0 0; }
+@media (max-width: 760px) { .ders-grid { grid-template-columns: 1fr; } }
 @media (max-width: 768px) { .subjects-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 480px) { .subjects-grid { grid-template-columns: 1fr; } }
 
@@ -1037,8 +1059,8 @@ a { color: inherit; text-decoration: none; }
 }
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  gap: 48px;
+  grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr;
+  gap: 36px;
   padding-bottom: 36px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -1164,6 +1186,7 @@ a { color: inherit; text-decoration: none; }
     <ul class="nav-links" id="navLinks">
       <li><a href="#ozellikler">Özellikler</a></li>
       <li><a href="#nasil">Nasıl çalışır?</a></li>
+      <li><a href="#konu-anlatimi">Konu Anlatımı</a></li>
       <li><a href="#veliler">Veliler</a></li>
       <li><a href="#sss">SSS</a></li>
       <li><a href="lgs-puan-hesaplama.html">LGS Puan Hesapla</a></li>
@@ -1324,6 +1347,63 @@ a { color: inherit; text-decoration: none; }
       <div class="subject-pill"><div class="subject-emoji" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.5 4 5.8 4 9s-1.5 6.5-4 9c-2.5-2.5-4-5.8-4-9s1.5-6.5 4-9Z"/></svg></div><div><span class="subj-name">İngilizce</span><span class="subj-count">yüzlerce soru</span></div></div>
     </div>
     <p class="subjects-note">📈 Soru bankası <strong>her gün büyüyor</strong> — düzenli olarak yeni sorular ekleniyor.</p>
+  </div>
+</section>
+
+<!-- ======================== KONU ANLATIMI / SEO DERS SAYFALARI ======================== -->
+<section class="section" id="konu-anlatimi">
+  <div class="container">
+    <div class="section-head center">
+      <span class="section-eyebrow">Ücretsiz konu anlatımı</span>
+      <h2 class="section-title">Uygulamadan önce konuyu öğren.</h2>
+      <p class="section-sub">8. sınıf Türkçe ve Matematik müfredatının tamamı — çözümlü örnekler, LGS problem tipleri ve her konuda test. Üyelik gerekmez.</p>
+    </div>
+
+    <div class="ders-grid">
+      <a class="ders-kart" href="/8-sinif-turkce/">
+        <span class="ders-et">13 konu</span>
+        <h3>8. Sınıf Türkçe →</h3>
+        <p>Dilbilgisi (fiilimsiler, ögeler, çatı, cümle türleri, yazım, noktalama, anlatım bozuklukları) ve anlam-okuma (sözcükte anlam, cümlede anlam, paragraf, metin türleri, söz sanatları, grafik okuma).</p>
+      </a>
+      <a class="ders-kart" href="/8-sinif-matematik/">
+        <span class="ders-et">12 konu</span>
+        <h3>8. Sınıf Matematik →</h3>
+        <p>Sayılar (çarpanlar, üslü, kareköklü), cebir (özdeşlikler, denklemler, eşitsizlikler), veri ve olasılık, geometri (üçgenler, benzerlik, dönüşüm, cisimler).</p>
+      </a>
+    </div>
+
+    <p class="konu-baslik">Türkçe konuları</p>
+    <div class="konu-liste">
+      <a href="/8-sinif-turkce/fiilimsiler/">Fiilimsiler</a>
+      <a href="/8-sinif-turkce/cumlenin-ogeleri/">Cümlenin Ögeleri</a>
+      <a href="/8-sinif-turkce/fiilde-cati/">Fiilde Çatı</a>
+      <a href="/8-sinif-turkce/cumle-turleri/">Cümle Türleri</a>
+      <a href="/8-sinif-turkce/yazim-kurallari/">Yazım Kuralları</a>
+      <a href="/8-sinif-turkce/noktalama-isaretleri/">Noktalama İşaretleri</a>
+      <a href="/8-sinif-turkce/anlatim-bozukluklari/">Anlatım Bozuklukları</a>
+      <a href="/8-sinif-turkce/sozcukte-anlam/">Sözcükte Anlam</a>
+      <a href="/8-sinif-turkce/cumlede-anlam/">Cümlede Anlam</a>
+      <a href="/8-sinif-turkce/paragraf/">Paragraf</a>
+      <a href="/8-sinif-turkce/metin-turleri/">Metin Türleri</a>
+      <a href="/8-sinif-turkce/soz-sanatlari/">Söz Sanatları</a>
+      <a href="/8-sinif-turkce/grafik-tablo-okuma/">Grafik ve Tablo Okuma</a>
+    </div>
+
+    <p class="konu-baslik">Matematik konuları</p>
+    <div class="konu-liste">
+      <a href="/8-sinif-matematik/carpanlar-ve-katlar/">Çarpanlar ve Katlar</a>
+      <a href="/8-sinif-matematik/uslu-ifadeler/">Üslü İfadeler</a>
+      <a href="/8-sinif-matematik/karekoklu-ifadeler/">Kareköklü İfadeler</a>
+      <a href="/8-sinif-matematik/veri-analizi/">Veri Analizi</a>
+      <a href="/8-sinif-matematik/olasilik/">Olasılık</a>
+      <a href="/8-sinif-matematik/cebirsel-ifadeler-ozdeslikler/">Cebirsel İfadeler ve Özdeşlikler</a>
+      <a href="/8-sinif-matematik/dogrusal-denklemler/">Doğrusal Denklemler</a>
+      <a href="/8-sinif-matematik/esitsizlikler/">Eşitsizlikler</a>
+      <a href="/8-sinif-matematik/ucgenler/">Üçgenler</a>
+      <a href="/8-sinif-matematik/eslik-ve-benzerlik/">Eşlik ve Benzerlik</a>
+      <a href="/8-sinif-matematik/donusum-geometrisi/">Dönüşüm Geometrisi</a>
+      <a href="/8-sinif-matematik/geometrik-cisimler/">Geometrik Cisimler</a>
+    </div>
   </div>
 </section>
 
@@ -1562,6 +1642,15 @@ a { color: inherit; text-decoration: none; }
           <li><a href="#pro">Net Up Pro</a></li>
           <li><a href="#sss">SSS</a></li>
           <li><a href="lgs-puan-hesaplama.html">LGS Puan Hesaplama</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Konu anlatımı</h4>
+        <ul>
+          <li><a href="/8-sinif-turkce/">8. Sınıf Türkçe</a></li>
+          <li><a href="/8-sinif-matematik/">8. Sınıf Matematik</a></li>
+          <li><a href="/8-sinif-turkce/paragraf/">Paragraf</a></li>
+          <li><a href="/8-sinif-matematik/ucgenler/">Üçgenler</a></li>
         </ul>
       </div>
       <div>

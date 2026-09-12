@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Doğrusal Denklemler — 8. Sınıf Konu Anlatımı | Net Up</title>
+<meta name="description" content="Doğrusal denklemler konu anlatımı: birinci dereceden denklem çözme, eğim, grafik çizme, denklem sistemleri. Çözümlü örnekler ve LGS testi.">
+<link rel="canonical" href="https://netup.website/8-sinif-matematik/dogrusal-denklemler/">
+<meta property="og:title" content="Doğrusal Denklemler — 8. Sınıf Konu Anlatımı">
+<meta property="og:description" content="Denklem çözme, eğim hesabı, grafik ve denklem sistemleri — örneklerle.">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="tr_TR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/ders.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article",
+"headline":"Doğrusal Denklemler — 8. Sınıf Konu Anlatımı",
+"description":"Birinci dereceden bir bilinmeyenli denklemler, eğim, grafik ve denklem sistemleri.",
+"inLanguage":"tr-TR","author":{"@type":"Organization","name":"Net Up"},
+"publisher":{"@type":"Organization","name":"Net Up"},"educationalLevel":"8. sınıf",
+"about":[{"@type":"Thing","name":"Doğrusal Denklemler"},{"@type":"Thing","name":"LGS Matematik"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Doğrusal denklem nedir?","acceptedAnswer":{"@type":"Answer","text":"Bilinmeyenin en büyük kuvveti 1 olan denklemlere doğrusal (birinci dereceden) denklem denir. Grafiği her zaman bir doğrudur. Örnek: 3x + 5 = 20 veya y = 2x + 1."}},
+{"@type":"Question","name":"Eğim nasıl hesaplanır?","acceptedAnswer":{"@type":"Answer","text":"Doğru üzerindeki iki noktanın y farkı, x farkına bölünür: eğim = (y₂ − y₁) / (x₂ − x₁). A(1,2) ve B(3,8) noktaları için eğim (8−2)/(3−1) = 3'tür."}},
+{"@type":"Question","name":"y = mx + n denkleminde m ve n neyi gösterir?","acceptedAnswer":{"@type":"Answer","text":"m eğimi, n ise doğrunun y eksenini kestiği noktanın ordinatını gösterir. y = 2x + 1 doğrusunun eğimi 2, y eksenini kestiği nokta (0,1)'dir."}},
+{"@type":"Question","name":"Eğim pozitif ve negatif olduğunda doğru nasıl görünür?","acceptedAnswer":{"@type":"Answer","text":"Eğim pozitifse doğru soldan sağa yukarı doğru yükselir; negatifse aşağı doğru iner. Eğim sıfırsa doğru x eksenine paraleldir."}},
+{"@type":"Question","name":"Denklem sistemi nasıl çözülür?","acceptedAnswer":{"@type":"Answer","text":"Yerine koyma veya yok etme (toplama-çıkarma) yöntemi kullanılır. Grafik olarak iki doğrunun kesim noktası çözümü verir."}}]}
+</script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a class="logo" href="/"><img src="/assets/app-icon-nav.png" alt="Net Up" width="30" height="30"> Net Up</a>
+    <a class="btn btn-ghost" style="background:var(--purple-50);color:var(--purple-700);box-shadow:none;padding:10px 20px;font-size:14.5px" href="https://apps.apple.com/app/id6768393770">Ücretsiz indir</a>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="bc"><a href="/8-sinif-matematik/">8. Sınıf Matematik</a> › Doğrusal Denklemler</div>
+    <h1>Doğrusal Denklemler</h1>
+    <p class="ozet">Denklem çözme, eğim hesabı, grafik okuma ve denklem sistemleri.</p>
+    <div class="etiketler">
+      <span class="etiket">8. sınıf · cebir</span>
+      <span class="etiket">Grafikli sorular</span>
+      <span class="etiket">Eğim = en çok sorulan</span>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+<p class="intro">Doğrusal denklemler iki parçadan oluşuyor: <strong>denklem çözmek</strong> (cebir) ve <strong>grafiği okumak</strong> (analitik). LGS'de ikincisi daha çok soruluyor — özellikle <em>eğim</em>. İyi haber: eğimin tek bir formülü var ve her soruda o işliyor.</p>
+
+<div class="icindekiler">
+  <b>Bu sayfada</b>
+  <ol>
+    <li><a href="#cozme">Denklem çözme</a></li>
+    <li><a href="#problem">Problem kurma</a></li>
+    <li><a href="#grafik">Doğrunun grafiği</a></li>
+    <li><a href="#egim">Eğim</a></li>
+    <li><a href="#mn">y = mx + n biçimi</a></li>
+    <li><a href="#kesim">Eksenleri kesme noktaları</a></li>
+    <li><a href="#sistem">Denklem sistemleri</a></li>
+    <li><a href="#hatalar">Sık yapılan hatalar</a></li>
+    <li><a href="#test">Kendini test et</a></li>
+  </ol>
+</div>
+
+<h2 id="cozme">1. Denklem çözme</h2>
+
+<div class="tanim">
+  <strong>Temel kural:</strong> Eşitliğin bir tarafına yaptığını <em>diğer tarafına da</em> yap. Amaç bilinmeyeni yalnız bırakmak.
+</div>
+
+<div class="ornek">
+  <div class="soru">3x + 5 = 20 denklemini çözünüz.</div>
+  <div class="hesap">3x + 5 = 20
+3x = 20 − 5        (iki taraftan 5 çıkar)
+3x = 15
+x = 15 / 3         (iki tarafı 3'e böl)
+<span class="sonuc">x = 5</span>
+
+Kontrol: 3·5 + 5 = 20 ✔</div>
+</div>
+
+<div class="ornek">
+  <div class="soru">2(x − 3) = 10</div>
+  <div class="hesap">2x − 6 = 10        (parantezi dağıt)
+2x = 16
+<span class="sonuc">x = 8</span></div>
+</div>
+
+<div class="ornek">
+  <div class="soru">5x − 2 = 3x + 8 &nbsp;(bilinmeyen iki tarafta)</div>
+  <div class="hesap">5x − 3x = 8 + 2    (x'leri sola, sayıları sağa)
+2x = 10
+<span class="sonuc">x = 5</span></div>
+</div>
+
+<div class="ornek">
+  <div class="soru">x/3 + 2 = 5 &nbsp;(kesirli)</div>
+  <div class="hesap">x/3 = 3
+x = 3 · 3
+<span class="sonuc">x = 9</span></div>
+</div>
+
+<div class="kutu">
+  <strong>Her zaman kontrol et:</strong> bulduğun değeri denkleme yerine koy. 5 saniyelik iş, yanlış cevabı yakalar.
+</div>
+
+<h2 id="problem">2. Problem kurma</h2>
+
+<div class="ornek">
+  <div class="soru">Bir sayının 3 katının 4 fazlası 19'dur. Bu sayı kaçtır?</div>
+  <div class="hesap">Sayı = x
+3x + 4 = 19
+3x = 15
+<span class="sonuc">x = 5</span></div>
+</div>
+
+<div class="kutu">
+  <strong>Çeviri sözlüğü:</strong> "fazlası" → + · "eksiği" → − · "katı" → × · "yarısı" → ÷2 · "ise/eşittir" → =
+</div>
+
+<h2 id="grafik">3. Doğrunun grafiği</h2>
+
+<p>Doğrusal bir denklemin grafiği <strong>her zaman bir doğrudur</strong>. Çizmek için iki nokta yeterli — en kolayı eksenleri kestiği noktalar.</p>
+
+<div class="ornek">
+  <div class="soru">2x + 3y = 12 doğrusunu çizmek için iki nokta bulunuz.</div>
+  <div class="hesap">x = 0 iken:  3y = 12  →  y = 4   →  (0, 4)
+y = 0 iken:  2x = 12  →  x = 6   →  (6, 0)
+
+Bu iki noktayı birleştirince doğru çizilir.</div>
+</div>
+
+<h2 id="egim">4. Eğim — en çok sorulan</h2>
+
+<div class="tanim">
+  <div class="hesap" style="margin-bottom:0">eğim (m) = (y₂ − y₁) / (x₂ − x₁)
+         = dikey değişim / yatay değişim</div>
+</div>
+
+<div class="ornek">
+  <div class="soru">A(1, 2) ve B(3, 8) noktalarından geçen doğrunun eğimi kaçtır?</div>
+  <div class="hesap">m = (8 − 2) / (3 − 1)
+  = 6 / 2
+  <span class="sonuc">= 3</span></div>
+</div>
+
+<div class="ornek">
+  <div class="soru">A(0, 5) ve B(2, 1) için eğim?</div>
+  <div class="hesap">m = (1 − 5) / (2 − 0) = −4 / 2 <span class="sonuc">= −2</span></div>
+  <p>Negatif eğim: doğru soldan sağa <strong>iniyor</strong>.</p>
+</div>
+
+<div class="tablo-sar">
+<table>
+  <tr><th>Eğim</th><th>Doğrunun görünümü</th></tr>
+  <tr><td><strong>Pozitif</strong> (m &gt; 0)</td><td>Soldan sağa yukarı çıkar ↗</td></tr>
+  <tr><td><strong>Negatif</strong> (m &lt; 0)</td><td>Soldan sağa aşağı iner ↘</td></tr>
+  <tr><td><strong>Sıfır</strong> (m = 0)</td><td>x eksenine paralel, yatay →</td></tr>
+  <tr><td><strong>Tanımsız</strong></td><td>y eksenine paralel, dikey ↑</td></tr>
+</table>
+</div>
+
+<div class="kutu uyari">
+  <strong>Sık hata:</strong> Formülde sıralamayı karıştırmak. y'ler payda, x'ler paydada olur ve <em>aynı noktadan</em> başlanır: (y₂−y₁)/(x₂−x₁). Ters yaparsan işaret hatalı çıkar.
+</div>
+
+<h2 id="mn">5. y = mx + n biçimi</h2>
+
+<div class="tanim">
+  <div class="hesap" style="margin-bottom:0">y = mx + n
+    m → EĞİM
+    n → y eksenini kestiği nokta (0, n)</div>
+</div>
+
+<div class="ornek">
+  <div class="soru">y = 2x + 1 doğrusunu inceleyiniz.</div>
+  <div class="hesap">Eğim: 2 (pozitif, yukarı çıkar)
+y eksenini kestiği nokta: (0, 1)
+
+x = 3 için: y = 2·3 + 1 = 7  →  (3, 7) doğru üzerinde</div>
+</div>
+
+<div class="kutu">
+  <strong>Pratik:</strong> Denklem y = mx + n biçiminde verilmişse eğimi hesaplamaya gerek yok — x'in katsayısı doğrudan eğimdir. Verilmemişse denklemi bu biçime çevir.
+</div>
+
+<h2 id="kesim">6. Eksenleri kesme noktaları</h2>
+
+<div class="hesap">x eksenini kestiği nokta  →  y = 0 yaz, x'i bul
+y eksenini kestiği nokta  →  x = 0 yaz, y'yi bul</div>
+
+<div class="ornek">
+  <div class="soru">y = 3x − 6 doğrusu eksenleri hangi noktalarda keser?</div>
+  <div class="hesap">y = 0:  0 = 3x − 6  →  x = 2   →  (2, 0)
+x = 0:  y = −6                →  (0, −6)</div>
+</div>
+
+<h2 id="sistem">7. Denklem sistemleri</h2>
+
+<p>İki bilinmeyenli iki denklem verildiğinde iki yöntem var.</p>
+
+<div class="ornek">
+  <div class="soru">Yerine koyma yöntemi: x + y = 10 ve x − y = 2</div>
+  <div class="hesap">1. denklemden:  x = 10 − y
+2. denkleme koy: (10 − y) − y = 2
+              10 − 2y = 2
+              2y = 8  →  y = 4
+x = 10 − 4    <span class="sonuc">x = 6, y = 4</span></div>
+</div>
+
+<div class="ornek">
+  <div class="soru">Yok etme yöntemi: aynı sistem</div>
+  <div class="hesap">  x + y = 10
++ x − y =  2
+─────────────
+ 2x     = 12  →  x = 6
+sonra:  6 + y = 10  →  <span class="sonuc">y = 4</span></div>
+  <p>İki denklem toplanınca y terimi yok oldu. Katsayılar zıt işaretliyse bu yöntem daha hızlı.</p>
+</div>
+
+<div class="kutu">
+  <strong>Grafik yorumu:</strong> Denklem sisteminin çözümü, iki doğrunun <strong>kesim noktası</strong>dır. Doğrular paralelse çözüm yoktur; üst üste çakışıyorsa sonsuz çözüm vardır.
+</div>
+
+<h2 id="hatalar">8. Sık yapılan hatalar</h2>
+
+<div class="kutu uyari">
+  <ul style="margin-bottom:0">
+    <li><strong>Eğim formülünü ters yazmak.</strong> y farkı paya, x farkı paydaya.</li>
+    <li><strong>Parantezi dağıtırken işaret hatası.</strong> −2(x − 3) = −2x + 6, −2x − 6 değil.</li>
+    <li><strong>Kontrolü atlamak.</strong> Bulduğun x'i denkleme koy; 5 saniyede hatayı yakalarsın.</li>
+    <li><strong>y = mx + n'de n'yi eğim sanmak.</strong> Eğim m'dir, n kesişim.</li>
+    <li><strong>Eksen kesme noktalarını karıştırmak.</strong> x eksenini keserken y = 0'dır.</li>
+    <li><strong>Problemde bilinmeyeni yanlış seçmek.</strong> Neyin x olduğunu başta yaz.</li>
+  </ul>
+</div>
+
+<h2 id="test">9. Kendini test et</h2>
+
+<ol>
+  <li>4x − 7 = 13 denklemini çözünüz.</li>
+  <li>3(x + 2) = 2x + 11</li>
+  <li>A(2, 3) ve B(6, 11) noktalarından geçen doğrunun eğimi kaçtır?</li>
+  <li>y = −3x + 6 doğrusunun eğimi ve y eksenini kestiği nokta nedir?</li>
+  <li>2x + y = 8 doğrusu x eksenini hangi noktada keser?</li>
+  <li>x + y = 7 ve x − y = 1 sistemini çözünüz.</li>
+</ol>
+
+<details>
+  <summary>Cevapları göster</summary>
+  <div class="hesap">1) 4x = 20 → x = 5
+   Kontrol: 4·5 − 7 = 13 ✔
+
+2) 3x + 6 = 2x + 11 → x = 5
+
+3) m = (11 − 3)/(6 − 2) = 8/4 = 2
+
+4) eğim = −3 (aşağı iner), y eksenini (0, 6)'da keser
+
+5) y = 0 → 2x = 8 → x = 4 → (4, 0)
+
+6) Toplama: 2x = 8 → x = 4, sonra y = 3
+   (x = 4, y = 3)</div>
+</details>
+
+<h2>Sık sorulan sorular</h2>
+
+<h3>Eğim neden önemli?</h3>
+<p>Çünkü doğrunun "dikliğini" ve yönünü tek sayıyla anlatır. LGS'de grafik verilip eğim sorulması ya da eğim verilip grafiğin hangisi olduğunun sorulması en yaygın tiplerden.</p>
+
+<h3>Bu konu hangi bilgiyi gerektirir?</h3>
+<p><a href="/8-sinif-matematik/cebirsel-ifadeler-ozdeslikler/">Cebirsel ifadeler</a> (denklem düzenlemek için) ve koordinat sistemi. Ardından <a href="/8-sinif-matematik/esitsizlikler/">eşitsizlikler</a> bu konunun devamıdır.</p>
+
+<div class="cta">
+  <h2>Konuyu öğrendin. Şimdi soru çöz.</h2>
+  <p>Denklem çözmek <strong>işlem alışkanlığı</strong>, eğim ise <strong>formül refleksi</strong> gerektiriyor — ikisi de tekrarla gelir. Net Up'ta seviyene göre soru gelir, yanlışların hata defterine düşer, çözünce silinir. <strong>Türkçe ve Matematik ücretsiz.</strong></p>
+  <div class="magaza-kart magaza">
+    <a href="https://apps.apple.com/app/id6768393770" aria-label="App Store'dan indirin">
+      <img src="/assets/appstore-badge-tr-black.svg" alt="App Store'dan indirin" width="176" height="52">
+    </a>
+    <a href="https://play.google.com/store/apps/details?id=com.netup.app" aria-label="Google Play'den indirin">
+      <img src="/assets/googleplay-badge-tr.svg" alt="Google Play'den indirin" width="175" height="52">
+    </a>
+  </div>
+</div>
+
+<a class="sonraki" href="/8-sinif-matematik/esitsizlikler/">
+  <span>
+    <span class="et">Sonraki konu</span>
+    <span class="ad">Eşitsizlikler</span>
+  </span>
+  <span class="ok">→</span>
+</a>
+
+</div>
+</main>
+
+<footer class="alt">
+  <div class="wrap">
+    <p><a href="/8-sinif-matematik/">8. Sınıf Matematik</a> · <a href="/8-sinif-matematik/cebirsel-ifadeler-ozdeslikler/">Cebirsel İfadeler</a> · <a href="/8-sinif-turkce/">8. Sınıf Türkçe</a></p>
+    <p><strong>Net Up</strong> — LGS hazırlık uygulaması. 6, 7 ve 8. sınıf için Türkçe ve Matematik ücretsiz.</p>
+  </div>
+</footer>
+
+</body>
+</html>

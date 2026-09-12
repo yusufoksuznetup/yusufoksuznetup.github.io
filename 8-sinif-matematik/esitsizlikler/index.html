@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eşitsizlikler — 8. Sınıf Konu Anlatımı | Net Up</title>
+<meta name="description" content="Eşitsizlikler konu anlatımı: eşitsizlik çözme, negatif sayıyla bölmede işaret dönmesi, sayı doğrusunda gösterim. Çözümlü örnekler ve LGS testi.">
+<link rel="canonical" href="https://netup.website/8-sinif-matematik/esitsizlikler/">
+<meta property="og:title" content="Eşitsizlikler — 8. Sınıf Konu Anlatımı">
+<meta property="og:description" content="Eşitsizlik çözme, işaret dönmesi kuralı ve sayı doğrusunda gösterim.">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="tr_TR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/ders.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article",
+"headline":"Eşitsizlikler — 8. Sınıf Konu Anlatımı",
+"description":"Birinci dereceden bir bilinmeyenli eşitsizlikler, işaret dönmesi ve sayı doğrusunda gösterim.",
+"inLanguage":"tr-TR","author":{"@type":"Organization","name":"Net Up"},
+"publisher":{"@type":"Organization","name":"Net Up"},"educationalLevel":"8. sınıf",
+"about":[{"@type":"Thing","name":"Eşitsizlikler"},{"@type":"Thing","name":"LGS Matematik"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Eşitsizlikte işaret ne zaman döner?","acceptedAnswer":{"@type":"Answer","text":"Eşitsizliğin iki tarafı negatif bir sayıyla çarpıldığında veya bölündüğünde eşitsizlik yönü değişir. Örnek: −3x > 9 eşitsizliğinde iki taraf −3'e bölünürse x < −3 olur."}},
+{"@type":"Question","name":"Eşitsizlik ile denklem arasındaki fark nedir?","acceptedAnswer":{"@type":"Answer","text":"Denklemin genellikle tek çözümü vardır; eşitsizliğin çözümü ise bir aralıktır, yani sonsuz sayıda değer sağlar. x + 2 = 5 denkleminin çözümü sadece 3, x + 2 < 5 eşitsizliğinin çözümü ise 3'ten küçük tüm sayılardır."}},
+{"@type":"Question","name":"Sayı doğrusunda içi boş ve dolu nokta ne anlama gelir?","acceptedAnswer":{"@type":"Answer","text":"İçi boş nokta o değerin çözüme dahil olmadığını (< veya >), içi dolu nokta dahil olduğunu (≤ veya ≥) gösterir."}},
+{"@type":"Question","name":"Eşitsizliğin kaç tam sayı çözümü olduğu nasıl bulunur?","acceptedAnswer":{"@type":"Answer","text":"Çözüm aralığı bulunur, ardından aralıktaki tam sayılar sayılır. Uç değerlerin dahil olup olmadığına dikkat edilir: −2 < x ≤ 3 aralığında −1, 0, 1, 2, 3 olmak üzere 5 tam sayı vardır."}}]}
+</script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a class="logo" href="/"><img src="/assets/app-icon-nav.png" alt="Net Up" width="30" height="30"> Net Up</a>
+    <a class="btn btn-ghost" style="background:var(--purple-50);color:var(--purple-700);box-shadow:none;padding:10px 20px;font-size:14.5px" href="https://apps.apple.com/app/id6768393770">Ücretsiz indir</a>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="bc"><a href="/8-sinif-matematik/">8. Sınıf Matematik</a> › Eşitsizlikler</div>
+    <h1>Eşitsizlikler</h1>
+    <p class="ozet">Eşitsizlik çözme, işaret dönmesi kuralı ve sayı doğrusunda gösterim.</p>
+    <div class="etiketler">
+      <span class="etiket">8. sınıf · cebir</span>
+      <span class="etiket">Tek kritik kural</span>
+      <span class="etiket">Denklemlerin devamı</span>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+<p class="intro">Eşitsizlikler, <a href="/8-sinif-matematik/dogrusal-denklemler/">doğrusal denklemlerin</a> neredeyse aynısı — <strong>tek bir kural farkıyla.</strong> O kuralı bilmeyen öğrenci soruların yarısını kaybeder, bilen ise denklem çözmeyi biliyorsa bu konuyu da biliyor demektir.</p>
+
+<div class="tanim">
+  <strong>Eşitsizlik işaretleri:</strong>
+  <div class="hesap" style="margin-bottom:0">&lt;   küçüktür           &gt;   büyüktür
+≤   küçük veya eşit    ≥   büyük veya eşit</div>
+  <strong>Denklemden farkı:</strong> denklemin çözümü tek sayıdır, eşitsizliğin çözümü bir <em>aralıktır</em> (sonsuz sayıda değer).
+</div>
+
+<div class="icindekiler">
+  <b>Bu sayfada</b>
+  <ol>
+    <li><a href="#kural">Tek kritik kural: işaret dönmesi</a></li>
+    <li><a href="#cozme">Eşitsizlik çözme</a></li>
+    <li><a href="#dogru">Sayı doğrusunda gösterim</a></li>
+    <li><a href="#tamsayi">Tam sayı çözüm sayısı</a></li>
+    <li><a href="#cift">Çift eşitsizlik</a></li>
+    <li><a href="#problem">Problem soruları</a></li>
+    <li><a href="#hatalar">Sık yapılan hatalar</a></li>
+    <li><a href="#test">Kendini test et</a></li>
+  </ol>
+</div>
+
+<h2 id="kural">1. Tek kritik kural: işaret dönmesi</h2>
+
+<div class="kutu uyari">
+  <strong>Eşitsizliğin iki tarafı NEGATİF bir sayıyla çarpılır veya bölünürse, eşitsizlik yönü DEĞİŞİR.</strong>
+  <div class="hesap" style="margin-top:8px;margin-bottom:0">−3x &gt; 9
+x &lt; −3        ← işaret döndü (−3'e bölündü)</div>
+</div>
+
+<div class="ornek">
+  <div class="soru">Neden dönüyor? Sayıyla görelim.</div>
+  <div class="hesap">2 &lt; 5                    (doğru)
+iki tarafı (−1) ile çarp:
+−2 ? −5
+
+−2 &gt; −5  olur, çünkü sayı doğrusunda
+−2 sağda, −5 solda.
+→ işaret ters döndü ✔</div>
+  <p>Mantığı bir kez gördüğünde kuralı ezberlemene gerek kalmaz: negatifle çarpmak sayı doğrusunda <strong>yönü ters çeviriyor</strong>.</p>
+</div>
+
+<div class="kutu">
+  <strong>Pozitif sayıyla çarpma/bölmede işaret DEĞİŞMEZ.</strong> Toplama ve çıkarmada da değişmez. Yalnızca negatifle çarpma/bölme yönü çevirir.
+</div>
+
+<h2 id="cozme">2. Eşitsizlik çözme</h2>
+
+<div class="ornek">
+  <div class="soru">2x + 3 &lt; 11</div>
+  <div class="hesap">2x &lt; 11 − 3
+2x &lt; 8
+x &lt; 4            (2 pozitif, işaret aynı kaldı)
+<span class="sonuc">Çözüm: x &lt; 4</span></div>
+</div>
+
+<div class="ornek">
+  <div class="soru">3x − 7 ≤ 8</div>
+  <div class="hesap">3x ≤ 15
+<span class="sonuc">x ≤ 5</span></div>
+</div>
+
+<div class="ornek">
+  <div class="soru">−2x + 4 &lt; 10 &nbsp;(dikkat: negatif katsayı)</div>
+  <div class="hesap">−2x &lt; 6
+x &gt; −3           ← (−2)'ye bölündü, İŞARET DÖNDÜ
+<span class="sonuc">Çözüm: x &gt; −3</span>
+
+Kontrol: x = 0 alalım → −2·0 + 4 = 4 &lt; 10 ✔
+         x = −5 alalım → −2·(−5) + 4 = 14 &lt; 10 ✘
+→ x &gt; −3 doğru</div>
+  <p><strong>Kontrol yöntemi:</strong> çözüm aralığından bir sayı seç, eşitsizliğe koy. Sağlıyorsa doğru, sağlamıyorsa işareti ters çevirmeyi unutmuşsun.</p>
+</div>
+
+<div class="ornek">
+  <div class="soru">x/2 ≥ 5</div>
+  <div class="hesap">x ≥ 10           (2 pozitif, işaret aynı)</div>
+</div>
+
+<h2 id="dogru">3. Sayı doğrusunda gösterim</h2>
+
+<div class="tanim">
+  <strong>İçi BOŞ nokta (○):</strong> değer dahil <em>değil</em> → &lt; veya &gt;<br>
+  <strong>İçi DOLU nokta (●):</strong> değer dahil → ≤ veya ≥
+</div>
+
+<div class="ornek">
+  <div class="soru">Gösterimler.</div>
+  <div class="hesap">x &lt; 4      ←────────○        (4 dahil değil, sola)
+                    4
+
+x ≤ 4      ←────────●        (4 dahil, sola)
+                    4
+
+x &gt; −3            ○────────→  (−3 dahil değil, sağa)
+                 −3
+
+x ≥ −3            ●────────→  (−3 dahil, sağa)
+                 −3</div>
+</div>
+
+<h2 id="tamsayi">4. Tam sayı çözüm sayısı (LGS'de sık)</h2>
+
+<div class="ornek">
+  <div class="soru">−2 &lt; x ≤ 3 eşitsizliğini sağlayan kaç tam sayı vardır?</div>
+  <div class="hesap">−2 dahil DEĞİL  →  −1'den başla
+ 3 dahil        →  3'e kadar
+
+−1, 0, 1, 2, 3  →  <span class="sonuc">5 tam sayı</span></div>
+  <p><strong>Dikkat:</strong> uç değerlerin dahil olup olmadığı cevabı doğrudan değiştirir. "&lt;" ile "≤" arasındaki fark burada bir sayı demek.</p>
+</div>
+
+<div class="kutu">
+  <strong>Hızlı sayma:</strong> Tam sayı aralığında adet = (büyük uç − küçük uç) − 1 + (dahil olan uç sayısı). Ama en güvenlisi küçük aralıklarda tek tek yazmak.
+</div>
+
+<h2 id="cift">5. Çift eşitsizlik</h2>
+
+<div class="ornek">
+  <div class="soru">1 &lt; 2x + 3 &lt; 9 eşitsizliğini çözünüz.</div>
+  <div class="hesap">Her üç tarafa aynı işlem:
+
+1 − 3 &lt; 2x &lt; 9 − 3
+−2 &lt; 2x &lt; 6
+−1 &lt; x &lt; 3        (üç tarafı 2'ye böl)
+
+<span class="sonuc">Çözüm: −1 &lt; x &lt; 3</span>
+Tam sayılar: 0, 1, 2  →  3 tane</div>
+  <p>Yöntem aynı — ne yaptıysan <strong>üç tarafa</strong> da yap.</p>
+</div>
+
+<h2 id="problem">6. Problem soruları</h2>
+
+<div class="ornek">
+  <div class="soru">Bir sayının 3 katının 5 fazlası 20'den küçüktür. Bu sayı en fazla kaç olabilir?</div>
+  <div class="hesap">3x + 5 &lt; 20
+3x &lt; 15
+x &lt; 5
+
+x &lt; 5 ise en büyük TAM SAYI değeri <span class="sonuc">4</span></div>
+  <p><strong>Dikkat:</strong> "x &lt; 5" cevabı 5 değildir. Soru "en fazla kaç" diyorsa ve tam sayı isteniyorsa cevap 4'tür. LGS bu ayrımı sever.</p>
+</div>
+
+<div class="kutu">
+  <strong>Çeviri sözlüğü:</strong> "en az" → ≥ · "en fazla" → ≤ · "küçüktür" → &lt; · "büyüktür" → &gt; · "geçmez" → ≤ · "az değildir" → ≥
+</div>
+
+<h2 id="hatalar">7. Sık yapılan hatalar</h2>
+
+<div class="kutu uyari">
+  <ul style="margin-bottom:0">
+    <li><strong>Negatifle bölerken işareti çevirmemek.</strong> Konunun tek gerçek tuzağı bu; soruların çoğu bunu ölçüyor.</li>
+    <li><strong>Pozitifle bölerken gereksiz çevirmek.</strong> Yalnızca negatifte döner.</li>
+    <li><strong>"&lt;" ile "≤" farkını atlamak.</strong> Tam sayı sayarken bir sayı fark eder.</li>
+    <li><strong>"En fazla kaç" sorusunda uç değeri vermek.</strong> x &lt; 5 ise en fazla 4'tür.</li>
+    <li><strong>İçi boş/dolu noktayı karıştırmak.</strong> Boş = dahil değil.</li>
+    <li><strong>Çift eşitsizlikte tek tarafa işlem yapmak.</strong> Üç tarafa birden.</li>
+  </ul>
+</div>
+
+<h2 id="test">8. Kendini test et</h2>
+
+<ol>
+  <li>3x + 4 &lt; 19 eşitsizliğini çözünüz.</li>
+  <li>−4x ≥ 12</li>
+  <li>−3x + 1 &gt; 7</li>
+  <li>−1 ≤ x &lt; 4 aralığında kaç tam sayı vardır?</li>
+  <li>2 &lt; 3x − 1 &lt; 11</li>
+  <li>Bir sayının 2 katının 3 eksiği 9'dan büyüktür. Bu sayı en az kaç olabilir? (tam sayı)</li>
+</ol>
+
+<details>
+  <summary>Cevapları göster</summary>
+  <div class="hesap">1) 3x < 15 → x < 5
+
+2) −4x ≥ 12 → x ≤ −3   (İŞARET DÖNDÜ)
+
+3) −3x > 6 → x < −2    (İŞARET DÖNDÜ)
+   Kontrol: x = −3 → −3(−3)+1 = 10 > 7 ✔
+
+4) −1, 0, 1, 2, 3 → 5 tam sayı
+   (−1 dahil, 4 dahil değil)
+
+5) 3 < 3x < 12 → 1 < x < 4
+   Tam sayılar: 2, 3 → 2 tane
+
+6) 2x − 3 > 9 → 2x > 12 → x > 6
+   x > 6 ise en küçük tam sayı 7</div>
+</details>
+
+<h2>Sık sorulan sorular</h2>
+
+<h3>İşaret dönmesini nasıl unutmam?</h3>
+<p>Her negatif bölme/çarpma işleminden sonra çözüm aralığından bir sayı seçip eşitsizliğe koy. Sağlamıyorsa işareti çevirmeyi atlamışsın. Bu kontrol 10 saniye sürer ve konudaki tek ciddi hatayı yakalar.</p>
+
+<h3>Eşitsizlik ile denklem aynı şekilde mi çözülür?</h3>
+<p>Neredeyse. Tüm adımlar aynı — yalnızca negatifle çarpma/bölme adımında yön değişir. Bu yüzden <a href="/8-sinif-matematik/dogrusal-denklemler/">doğrusal denklemleri</a> bilen öğrenci bu konuyu hızlı öğrenir.</p>
+
+<div class="cta">
+  <h2>Konuyu öğrendin. Şimdi soru çöz.</h2>
+  <p>Bu konuda başarı <strong>tek kuralı hiç atlamamaya</strong> bağlı — o da ancak tekrarla otomatikleşir. Net Up'ta seviyene göre soru gelir, yanlışların hata defterine düşer, çözünce silinir. <strong>Türkçe ve Matematik ücretsiz.</strong></p>
+  <div class="magaza-kart magaza">
+    <a href="https://apps.apple.com/app/id6768393770" aria-label="App Store'dan indirin">
+      <img src="/assets/appstore-badge-tr-black.svg" alt="App Store'dan indirin" width="176" height="52">
+    </a>
+    <a href="https://play.google.com/store/apps/details?id=com.netup.app" aria-label="Google Play'den indirin">
+      <img src="/assets/googleplay-badge-tr.svg" alt="Google Play'den indirin" width="175" height="52">
+    </a>
+  </div>
+</div>
+
+<a class="sonraki" href="/8-sinif-matematik/veri-analizi/">
+  <span>
+    <span class="et">Sonraki konu</span>
+    <span class="ad">Veri Analizi</span>
+  </span>
+  <span class="ok">→</span>
+</a>
+
+</div>
+</main>
+
+<footer class="alt">
+  <div class="wrap">
+    <p><a href="/8-sinif-matematik/">8. Sınıf Matematik</a> · <a href="/8-sinif-matematik/dogrusal-denklemler/">Doğrusal Denklemler</a> · <a href="/8-sinif-turkce/">8. Sınıf Türkçe</a></p>
+    <p><strong>Net Up</strong> — LGS hazırlık uygulaması. 6, 7 ve 8. sınıf için Türkçe ve Matematik ücretsiz.</p>
+  </div>
+</footer>
+
+</body>
+</html>

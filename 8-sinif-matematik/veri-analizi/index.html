@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veri Analizi — 8. Sınıf Konu Anlatımı | Net Up</title>
+<meta name="description" content="Veri analizi konu anlatımı: aritmetik ortalama, ortanca, mod, açıklık; sütun, çizgi ve daire grafiği okuma. Çözümlü örnekler ve LGS testi.">
+<link rel="canonical" href="https://netup.website/8-sinif-matematik/veri-analizi/">
+<meta property="og:title" content="Veri Analizi — 8. Sınıf Konu Anlatımı">
+<meta property="og:description" content="Ortalama, ortanca, mod, açıklık ve grafik okuma — çözümlü örneklerle.">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="tr_TR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/ders.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article",
+"headline":"Veri Analizi — 8. Sınıf Konu Anlatımı",
+"description":"Aritmetik ortalama, ortanca, mod, açıklık ve grafik türleri.",
+"inLanguage":"tr-TR","author":{"@type":"Organization","name":"Net Up"},
+"publisher":{"@type":"Organization","name":"Net Up"},"educationalLevel":"8. sınıf",
+"about":[{"@type":"Thing","name":"Veri Analizi"},{"@type":"Thing","name":"LGS Matematik"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Aritmetik ortalama nasıl hesaplanır?","acceptedAnswer":{"@type":"Answer","text":"Bütün verilerin toplamı, veri sayısına bölünür. 4, 8, 6, 10, 7 verilerinin toplamı 35, veri sayısı 5 olduğundan ortalama 7'dir."}},
+{"@type":"Question","name":"Ortanca (medyan) nasıl bulunur?","acceptedAnswer":{"@type":"Answer","text":"Veriler küçükten büyüğe sıralanır. Veri sayısı tekse tam ortadaki değer, çiftse ortadaki iki değerin aritmetik ortalaması ortancadır."}},
+{"@type":"Question","name":"Mod nedir?","acceptedAnswer":{"@type":"Answer","text":"Bir veri grubunda en çok tekrar eden değere mod (tepe değer) denir. 3, 5, 5, 7, 9, 11 verilerinin modu 5'tir. Birden fazla mod olabilir veya hiç olmayabilir."}},
+{"@type":"Question","name":"Açıklık nasıl bulunur?","acceptedAnswer":{"@type":"Answer","text":"En büyük veriden en küçük veri çıkarılır. 4 ile 10 arasında değişen bir veri grubunun açıklığı 10 − 4 = 6'dır."}},
+{"@type":"Question","name":"Daire grafiğinde yüzde nasıl dereceye çevrilir?","acceptedAnswer":{"@type":"Answer","text":"Yüzde değeri 360 ile çarpılıp 100'e bölünür. %25 için 25 × 360 / 100 = 90 derece bulunur."}}]}
+</script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a class="logo" href="/"><img src="/assets/app-icon-nav.png" alt="Net Up" width="30" height="30"> Net Up</a>
+    <a class="btn btn-ghost" style="background:var(--purple-50);color:var(--purple-700);box-shadow:none;padding:10px 20px;font-size:14.5px" href="https://apps.apple.com/app/id6768393770">Ücretsiz indir</a>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="bc"><a href="/8-sinif-matematik/">8. Sınıf Matematik</a> › Veri Analizi</div>
+    <h1>Veri Analizi</h1>
+    <p class="ozet">Ortalama, ortanca, mod, açıklık ve grafik okuma — hangi ölçü ne zaman kullanılır?</p>
+    <div class="etiketler">
+      <span class="etiket">8. sınıf · veri</span>
+      <span class="etiket">4 merkezi ölçü</span>
+      <span class="etiket">Grafikli sorular</span>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+<p class="intro">Veri analizi, LGS'nin <strong>en çok grafik içeren</strong> ünitesi. Hesaplamalar kolay — zorluk, sorunun hangi ölçüyü istediğini anlamakta. Ortalama mı ortanca mı? Bu ayrımı yapabilen öğrenci bu ünitede net kaybetmez.</p>
+
+<div class="icindekiler">
+  <b>Bu sayfada</b>
+  <ol>
+    <li><a href="#ortalama">Aritmetik ortalama</a></li>
+    <li><a href="#ortanca">Ortanca (medyan)</a></li>
+    <li><a href="#mod">Mod (tepe değer)</a></li>
+    <li><a href="#aciklik">Açıklık</a></li>
+    <li><a href="#hangi">Hangi ölçü ne zaman?</a></li>
+    <li><a href="#grafik">Grafik türleri</a></li>
+    <li><a href="#daire">Daire grafiği hesapları</a></li>
+    <li><a href="#tip">LGS soru tipleri</a></li>
+    <li><a href="#test">Kendini test et</a></li>
+  </ol>
+</div>
+
+<h2 id="ortalama">1. Aritmetik ortalama</h2>
+
+<div class="tanim">
+  <div class="hesap" style="margin-bottom:0">Ortalama = Verilerin toplamı / Veri sayısı</div>
+</div>
+
+<div class="ornek">
+  <div class="soru">4, 8, 6, 10, 7 verilerinin ortalaması kaçtır?</div>
+  <div class="hesap">Toplam = 4 + 8 + 6 + 10 + 7 = 35
+Veri sayısı = 5
+Ortalama = 35 / 5 <span class="sonuc">= 7</span></div>
+</div>
+
+<div class="ornek">
+  <div class="soru">Ağırlıklı ortalama: 2 dersten 80, 3 dersten 90 alan öğrencinin ortalaması?</div>
+  <div class="hesap">(2 · 80 + 3 · 90) / (2 + 3)
+= (160 + 270) / 5
+= 430 / 5 <span class="sonuc">= 86</span></div>
+  <p>Dikkat: (80 + 90) / 2 = 85 <strong>yanlıştır</strong>. Ders sayıları farklı olduğu için ağırlıklı hesap gerekir.</p>
+</div>
+
+<div class="ornek">
+  <div class="soru">Eksik veri bulma: 4 sayının ortalaması 15. Üçü 12, 14 ve 16 ise dördüncüsü kaçtır?</div>
+  <div class="hesap">Toplam = 4 · 15 = 60
+Bilinen üçü = 12 + 14 + 16 = 42
+Dördüncü = 60 − 42 <span class="sonuc">= 18</span></div>
+  <p><strong>Yöntem:</strong> ortalamadan toplamı bul (ortalama × veri sayısı), sonra bilinenleri çıkar. Bu tip LGS'de sık çıkar.</p>
+</div>
+
+<div class="ornek">
+  <div class="soru">Ortalama değişimi: 5 sayının ortalaması 12. Gruba 18 eklenirse yeni ortalama?</div>
+  <div class="hesap">Eski toplam = 5 · 12 = 60
+Yeni toplam = 60 + 18 = 78
+Yeni veri sayısı = 6
+Yeni ortalama = 78 / 6 <span class="sonuc">= 13</span></div>
+</div>
+
+<h2 id="ortanca">2. Ortanca (medyan)</h2>
+
+<div class="tanim">
+  <strong>Tanım:</strong> Veriler <em>küçükten büyüğe sıralandığında</em> ortada kalan değer.
+  <div class="hesap" style="margin-bottom:0">Veri sayısı TEK  → tam ortadaki değer
+Veri sayısı ÇİFT → ortadaki iki değerin ortalaması</div>
+</div>
+
+<div class="ornek">
+  <div class="soru">4, 8, 6, 10, 7 verilerinin ortancası?</div>
+  <div class="hesap">Sırala: 4, 6, [7], 8, 10
+5 veri (tek) → ortadaki <span class="sonuc">= 7</span></div>
+</div>
+
+<div class="ornek">
+  <div class="soru">3, 5, 5, 7, 9, 11 verilerinin ortancası?</div>
+  <div class="hesap">6 veri (çift) → ortadaki ikisi: 5 ve 7
+Ortanca = (5 + 7) / 2 <span class="sonuc">= 6</span></div>
+</div>
+
+<div class="kutu uyari">
+  <strong>En sık hata:</strong> sıralamayı atlamak. Ortanca bulmadan önce veriler <em>mutlaka</em> sıralanmalı. Sıralamadan ortadaki sayıyı almak yanlış sonuç verir.
+</div>
+
+<h2 id="mod">3. Mod (tepe değer)</h2>
+
+<div class="tanim">
+  <strong>Tanım:</strong> En çok tekrar eden değer.
+</div>
+
+<div class="ornek">
+  <div class="soru">3, 5, 5, 7, 9, 11 → mod?</div>
+  <div class="hesap">5 iki kez, diğerleri bir kez → mod <span class="sonuc">= 5</span></div>
+</div>
+
+<div class="kutu">
+  <strong>Özel durumlar:</strong> Bir veri grubunda <em>birden fazla mod</em> olabilir (iki değer eşit sıklıkta tekrar ederse). Hiç tekrar yoksa <em>mod yoktur</em>. Bu iki durum LGS'de tuzak olarak kullanılır.
+</div>
+
+<h2 id="aciklik">4. Açıklık</h2>
+
+<div class="tanim">
+  <div class="hesap" style="margin-bottom:0">Açıklık = En büyük veri − En küçük veri</div>
+  Verilerin ne kadar <em>yayıldığını</em> gösterir.
+</div>
+
+<div class="ornek">
+  <div class="soru">4, 8, 6, 10, 7 → açıklık?</div>
+  <div class="hesap">10 − 4 <span class="sonuc">= 6</span></div>
+</div>
+
+<h2 id="hangi">5. Hangi ölçü ne zaman kullanılır?</h2>
+
+<p>Bu bölüm ezber değil, mantık — ve LGS'de yorum sorusu olarak çıkıyor.</p>
+
+<div class="tablo-sar">
+<table>
+  <tr><th>Ölçü</th><th>Ne zaman uygun?</th><th>Zayıf yönü</th></tr>
+  <tr><td><strong>Ortalama</strong></td><td>Veriler dengeli dağılmışsa</td><td>Aşırı uç değerden çok etkilenir</td></tr>
+  <tr><td><strong>Ortanca</strong></td><td>Aşırı uç değer varsa</td><td>Tüm verileri kullanmaz</td></tr>
+  <tr><td><strong>Mod</strong></td><td>En sık tercih/en çok satan aranıyorsa</td><td>Sayısal yorum vermez</td></tr>
+  <tr><td><strong>Açıklık</strong></td><td>Yayılımı ölçmek gerekiyorsa</td><td>Sadece iki uç değere bakar</td></tr>
+</table>
+</div>
+
+<div class="ornek">
+  <div class="soru">Neden uç değer ortalamayı bozar?</div>
+  <div class="hesap">Maaşlar: 3, 3, 4, 4, 50  (bin TL)
+Ortalama = 64 / 5 = 12,8   ← kimse bu kadar kazanmıyor!
+Ortanca  = 4               ← gerçeği daha iyi anlatıyor</div>
+  <p>Bu yüzden gelir gibi uç değerli verilerde <strong>ortanca</strong> tercih edilir. "Hangi ölçü daha uygun?" sorusunda cevap genelde budur.</p>
+</div>
+
+<h2 id="grafik">6. Grafik türleri</h2>
+
+<div class="tablo-sar">
+<table>
+  <tr><th>Grafik</th><th>Ne için kullanılır?</th></tr>
+  <tr><td><strong>Sütun grafiği</strong></td><td>Kategorileri karşılaştırmak (hangi daha çok?)</td></tr>
+  <tr><td><strong>Çizgi grafiği</strong></td><td>Zaman içindeki değişimi göstermek (artıyor mu?)</td></tr>
+  <tr><td><strong>Daire grafiği</strong></td><td>Bütün içindeki payları göstermek (yüzde dağılım)</td></tr>
+  <tr><td><strong>Sıklık tablosu</strong></td><td>Verileri gruplayıp saymak</td></tr>
+</table>
+</div>
+
+<div class="kutu">
+  <strong>Soru kalıbı:</strong> "Bu veriyi göstermek için en uygun grafik hangisidir?" Cevap için şu soruyu sor: <em>karşılaştırma</em> mı (sütun), <em>zaman içinde değişim</em> mi (çizgi), <em>bütünün parçaları</em> mı (daire)?
+</div>
+
+<h2 id="daire">7. Daire grafiği hesapları</h2>
+
+<div class="tanim">
+  <strong>Tam daire = 360°= %100</strong>
+  <div class="hesap" style="margin-bottom:0">Merkez açı = (yüzde × 360) / 100
+Yüzde      = (merkez açı × 100) / 360</div>
+</div>
+
+<div class="ornek">
+  <div class="soru">Dönüşümler.</div>
+  <div class="hesap">%25  →  25 · 360 / 100 = 90°
+%40  →  40 · 360 / 100 = 144°
+120° →  120 · 100 / 360 = %33,3
+
+Kontrol: %25 çeyrek daire = 90° ✔</div>
+</div>
+
+<div class="ornek">
+  <div class="soru">Bir sınıfta 40 öğrenci var. Daire grafiğinde matematik sevenlerin dilim açısı 90° ise kaç öğrenci matematik seviyor?</div>
+  <div class="hesap">90° → 90/360 = 1/4 → %25
+40 · 1/4 <span class="sonuc">= 10 öğrenci</span></div>
+</div>
+
+<h2 id="tip">8. LGS soru tipleri</h2>
+
+<div class="tablo-sar">
+<table>
+  <tr><th>Tip</th><th>Çözüm yolu</th></tr>
+  <tr><td>Ortalama verilmiş, eksik veri soruluyor</td><td>Toplam = ortalama × veri sayısı, sonra çıkar</td></tr>
+  <tr><td>Gruba veri eklenince ortalama değişimi</td><td>Yeni toplam / yeni veri sayısı</td></tr>
+  <tr><td>Grafikten okuma + hesap</td><td>Grafikten değerleri al, sonra ortalama/ortanca hesapla</td></tr>
+  <tr><td>Hangi ölçü daha uygun?</td><td>Uç değer varsa ortanca, yoksa ortalama</td></tr>
+  <tr><td>Daire grafiğinde açı ↔ yüzde ↔ kişi sayısı</td><td>360° = %100 = toplam kişi orantısı</td></tr>
+</table>
+</div>
+
+<h2 id="test">9. Kendini test et</h2>
+
+<ol>
+  <li>7, 3, 9, 5, 11 verilerinin ortalaması ve ortancası kaçtır?</li>
+  <li>2, 4, 4, 6, 8, 10 verilerinin modu ve ortancası kaçtır?</li>
+  <li>5 sayının ortalaması 20. Bir sayı 30 ise diğer dördünün toplamı kaçtır?</li>
+  <li>Bir daire grafiğinde bir dilim %35 ise merkez açısı kaç derecedir?</li>
+  <li>6, 6, 7, 8, 40 verilerinde ortalama mı ortanca mı daha uygun? Neden?</li>
+  <li>Bir sınıfın not açıklığı 45, en yüksek not 95 ise en düşük not kaçtır?</li>
+</ol>
+
+<details>
+  <summary>Cevapları göster</summary>
+  <div class="hesap">1) Toplam = 35, ortalama = 35/5 = 7
+   Sıralı: 3, 5, [7], 9, 11 → ortanca = 7
+
+2) Mod = 4 (iki kez tekrar)
+   6 veri → ortanca = (4+6)/2 = 5
+
+3) Toplam = 5 · 20 = 100
+   Diğer dördü = 100 − 30 = 70
+
+4) 35 · 360 / 100 = 126°
+
+5) ORTANCA daha uygun.
+   40 aşırı uç değer, ortalamayı yukarı çekiyor:
+   ortalama = 67/5 = 13,4 (kimseyi temsil etmiyor)
+   ortanca = 7 (veriyi daha iyi anlatıyor)
+
+6) 95 − 45 = 50</div>
+</details>
+
+<h2>Sık sorulan sorular</h2>
+
+<h3>Ortalama mı ortanca mı sorusunun cevabını nasıl bulurum?</h3>
+<p>Veri grubuna bak: diğerlerinden çok uzak bir değer (uç değer) var mı? Varsa ortanca daha uygundur, çünkü ortalama o uç değer tarafından çekilir.</p>
+
+<h3>Mod her veri grubunda var mıdır?</h3>
+<p>Hayır. Hiçbir değer tekrar etmiyorsa mod yoktur; iki değer eşit sıklıkta tekrar ederse iki mod olur.</p>
+
+<div class="cta">
+  <h2>Konuyu öğrendin. Şimdi soru çöz.</h2>
+  <p>Veri analizinde hesap kolay, <strong>grafik okumak</strong> pratik gerektirir. Net Up'ta seviyene göre soru gelir, yanlışların hata defterine düşer, çözünce silinir. <strong>Türkçe ve Matematik ücretsiz.</strong></p>
+  <div class="magaza-kart magaza">
+    <a href="https://apps.apple.com/app/id6768393770" aria-label="App Store'dan indirin">
+      <img src="/assets/appstore-badge-tr-black.svg" alt="App Store'dan indirin" width="176" height="52">
+    </a>
+    <a href="https://play.google.com/store/apps/details?id=com.netup.app" aria-label="Google Play'den indirin">
+      <img src="/assets/googleplay-badge-tr.svg" alt="Google Play'den indirin" width="175" height="52">
+    </a>
+  </div>
+</div>
+
+<a class="sonraki" href="/8-sinif-matematik/olasilik/">
+  <span>
+    <span class="et">Sonraki konu</span>
+    <span class="ad">Olasılık</span>
+  </span>
+  <span class="ok">→</span>
+</a>
+
+</div>
+</main>
+
+<footer class="alt">
+  <div class="wrap">
+    <p><a href="/8-sinif-matematik/">8. Sınıf Matematik</a> · <a href="/8-sinif-matematik/esitsizlikler/">Eşitsizlikler</a> · <a href="/8-sinif-turkce/">8. Sınıf Türkçe</a></p>
+    <p><strong>Net Up</strong> — LGS hazırlık uygulaması. 6, 7 ve 8. sınıf için Türkçe ve Matematik ücretsiz.</p>
+  </div>
+</footer>
+
+</body>
+</html>

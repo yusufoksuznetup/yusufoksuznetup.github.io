@@ -47,6 +47,7 @@ body{
 .topbar{background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
 .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
 .logo{display:flex;align-items:center;gap:9px;text-decoration:none;color:var(--ink-900);font-weight:800;letter-spacing:-.02em;font-size:18px}
+.logo img{width:30px;height:30px;border-radius:9px;display:block;flex-shrink:0}
 .logo .dot{width:26px;height:26px;border-radius:8px;background:linear-gradient(135deg,var(--purple-600),var(--purple-500));display:inline-block}
 
 /* ---------- Hero ---------- */
