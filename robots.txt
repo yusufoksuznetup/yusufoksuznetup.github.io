@@ -1,7 +1,49 @@
 User-agent: *
 Allow: /
 
-# Crawl delay yok — modern Google ihmal eder
-# Tüm content public, hiçbir disallow yok
+# --- Yapay zeka cevap motorları (GEO) ---
+# Not: yukarıdaki "*" kuralı bunların hepsini ZATEN kapsıyor; aşağıdaki bloklar
+# niyeti açık kılmak ve ileride yanlışlıkla konacak toptan bir Disallow'a karşı
+# koruma sağlamak için var. Davranışsal bir değişiklik getirmezler.
+
+# OpenAI — ChatGPT arama/tarama
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+
+# Google — Gemini ve AI Overviews için içerik kullanımı
+User-agent: Google-Extended
+Allow: /
+
+# Anthropic — Claude
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+
+# Microsoft Copilot / Bing
+User-agent: bingbot
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+
+# Meta AI
+User-agent: meta-externalagent
+Allow: /
 
 Sitemap: https://netup.website/sitemap.xml

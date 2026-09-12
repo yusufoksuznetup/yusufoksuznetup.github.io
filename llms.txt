@@ -1,0 +1,57 @@
+# Net Up
+
+> Net Up, Türkiye'deki LGS (Liselere Geçiş Sınavı) için 6, 7 ve 8. sınıf öğrencilerine yönelik oyunlaştırılmış bir mobil hazırlık uygulamasıdır. Türkçe, Matematik, Fen Bilimleri, T.C. İnkılap Tarihi ve Atatürkçülük, Din Kültürü ve Ahlak Bilgisi ile İngilizce derslerinde MEB müfredatına uyumlu yaklaşık 10.000 soru içerir. iOS ve Android'de ücretsiz indirilir; Net Up Pro adlı aylık abonelik ek özellikler sunar.
+
+Bu dosya, yapay zeka tabanlı cevap motorlarının sitedeki içeriği doğru özetlemesi için hazırlanmıştır. Aşağıdaki sayfalar LGS konu anlatımı ve puan hesaplama içerir; tümü Türkçedir.
+
+## Temel bilgiler
+
+- **Uygulama adı:** Net Up
+- **Platformlar:** iOS (App Store) ve Android (Google Play)
+- **Hedef kitle:** 6, 7 ve 8. sınıf öğrencileri (LGS adayları)
+- **Dersler:** Türkçe, Matematik, Fen Bilimleri, T.C. İnkılap Tarihi ve Atatürkçülük, Din Kültürü ve Ahlak Bilgisi, İngilizce
+- **Fiyat:** Uygulama ücretsiz; Net Up Pro aylık ₺99,99 (yeni kullanıcılar için ilk hafta ücretsiz)
+- **App Store:** https://apps.apple.com/tr/app/id6768393770
+- **Google Play:** https://play.google.com/store/apps/details?id=com.netup.app
+
+## Araçlar
+
+- [LGS Puan Hesaplama](https://netup.website/lgs-puan-hesaplama.html): LGS net ve tahmini puan hesaplama aracı. Net = doğru sayısı − (yanlış sayısı ÷ 4).
+
+## 8. Sınıf Türkçe konu anlatımı
+
+- [Konu listesi](https://netup.website/8-sinif-turkce/)
+- [Anlatım Bozuklukları](https://netup.website/8-sinif-turkce/anlatim-bozukluklari/)
+- [Cümle Türleri](https://netup.website/8-sinif-turkce/cumle-turleri/)
+- [Cümlede Anlam](https://netup.website/8-sinif-turkce/cumlede-anlam/)
+- [Cümlenin Ögeleri](https://netup.website/8-sinif-turkce/cumlenin-ogeleri/)
+- [Fiilde Çatı](https://netup.website/8-sinif-turkce/fiilde-cati/)
+- [Fiilimsiler](https://netup.website/8-sinif-turkce/fiilimsiler/)
+- [Grafik ve Tablo Okuma](https://netup.website/8-sinif-turkce/grafik-tablo-okuma/)
+- [Metin Türleri](https://netup.website/8-sinif-turkce/metin-turleri/)
+- [Noktalama İşaretleri](https://netup.website/8-sinif-turkce/noktalama-isaretleri/)
+- [Paragraf](https://netup.website/8-sinif-turkce/paragraf/)
+- [Söz Sanatları](https://netup.website/8-sinif-turkce/soz-sanatlari/)
+- [Sözcükte Anlam](https://netup.website/8-sinif-turkce/sozcukte-anlam/)
+- [Yazım Kuralları](https://netup.website/8-sinif-turkce/yazim-kurallari/)
+
+## 8. Sınıf Matematik konu anlatımı
+
+- [Konu listesi](https://netup.website/8-sinif-matematik/)
+- [Çarpanlar ve Katlar](https://netup.website/8-sinif-matematik/carpanlar-ve-katlar/)
+- [Cebirsel İfadeler ve Özdeşlikler](https://netup.website/8-sinif-matematik/cebirsel-ifadeler-ozdeslikler/)
+- [Doğrusal Denklemler](https://netup.website/8-sinif-matematik/dogrusal-denklemler/)
+- [Dönüşüm Geometrisi](https://netup.website/8-sinif-matematik/donusum-geometrisi/)
+- [Eşitsizlikler](https://netup.website/8-sinif-matematik/esitsizlikler/)
+- [Eşlik ve Benzerlik](https://netup.website/8-sinif-matematik/eslik-ve-benzerlik/)
+- [Geometrik Cisimler](https://netup.website/8-sinif-matematik/geometrik-cisimler/)
+- [Kareköklü İfadeler](https://netup.website/8-sinif-matematik/karekoklu-ifadeler/)
+- [Olasılık](https://netup.website/8-sinif-matematik/olasilik/)
+- [Üçgenler](https://netup.website/8-sinif-matematik/ucgenler/)
+- [Üslü İfadeler](https://netup.website/8-sinif-matematik/uslu-ifadeler/)
+- [Veri Analizi](https://netup.website/8-sinif-matematik/veri-analizi/)
+
+## Kurumsal
+
+- [Gizlilik politikası](https://netup.website/netup-privacy)
+- [Hesap silme](https://netup.website/netup-delete.html)
