@@ -712,7 +712,7 @@ a { color: inherit; text-decoration: none; }
 .subjects-note strong { color: var(--purple-600); }
 
 /* === KONU ANLATIMI (SEO ders sayfalari) === */
-.ders-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+.ders-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
 .ders-kart {
   display: block; background: var(--surface); border: 1px solid var(--line);
   border-radius: var(--radius-lg); padding: 30px 28px; text-decoration: none;
@@ -731,7 +731,8 @@ a { color: inherit; text-decoration: none; }
 }
 .konu-liste a:hover { background: #EDE9FE; border-color: var(--purple-400); }
 .konu-baslik { font-size: 15px; font-weight: 700; color: var(--ink-700); margin: 26px 0 0; }
-@media (max-width: 760px) { .ders-grid { grid-template-columns: 1fr; } }
+@media (max-width: 1100px) { .ders-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; } }
+@media (max-width: 700px)  { .ders-grid { grid-template-columns: 1fr; } }
 @media (max-width: 768px) { .subjects-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 480px) { .subjects-grid { grid-template-columns: 1fr; } }
 
@@ -1492,7 +1493,7 @@ a { color: inherit; text-decoration: none; }
     <div class="section-head center">
       <span class="section-eyebrow">Ücretsiz konu anlatımı</span>
       <h2 class="section-title">Uygulamadan önce konuyu öğren.</h2>
-      <p class="section-sub">8. sınıf Türkçe ve Matematik müfredatının tamamı — çözümlü örnekler, LGS problem tipleri ve her konuda test. Üyelik gerekmez.</p>
+      <p class="section-sub">8. sınıf Türkçe, Matematik, Fen, İnkılap Tarihi ve Din Kültürü müfredatı — çözümlü örnekler, LGS problem tipleri ve her konuda test. Üyelik gerekmez.</p>
     </div>
 
     <div class="ders-grid">
@@ -1505,6 +1506,21 @@ a { color: inherit; text-decoration: none; }
         <span class="ders-et">12 konu</span>
         <h3>8. Sınıf Matematik →</h3>
         <p>Sayılar (çarpanlar, üslü, kareköklü), cebir (özdeşlikler, denklemler, eşitsizlikler), veri ve olasılık, geometri (üçgenler, benzerlik, dönüşüm, cisimler).</p>
+      </a>
+      <a class="ders-kart" href="/8-sinif-fen/">
+        <span class="ders-et">10 konu</span>
+        <h3>8. Sınıf Fen Bilimleri →</h3>
+        <p>Mevsimler ve iklim, DNA ve kalıtım, basınç, periyodik sistem, asitler ve bazlar, kimyasal tepkimeler, basit makineler, enerji dönüşümleri, elektrik.</p>
+      </a>
+      <a class="ders-kart" href="/8-sinif-inkilap/">
+        <span class="ders-et">7 konu</span>
+        <h3>8. Sınıf İnkılap Tarihi →</h3>
+        <p>Mustafa Kemal'in hayatı, Millî Uyanış, genelgeler ve kongreler, Kurtuluş Savaşı cepheleri, Lozan, Atatürk inkılapları, ilkeler ve dış politika.</p>
+      </a>
+      <a class="ders-kart" href="/8-sinif-din-kulturu/">
+        <span class="ders-et">5 ünite</span>
+        <h3>8. Sınıf Din Kültürü →</h3>
+        <p>Kader inancı, zekât ve sadaka, din ve hayat, Hz. Muhammed'in örnekliği, Kur'an-ı Kerim ve özellikleri.</p>
       </a>
     </div>
 
@@ -1539,6 +1555,41 @@ a { color: inherit; text-decoration: none; }
       <a href="/8-sinif-matematik/eslik-ve-benzerlik/">Eşlik ve Benzerlik</a>
       <a href="/8-sinif-matematik/donusum-geometrisi/">Dönüşüm Geometrisi</a>
       <a href="/8-sinif-matematik/geometrik-cisimler/">Geometrik Cisimler</a>
+    </div>
+
+    <p class="konu-baslik">Fen Bilimleri konuları</p>
+    <div class="konu-liste">
+      <a href="/8-sinif-fen/mevsimler-ve-iklim/">Mevsimler ve İklim</a>
+      <a href="/8-sinif-fen/dna-ve-genetik-kod/">DNA ve Genetik Kod</a>
+      <a href="/8-sinif-fen/kalitim-ve-mendel/">Kalıtım ve Mendel</a>
+      <a href="/8-sinif-fen/basinc/">Basınç</a>
+      <a href="/8-sinif-fen/periyodik-sistem/">Periyodik Sistem</a>
+      <a href="/8-sinif-fen/fiziksel-kimyasal-degisim/">Fiziksel ve Kimyasal Değişim</a>
+      <a href="/8-sinif-fen/kimyasal-tepkimeler/">Kimyasal Tepkimeler</a>
+      <a href="/8-sinif-fen/basit-makineler/">Basit Makineler</a>
+      <a href="/8-sinif-fen/enerji-donusumleri/">Enerji Dönüşümleri</a>
+      <a href="/8-sinif-fen/elektrik-yukleri-ve-enerjisi/">Elektrik Yükleri</a>
+    </div>
+
+    <p class="konu-baslik">İnkılap Tarihi konuları</p>
+    <div class="konu-liste">
+      <a href="/8-sinif-inkilap/bir-kahraman-doguyor/">Bir Kahraman Doğuyor</a>
+      <a href="/8-sinif-inkilap/milli-uyanis/">Millî Uyanış</a>
+      <a href="/8-sinif-inkilap/genelgeler-ve-kongreler/">Genelgeler ve Kongreler</a>
+      <a href="/8-sinif-inkilap/kurtulus-savasi-cepheleri/">Kurtuluş Savaşı Cepheleri</a>
+      <a href="/8-sinif-inkilap/lozan-antlasmasi/">Lozan Antlaşması</a>
+      <a href="/8-sinif-inkilap/ataturk-inkilaplari/">Atatürk İnkılapları</a>
+      <a href="/8-sinif-inkilap/ataturk-ilkeleri/">Atatürk İlkeleri</a>
+      <a href="/8-sinif-inkilap/ataturk-donemi-dis-politika/">Dış Politika</a>
+    </div>
+
+    <p class="konu-baslik">Din Kültürü konuları</p>
+    <div class="konu-liste">
+      <a href="/8-sinif-din-kulturu/kader-inanci/">Kader İnancı</a>
+      <a href="/8-sinif-din-kulturu/zekat-ve-sadaka/">Zekât ve Sadaka</a>
+      <a href="/8-sinif-din-kulturu/din-ve-hayat/">Din ve Hayat</a>
+      <a href="/8-sinif-din-kulturu/hz-muhammedin-ornekligi/">Hz. Muhammed'in Örnekliği</a>
+      <a href="/8-sinif-din-kulturu/kuran-i-kerim-ve-ozellikleri/">Kur'an-ı Kerim</a>
     </div>
   </div>
 </section>
@@ -1785,8 +1836,9 @@ a { color: inherit; text-decoration: none; }
         <ul>
           <li><a href="/8-sinif-turkce/">8. Sınıf Türkçe</a></li>
           <li><a href="/8-sinif-matematik/">8. Sınıf Matematik</a></li>
-          <li><a href="/8-sinif-turkce/paragraf/">Paragraf</a></li>
-          <li><a href="/8-sinif-matematik/ucgenler/">Üçgenler</a></li>
+          <li><a href="/8-sinif-fen/">8. Sınıf Fen Bilimleri</a></li>
+          <li><a href="/8-sinif-inkilap/">8. Sınıf İnkılap Tarihi</a></li>
+          <li><a href="/8-sinif-din-kulturu/">8. Sınıf Din Kültürü</a></li>
         </ul>
       </div>
       <div>
