@@ -247,6 +247,197 @@ x &lt; 5 ise en büyük TAM SAYI değeri <span class="sonuc">4</span></div>
    x > 6 ise en küçük tam sayı 7</div>
 </details>
 
+<!-- geo:ornek-sorular -->
+<h2 id="ornek-sorular">Çözümlü örnek sorular</h2>
+
+<p class="intro">Aşağıdaki sorular Net Up uygulamasının soru havuzundan alınmıştır; kolaydan
+zora doğru sıralıdır. Her birinin adım adım çözümü de birlikte verilmiştir.</p>
+
+  <div class="ornek-soru">
+    <span class="rozet z1">KOLAY</span>
+    <p class="kok">Bir sınıfta <strong>20&#x27;den fazla</strong>, <strong>25&#x27;ten az</strong> öğrenci vardır. Öğrenciler <strong>4&#x27;erli</strong> sıralara oturacak ve her öğrenci bir sıraya oturacaktır.</p>
+    <p class="kok">Buna göre en az kaç sıra gereklidir?</p>
+    <ul class="secenekler">
+      <li class="dogru"><span class="h">A)</span> 6</li>
+      <li><span class="h">B)</span> 5</li>
+      <li><span class="h">C)</span> 21</li>
+      <li><span class="h">D)</span> 7</li>
+    </ul>
+    <details>
+      <summary>Çözümü gör</summary>
+      <div class="cozum">
+      <p>Eşitsizliği kuralım:</p>
+      <p class="adim">→ Sıra sayısına x diyelim. Her sırada 4 kişi oturduğuna göre toplam kapasite 4x&#x27;tir.</p>
+      <p class="adim">→ Öğrenci sayısı 20&#x27;den büyük bir tam sayı olduğuna göre en az 21&#x27;dir.</p>
+      <p class="adim">→ Herkes oturacaksa kapasite öğrenci sayısından küçük olamaz: <strong>4x ≥ 21</strong></p>
+      <p class="adim">→ Her iki tarafı 4&#x27;e bölelim: <strong>x ≥ 5,25</strong></p>
+      <p class="adim">→ x bir sıra sayısı olduğundan tam sayıdır. 5,25&#x27;ten büyük en küçük tam sayı <strong>6</strong>&#x27;dır.</p>
+      <p>Kontrol: 5 sıra yalnızca 5 × 4 = 20 kişi alır, oysa öğrenci sayısı en az 21&#x27;dir. 6 sıra ise 24 kişiye kadar yeter; sınıftaki en fazla öğrenci sayısı 24 olduğu için 6 sıra her durumda yeterlidir.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="ornek-soru">
+    <span class="rozet z2">ORTA</span>
+    <p class="kok">x ve y pozitif tam sayıları için 3x + 2y ≤ 12 koşulunu sağlayan (x, y) çiftlerinin sayısı kaçtır?</p>
+    <ul class="secenekler">
+      <li class="dogru"><span class="h">A)</span> 8</li>
+      <li><span class="h">B)</span> 7</li>
+      <li><span class="h">C)</span> 6</li>
+      <li><span class="h">D)</span> 9</li>
+    </ul>
+    <details>
+      <summary>Çözümü gör</summary>
+      <div class="cozum">
+      <p>x ve y pozitif tam sayı → x ≥ 1, y ≥ 1</p>
+      <p><strong>x = 1:</strong> 3 + 2y ≤ 12 → 2y ≤ 9 → y ≤ 4,5 → y ∈ {1,2,3,4} → <strong>4 çift</strong></p>
+      <p><strong>x = 2:</strong> 6 + 2y ≤ 12 → 2y ≤ 6 → y ≤ 3 → y ∈ {1,2,3} → <strong>3 çift</strong></p>
+      <p><strong>x = 3:</strong> 9 + 2y ≤ 12 → 2y ≤ 3 → y ≤ 1,5 → y ∈ {1} → <strong>1 çift</strong></p>
+      <p><strong>x = 4:</strong> 12 + 2y ≤ 12 → 2y ≤ 0 → y ≤ 0 → pozitif yok</p>
+      <p>Toplam: 4 + 3 + 1 = <strong>8 çift</strong></p>
+      </div>
+    </details>
+  </div>
+
+  <div class="ornek-soru">
+    <span class="rozet z3">ZOR</span>
+    <p class="kok">Bir öğrenci 5 sınavdan 3&#x27;ünde 70, 80 ve 65 aldı. Ortalama 75&#x27;ten yüksek olsun. Kalan 2 sınavdan toplamda en az kaç puan almalı?</p>
+    <ul class="secenekler">
+      <li><span class="h">A)</span> 155</li>
+      <li><span class="h">B)</span> 160</li>
+      <li class="dogru"><span class="h">C)</span> 161</li>
+      <li><span class="h">D)</span> 165</li>
+    </ul>
+    <details>
+      <summary>Çözümü gör</summary>
+      <div class="cozum">
+      <p>&quot;Ortalama 75&#x27;ten yüksek&quot; → toplam &gt; 5 × 75 = 375</p>
+      <p>Mevcut 3 sınav toplamı: 70 + 80 + 65 = 215</p>
+      <p>Kalan 2 sınavdan gerekli: k &gt; 375 − 215 = 160</p>
+      <p>k tam sayı olduğundan: <strong>k ≥ 161</strong></p>
+      <p>Seçenekleri kontrol et:</p>
+      <p>A) 155 → 215+155=370 &lt; 375 ✗</p>
+      <p>B) 160 → 215+160=375 → 375 &gt; 375 ✗ (eşit, büyük değil)</p>
+      <p><strong>C) 161</strong> → 215+161=376 &gt; 375 ✓</p>
+      <p>D) 165 → fazla, ama 161 minimum ✗</p>
+      </div>
+    </details>
+  </div>
+
+<div class="kisayol">
+  <strong>Net hesabı:</strong> Bu konudan kaç doğru çıkardığının puanına etkisini merak ediyorsan
+  <a href="/lgs-puan-hesaplama.html">LGS puan hesaplama aracımızla</a> deneyebilirsin.
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Quiz",
+  "name": "Eşitsizlikler — çözümlü örnek sorular",
+  "about": {
+    "@type": "Thing",
+    "name": "Eşitsizlikler"
+  },
+  "educationalLevel": "8. sınıf (LGS)",
+  "inLanguage": "tr-TR",
+  "learningResourceType": "Quiz",
+  "typicalAgeRange": "13-14",
+  "hasPart": [
+    {
+      "@type": "Question",
+      "eduQuestionType": "Multiple choice",
+      "learningResourceType": "Practice problem",
+      "name": "Bir sınıfta 20'den fazla, 25'ten az öğrenci vardır. Öğrenciler 4'erli sıralara oturacak ve her öğrenci bir sır",
+      "text": "Bir sınıfta 20'den fazla, 25'ten az öğrenci vardır. Öğrenciler 4'erli sıralara oturacak ve her öğrenci bir sıraya oturacaktır. Buna göre en az kaç sıra gereklidir?",
+      "suggestedAnswer": [
+        {
+          "@type": "Answer",
+          "position": 1,
+          "text": "5"
+        },
+        {
+          "@type": "Answer",
+          "position": 2,
+          "text": "21"
+        },
+        {
+          "@type": "Answer",
+          "position": 3,
+          "text": "7"
+        }
+      ],
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "position": 0,
+        "text": "6",
+        "explanation": "Eşitsizliği kuralım: → Sıra sayısına x diyelim. Her sırada 4 kişi oturduğuna göre toplam kapasite 4x'tir. → Öğrenci sayısı 20'den büyük bir tam sayı olduğuna göre en az 21'dir. → Herkes oturacaksa kapasite öğrenci sayısından küçük olamaz: 4x ≥ 21 → Her iki tarafı 4'e bölelim: x ≥ 5,25 → x bir sıra sayısı olduğundan tam sayıdır. 5,25'ten büyük en küçük tam sayı 6'dır. Kontrol: 5 sıra yalnızca 5 × 4 = 20 kişi alır, oysa öğrenci sayısı en az 21'dir. 6 sıra ise 24 kişiye kadar yeter; sınıftaki en fazla öğrenci sayısı 24 olduğu için 6 sıra her durumda yeterlidir."
+      }
+    },
+    {
+      "@type": "Question",
+      "eduQuestionType": "Multiple choice",
+      "learningResourceType": "Practice problem",
+      "name": "x ve y pozitif tam sayıları için 3x + 2y ≤ 12 koşulunu sağlayan (x, y) çiftlerinin sayısı kaçtır?",
+      "text": "x ve y pozitif tam sayıları için 3x + 2y ≤ 12 koşulunu sağlayan (x, y) çiftlerinin sayısı kaçtır?",
+      "suggestedAnswer": [
+        {
+          "@type": "Answer",
+          "position": 1,
+          "text": "7"
+        },
+        {
+          "@type": "Answer",
+          "position": 2,
+          "text": "6"
+        },
+        {
+          "@type": "Answer",
+          "position": 3,
+          "text": "9"
+        }
+      ],
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "position": 0,
+        "text": "8",
+        "explanation": "x ve y pozitif tam sayı → x ≥ 1, y ≥ 1 x = 1: 3 + 2y ≤ 12 → 2y ≤ 9 → y ≤ 4,5 → y ∈ {1,2,3,4} → 4 çift x = 2: 6 + 2y ≤ 12 → 2y ≤ 6 → y ≤ 3 → y ∈ {1,2,3} → 3 çift x = 3: 9 + 2y ≤ 12 → 2y ≤ 3 → y ≤ 1,5 → y ∈ {1} → 1 çift x = 4: 12 + 2y ≤ 12 → 2y ≤ 0 → y ≤ 0 → pozitif yok Toplam: 4 + 3 + 1 = 8 çift"
+      }
+    },
+    {
+      "@type": "Question",
+      "eduQuestionType": "Multiple choice",
+      "learningResourceType": "Practice problem",
+      "name": "Bir öğrenci 5 sınavdan 3'ünde 70, 80 ve 65 aldı. Ortalama 75'ten yüksek olsun. Kalan 2 sınavdan toplamda en az",
+      "text": "Bir öğrenci 5 sınavdan 3'ünde 70, 80 ve 65 aldı. Ortalama 75'ten yüksek olsun. Kalan 2 sınavdan toplamda en az kaç puan almalı?",
+      "suggestedAnswer": [
+        {
+          "@type": "Answer",
+          "position": 0,
+          "text": "155"
+        },
+        {
+          "@type": "Answer",
+          "position": 1,
+          "text": "160"
+        },
+        {
+          "@type": "Answer",
+          "position": 3,
+          "text": "165"
+        }
+      ],
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "position": 2,
+        "text": "161",
+        "explanation": "\"Ortalama 75'ten yüksek\" → toplam > 5 × 75 = 375 Mevcut 3 sınav toplamı: 70 + 80 + 65 = 215 Kalan 2 sınavdan gerekli: k > 375 − 215 = 160 k tam sayı olduğundan: k ≥ 161 Seçenekleri kontrol et: A) 155 → 215+155=370 < 375 ✗ B) 160 → 215+160=375 → 375 > 375 ✗ (eşit, büyük değil) C) 161 → 215+161=376 > 375 ✓ D) 165 → fazla, ama 161 minimum ✗"
+      }
+    }
+  ]
+}
+</script>
+<!-- /geo:ornek-sorular -->
+
 <h2>Sık sorulan sorular</h2>
 
 <h3>İşaret dönmesini nasıl unutmam?</h3>

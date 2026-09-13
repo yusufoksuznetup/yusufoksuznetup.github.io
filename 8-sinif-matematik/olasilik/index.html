@@ -253,6 +253,211 @@ P = 6/36 = <span class="sonuc">1/6</span></div>
 6) İmkânsız olay → P = 0</div>
 </details>
 
+<!-- geo:ornek-sorular -->
+<h2 id="ornek-sorular">Çözümlü örnek sorular</h2>
+
+<p class="intro">Aşağıdaki sorular Net Up uygulamasının soru havuzundan alınmıştır; kolaydan
+zora doğru sıralıdır. Her birinin adım adım çözümü de birlikte verilmiştir.</p>
+
+  <div class="ornek-soru">
+    <span class="rozet z1">KOLAY</span>
+    <p class="kok">Bir torbada 4 kırmızı, 6 mavi top var. Rastgele bir top çekildiğinde kırmızı gelme olasılığı kaçtır?</p>
+    <ul class="secenekler">
+      <li class="dogru"><span class="h">A)</span> 2/5</li>
+      <li><span class="h">B)</span> 1/3</li>
+      <li><span class="h">C)</span> 1/4</li>
+      <li><span class="h">D)</span> 3/5</li>
+    </ul>
+    <details>
+      <summary>Çözümü gör</summary>
+      <div class="cozum">
+      <p><strong>Olasılık formülü:</strong> P(A) = elverişli sonuç sayısı / toplam sonuç sayısı</p>
+      <p>Toplam top: 4 + 6 = <strong>10</strong></p>
+      <p>Kırmızı top: <strong>4</strong></p>
+      <p>P(kırmızı) = 4/10 = <strong>2/5</strong></p>
+      <p><strong>Seçenekleri kontrol et:</strong></p>
+      <p class="adim">→ <strong>2/5</strong> ✓ — 4/10 sadeleştirilmiş hâli.</p>
+      <p class="adim">→ 1/3 → 4/12 olurdu; toplam top sayısı 12 sanılmış ✗</p>
+      <p class="adim">→ 1/4 → kırmızı sayısını toplam sanıp 1/4 yazma hatası ✗</p>
+      <p class="adim">→ 3/5 → 6/10, yani <strong>mavi</strong> gelme olasılığı ✗</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="ornek-soru">
+    <span class="rozet z2">ORTA</span>
+    <p class="kok">Bir torbada 5 beyaz, 3 siyah top var. Geri konulmadan 2 top çekiliyor. İkinci topun siyah olma olasılığı kaçtır?</p>
+    <ul class="secenekler">
+      <li class="dogru"><span class="h">A)</span> 3/8</li>
+      <li><span class="h">B)</span> 3/7</li>
+      <li><span class="h">C)</span> 1/4</li>
+      <li><span class="h">D)</span> 1/2</li>
+    </ul>
+    <details>
+      <summary>Çözümü gör</summary>
+      <div class="cozum">
+      <p><strong>Koşullu olasılık:</strong> Geri konulmazsa ikinci çekiş birincisine bağlı.</p>
+      <p><strong>Durum 1:</strong> İlk top beyaz çıkar</p>
+      <p class="adim">→ P(1. beyaz) = 5/8</p>
+      <p class="adim">→ Torbada 7 top kaldı: 4B+3S</p>
+      <p class="adim">→ P(2. siyah | 1. beyaz) = 3/7</p>
+      <p class="adim">→ Birlikte: 5/8 × 3/7 = <strong>15/56</strong></p>
+      <p><strong>Durum 2:</strong> İlk top siyah çıkar</p>
+      <p class="adim">→ P(1. siyah) = 3/8</p>
+      <p class="adim">→ Torbada 7 top kaldı: 5B+2S</p>
+      <p class="adim">→ P(2. siyah | 1. siyah) = 2/7</p>
+      <p class="adim">→ Birlikte: 3/8 × 2/7 = <strong>6/56</strong></p>
+      <p>Toplam: 15/56 + 6/56 = 21/56 = <strong>3/8</strong></p>
+      <p>Seçenekleri karşılaştır:</p>
+      <p><strong>A) 3/8</strong> → 21/56 = 3/8 ✓</p>
+      <p>B) 3/7 → ilk top sonrasını unutmuş ✗</p>
+      <p>C) 1/4 → yanlış ✗</p>
+      <p>D) 1/2 → yanlış ✗</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="ornek-soru">
+    <span class="rozet z3">ZOR</span>
+    <p class="kok">6 kişi bir sıraya oturacak. A ile B mutlaka yan yana oturmak zorunda. Kaç farklı oturma düzeni vardır?</p>
+    <ul class="secenekler">
+      <li><span class="h">A)</span> 120</li>
+      <li><span class="h">B)</span> 360</li>
+      <li class="dogru"><span class="h">C)</span> 240</li>
+      <li><span class="h">D)</span> 720</li>
+    </ul>
+    <details>
+      <summary>Çözümü gör</summary>
+      <div class="cozum">
+      <p><strong>Bitişik permütasyon:</strong> Yan yana olması gerekenler tek birim sayılır.</p>
+      <p>Adımlar:</p>
+      <p class="adim">→ A ve B&#x27;yi tek birim kabul et → 5+1=6 değil, 5 birim var</p>
+      <p class="adim">→ 5 birimi sırala: 5! = <strong>120</strong></p>
+      <p class="adim">→ A ve B kendi aralarında yer değiştirebilir: 2! = <strong>2</strong></p>
+      <p class="adim">→ Toplam: 5! × 2! = 120 × 2 = <strong>240</strong></p>
+      <p>Seçenekleri karşılaştır:</p>
+      <p>120 → 5! ama içteki 2!&#x27;yi unutmuş ✗</p>
+      <p><strong>240</strong> → 5! × 2! = 240 ✓</p>
+      <p>360 → yanlış çarpım ✗</p>
+      <p>720 → 6!, kısıt yok olsaydı ✗</p>
+      </div>
+    </details>
+  </div>
+
+<div class="kisayol">
+  <strong>Net hesabı:</strong> Bu konudan kaç doğru çıkardığının puanına etkisini merak ediyorsan
+  <a href="/lgs-puan-hesaplama.html">LGS puan hesaplama aracımızla</a> deneyebilirsin.
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Quiz",
+  "name": "Olasılık — çözümlü örnek sorular",
+  "about": {
+    "@type": "Thing",
+    "name": "Olasılık"
+  },
+  "educationalLevel": "8. sınıf (LGS)",
+  "inLanguage": "tr-TR",
+  "learningResourceType": "Quiz",
+  "typicalAgeRange": "13-14",
+  "hasPart": [
+    {
+      "@type": "Question",
+      "eduQuestionType": "Multiple choice",
+      "learningResourceType": "Practice problem",
+      "name": "Bir torbada 4 kırmızı, 6 mavi top var. Rastgele bir top çekildiğinde kırmızı gelme olasılığı kaçtır?",
+      "text": "Bir torbada 4 kırmızı, 6 mavi top var. Rastgele bir top çekildiğinde kırmızı gelme olasılığı kaçtır?",
+      "suggestedAnswer": [
+        {
+          "@type": "Answer",
+          "position": 1,
+          "text": "1/3"
+        },
+        {
+          "@type": "Answer",
+          "position": 2,
+          "text": "1/4"
+        },
+        {
+          "@type": "Answer",
+          "position": 3,
+          "text": "3/5"
+        }
+      ],
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "position": 0,
+        "text": "2/5",
+        "explanation": "Olasılık formülü: P(A) = elverişli sonuç sayısı / toplam sonuç sayısı Toplam top: 4 + 6 = 10 Kırmızı top: 4 P(kırmızı) = 4/10 = 2/5 Seçenekleri kontrol et: → 2/5 ✓ — 4/10 sadeleştirilmiş hâli. → 1/3 → 4/12 olurdu; toplam top sayısı 12 sanılmış ✗ → 1/4 → kırmızı sayısını toplam sanıp 1/4 yazma hatası ✗ → 3/5 → 6/10, yani mavi gelme olasılığı ✗"
+      }
+    },
+    {
+      "@type": "Question",
+      "eduQuestionType": "Multiple choice",
+      "learningResourceType": "Practice problem",
+      "name": "Bir torbada 5 beyaz, 3 siyah top var. Geri konulmadan 2 top çekiliyor. İkinci topun siyah olma olasılığı kaçtı",
+      "text": "Bir torbada 5 beyaz, 3 siyah top var. Geri konulmadan 2 top çekiliyor. İkinci topun siyah olma olasılığı kaçtır?",
+      "suggestedAnswer": [
+        {
+          "@type": "Answer",
+          "position": 1,
+          "text": "3/7"
+        },
+        {
+          "@type": "Answer",
+          "position": 2,
+          "text": "1/4"
+        },
+        {
+          "@type": "Answer",
+          "position": 3,
+          "text": "1/2"
+        }
+      ],
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "position": 0,
+        "text": "3/8",
+        "explanation": "Koşullu olasılık: Geri konulmazsa ikinci çekiş birincisine bağlı. Durum 1: İlk top beyaz çıkar → P(1. beyaz) = 5/8 → Torbada 7 top kaldı: 4B+3S → P(2. siyah | 1. beyaz) = 3/7 → Birlikte: 5/8 × 3/7 = 15/56 Durum 2: İlk top siyah çıkar → P(1. siyah) = 3/8 → Torbada 7 top kaldı: 5B+2S → P(2. siyah | 1. siyah) = 2/7 → Birlikte: 3/8 × 2/7 = 6/56 Toplam: 15/56 + 6/56 = 21/56 = 3/8 Seçenekleri karşılaştır: A) 3/8 → 21/56 = 3/8 ✓ B) 3/7 → ilk top sonrasını unutmuş ✗ C) 1/4 → yanlış ✗ D) 1/2 → yanlış ✗"
+      }
+    },
+    {
+      "@type": "Question",
+      "eduQuestionType": "Multiple choice",
+      "learningResourceType": "Practice problem",
+      "name": "6 kişi bir sıraya oturacak. A ile B mutlaka yan yana oturmak zorunda. Kaç farklı oturma düzeni vardır?",
+      "text": "6 kişi bir sıraya oturacak. A ile B mutlaka yan yana oturmak zorunda. Kaç farklı oturma düzeni vardır?",
+      "suggestedAnswer": [
+        {
+          "@type": "Answer",
+          "position": 0,
+          "text": "120"
+        },
+        {
+          "@type": "Answer",
+          "position": 1,
+          "text": "360"
+        },
+        {
+          "@type": "Answer",
+          "position": 3,
+          "text": "720"
+        }
+      ],
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "position": 2,
+        "text": "240",
+        "explanation": "Bitişik permütasyon: Yan yana olması gerekenler tek birim sayılır. Adımlar: → A ve B'yi tek birim kabul et → 5+1=6 değil, 5 birim var → 5 birimi sırala: 5! = 120 → A ve B kendi aralarında yer değiştirebilir: 2! = 2 → Toplam: 5! × 2! = 120 × 2 = 240 Seçenekleri karşılaştır: 120 → 5! ama içteki 2!'yi unutmuş ✗ 240 → 5! × 2! = 240 ✓ 360 → yanlış çarpım ✗ 720 → 6!, kısıt yok olsaydı ✗"
+      }
+    }
+  ]
+}
+</script>
+<!-- /geo:ornek-sorular -->
+
 <h2>Sık sorulan sorular</h2>
 
 <h3>"En az bir" ifadesini görünce ne yapmalıyım?</h3>

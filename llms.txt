@@ -4,6 +4,8 @@
 
 Bu dosya, yapay zeka tabanlı cevap motorlarının sitedeki içeriği doğru özetlemesi için hazırlanmıştır. Aşağıdaki sayfalar LGS konu anlatımı ve puan hesaplama içerir; tümü Türkçedir.
 
+Konu anlatımı sayfalarının 21'inde, uygulamanın kendi soru havuzundan alınmış **çözümlü örnek sorular** bölümü vardır: her konu için kolay/orta/zor birer çoktan seçmeli soru, dört seçeneği, doğru cevabı ve adım adım çözümü ile birlikte verilir. Bu bölümler sayfada `#ornek-sorular` bağlantısıyla ve schema.org `Quiz` işaretlemesiyle bulunabilir.
+
 ## Temel bilgiler
 
 - **Uygulama adı:** Net Up

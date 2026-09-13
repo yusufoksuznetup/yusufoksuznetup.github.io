@@ -246,3 +246,38 @@ summary:focus-visible,
   .magaza img{height:46px}
   .magaza-kart{padding:14px 16px;gap:10px;border-radius:var(--radius-md)}
 }
+
+/* ---------- Havuzdan çözümlü örnek soru (GEO bloğu) ---------- */
+.ornek-soru{
+  background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--purple-500);
+  border-radius:var(--radius-lg);padding:22px 24px;margin:22px 0;box-shadow:var(--shadow-sm);
+}
+.ornek-soru .rozet{
+  display:inline-block;font-size:11px;letter-spacing:.11em;font-weight:800;
+  padding:4px 10px;border-radius:999px;margin-bottom:12px;
+}
+.rozet.z1{background:#E8F9F1;color:#0B7A4B}
+.rozet.z2{background:#FDF3E0;color:#B45309}
+.rozet.z3{background:#FDE9EC;color:#C0392B}
+.ornek-soru .kok{font-weight:700;color:var(--ink-900);font-size:17.5px;margin:0 0 12px}
+.ornek-soru .kok:last-of-type{margin-bottom:14px}
+.secenekler{list-style:none;margin:0;padding:0}
+.secenekler li{
+  border:1px solid var(--line);border-radius:var(--radius-md);padding:11px 15px;
+  margin-bottom:8px;font-size:16.5px;color:var(--ink-700);overflow:hidden;
+}
+.secenekler li .h{font-weight:800;color:var(--purple-600);margin-right:8px}
+.secenekler li.dogru{background:#F4FDF8;border-color:#A7E8C8}
+.secenekler li.dogru .h{color:#0B7A4B}
+.secenekler li.dogru::after{
+  content:"✓ doğru";float:right;font-size:12.5px;font-weight:800;
+  color:#0B7A4B;letter-spacing:.04em;margin-left:10px;
+}
+.ornek-soru details{margin:14px 0 0;padding:14px 18px;background:var(--purple-50);border-color:#E9E3FE}
+.cozum p{margin:0 0 9px;font-size:16px}
+.cozum p.adim{padding-left:2px;color:var(--ink-700)}
+.cozum p:last-child{margin-bottom:0}
+@media(max-width:560px){
+  .ornek-soru{padding:18px 18px}
+  .secenekler li.dogru::after{content:"✓";float:right}
+}
