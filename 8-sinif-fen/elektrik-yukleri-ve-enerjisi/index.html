@@ -288,6 +288,191 @@ Maliyet:
    E = 1,5 · 2 = 3 kWh</div>
 </details>
 
+<!-- geo:ornek-sorular -->
+<h2 id="ornek-sorular">Çözümlü örnek sorular</h2>
+
+<p class="intro">Aşağıdaki sorular Net Up uygulamasının soru havuzundan alınmıştır; kolaydan
+zora doğru sıralıdır. Her birinin adım adım çözümü de birlikte verilmiştir.</p>
+
+  <div class="ornek-soru">
+    <span class="rozet z1">KOLAY</span>
+    <p class="kok">Aşağıdakilerden hangisi yalıtkan maddelere örnek gösterilebilir?</p>
+    <ul class="secenekler">
+      <li class="dogru"><span class="h">A)</span> Plastik, kauçuk ve cam</li>
+      <li><span class="h">B)</span> Gümüş ve alüminyum folyo</li>
+      <li><span class="h">C)</span> Grafit ve insan vücudu</li>
+      <li><span class="h">D)</span> Bakır tel ve demir çubuk</li>
+    </ul>
+    <details>
+      <summary>Çözümü gör</summary>
+      <div class="cozum">
+      <p><strong>Yalıtkan Maddeler:</strong></p>
+      <p class="adim">→ Plastik, kauçuk ve cam elektrik yükünü iletmez → yalıtkandır ✓ (A)</p>
+      <p><strong>Yanlış Seçenekler:</strong></p>
+      <p class="adim">→ B: Gümüş ve alüminyum iyi iletkendir</p>
+      <p class="adim">→ C: Grafit ve insan vücudu elektriği iletir</p>
+      <p class="adim">→ D: Bakır ve demir iletkendir</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="ornek-soru">
+    <span class="rozet z2">ORTA</span>
+    <p class="kok">TCG Anadolu savaş gemisinin güç sisteminde <strong>440 V</strong>&#x27;luk jeneratöre seri bağlı <strong>5Ω</strong> (makine dairesi), <strong>11Ω</strong> (silah sistemi) ve <strong>28Ω</strong> (radar-sonar) bulunuyor.</p>
+    <p class="kok">Devreden geçen akım ve radar-sonar sisteminin güç tüketimi aşağıdakilerden hangisidir?</p>
+    <ul class="secenekler">
+      <li class="dogru"><span class="h">A)</span> I = 10 A; P_radar = 2800 W</li>
+      <li><span class="h">B)</span> I = 8 A; P_radar = 1792 W</li>
+      <li><span class="h">C)</span> I = 11 A; P_radar = 3388 W</li>
+      <li><span class="h">D)</span> I = 5 A; P_radar = 700 W</li>
+    </ul>
+    <details>
+      <summary>Çözümü gör</summary>
+      <div class="cozum">
+      <p><strong>Seri Devre:</strong></p>
+      <p class="adim">→ Seride dirençler toplanır: R = 5+11+28 = 44 Ω</p>
+      <p class="adim">→ Akım: I = V/R = 440/44 = 10 A (seride akım her yerde aynı)</p>
+      <p class="adim">→ Radar gücü: P = I²·R = 10²·28 = 2.800 W → A doğru ✓</p>
+      <p><strong>Yanlış Seçenekler:</strong></p>
+      <p class="adim">→ B: Akım 10 A&#x27;dir (toplam direnç 44Ω), 8 değil.</p>
+      <p class="adim">→ C: I = 10 A ve P = 2.800 W olmalı.</p>
+      <p class="adim">→ D: Seri devrede akım 10 A&#x27;dir, 5 değil.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="ornek-soru">
+    <span class="rozet z3">ZOR</span>
+    <p class="kok"><strong>Bir akıllı sulama sisteminde </strong>36 V<strong>&#x27;luk bataryaya </strong>6Ω<strong> (toprak nem sensörü) ve </strong>12Ω<strong> (su pompası) </strong>paralel<strong> bağlı.</strong></p>
+    <p class="kok">Su pompasından geçen akım, toplam akım ve toplam güç aşağıdakilerden hangisidir?</p>
+    <ul class="secenekler">
+      <li><span class="h">A)</span> I_pompa = 2 A; I_top = 8 A; P = 288 W</li>
+      <li><span class="h">B)</span> I_pompa = 6 A; I_top = 12 A; P = 432 W</li>
+      <li><span class="h">C)</span> I_pompa = 3 A; I_top = 6 A; P = 216 W</li>
+      <li class="dogru"><span class="h">D)</span> I_pompa = 3 A; I_top = 9 A; P = 324 W</li>
+    </ul>
+    <details>
+      <summary>Çözümü gör</summary>
+      <div class="cozum">
+      <p>Seri bağlı dirençlerde eşdeğer direnç: R_eş = R₁ + R₂ + ... = 2 + 4 = 6 Ω. Mantık: seri bağlı dirençler üst üste konulmuş gibi davranır; toplam uzunluk artar → direnç artar. Karşılaştırma: paralel bağlı olsaydı 1/R_eş = 1/2 + 1/4 = 3/4 → R_eş = 4/3 ≈ 1,33 Ω (A seçeneği). → Cevap: D</p>
+      </div>
+    </details>
+  </div>
+
+<div class="kisayol">
+  <strong>Net hesabı:</strong> Bu konudan kaç doğru çıkardığının puanına etkisini merak ediyorsan
+  <a href="/lgs-puan-hesaplama.html">LGS puan hesaplama aracımızla</a> deneyebilirsin.
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Quiz",
+  "name": "Elektrik Yükleri ve Elektrik Enerjisi — çözümlü örnek sorular",
+  "about": {
+    "@type": "Thing",
+    "name": "Elektrik Yükleri ve Elektrik Enerjisi"
+  },
+  "educationalLevel": "8. sınıf (LGS)",
+  "inLanguage": "tr-TR",
+  "learningResourceType": "Quiz",
+  "typicalAgeRange": "13-14",
+  "hasPart": [
+    {
+      "@type": "Question",
+      "eduQuestionType": "Multiple choice",
+      "learningResourceType": "Practice problem",
+      "name": "Aşağıdakilerden hangisi yalıtkan maddelere örnek gösterilebilir?",
+      "text": "Aşağıdakilerden hangisi yalıtkan maddelere örnek gösterilebilir?",
+      "suggestedAnswer": [
+        {
+          "@type": "Answer",
+          "position": 1,
+          "text": "Gümüş ve alüminyum folyo"
+        },
+        {
+          "@type": "Answer",
+          "position": 2,
+          "text": "Grafit ve insan vücudu"
+        },
+        {
+          "@type": "Answer",
+          "position": 3,
+          "text": "Bakır tel ve demir çubuk"
+        }
+      ],
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "position": 0,
+        "text": "Plastik, kauçuk ve cam",
+        "explanation": "Yalıtkan Maddeler: → Plastik, kauçuk ve cam elektrik yükünü iletmez → yalıtkandır ✓ (A) Yanlış Seçenekler: → B: Gümüş ve alüminyum iyi iletkendir → C: Grafit ve insan vücudu elektriği iletir → D: Bakır ve demir iletkendir"
+      }
+    },
+    {
+      "@type": "Question",
+      "eduQuestionType": "Multiple choice",
+      "learningResourceType": "Practice problem",
+      "name": "TCG Anadolu savaş gemisinin güç sisteminde 440 V'luk jeneratöre seri bağlı 5Ω (makine dairesi), 11Ω (silah sistemi) ve 28Ω (radar-sonar) bulunuyor. Devreden geçen akım ve radar-sonar sisteminin güç tüketimi aşağıdakilerden hangisidir?",
+      "text": "TCG Anadolu savaş gemisinin güç sisteminde 440 V'luk jeneratöre seri bağlı 5Ω (makine dairesi), 11Ω (silah sistemi) ve 28Ω (radar-sonar) bulunuyor. Devreden geçen akım ve radar-sonar sisteminin güç tüketimi aşağıdakilerden hangisidir?",
+      "suggestedAnswer": [
+        {
+          "@type": "Answer",
+          "position": 1,
+          "text": "I = 8 A; P_radar = 1792 W"
+        },
+        {
+          "@type": "Answer",
+          "position": 2,
+          "text": "I = 11 A; P_radar = 3388 W"
+        },
+        {
+          "@type": "Answer",
+          "position": 3,
+          "text": "I = 5 A; P_radar = 700 W"
+        }
+      ],
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "position": 0,
+        "text": "I = 10 A; P_radar = 2800 W",
+        "explanation": "Seri Devre: → Seride dirençler toplanır: R = 5+11+28 = 44 Ω → Akım: I = V/R = 440/44 = 10 A (seride akım her yerde aynı) → Radar gücü: P = I²·R = 10²·28 = 2.800 W → A doğru ✓ Yanlış Seçenekler: → B: Akım 10 A'dir (toplam direnç 44Ω), 8 değil. → C: I = 10 A ve P = 2.800 W olmalı. → D: Seri devrede akım 10 A'dir, 5 değil."
+      }
+    },
+    {
+      "@type": "Question",
+      "eduQuestionType": "Multiple choice",
+      "learningResourceType": "Practice problem",
+      "name": "Bir akıllı sulama sisteminde 36 V'luk bataryaya 6Ω (toprak nem sensörü) ve 12Ω (su pompası) paralel bağlı. Su pompasından geçen akım, toplam akım ve toplam güç aşağıdakilerden hangisidir?",
+      "text": "Bir akıllı sulama sisteminde 36 V'luk bataryaya 6Ω (toprak nem sensörü) ve 12Ω (su pompası) paralel bağlı. Su pompasından geçen akım, toplam akım ve toplam güç aşağıdakilerden hangisidir?",
+      "suggestedAnswer": [
+        {
+          "@type": "Answer",
+          "position": 1,
+          "text": "I_pompa = 2 A; I_top = 8 A; P = 288 W"
+        },
+        {
+          "@type": "Answer",
+          "position": 2,
+          "text": "I_pompa = 6 A; I_top = 12 A; P = 432 W"
+        },
+        {
+          "@type": "Answer",
+          "position": 3,
+          "text": "I_pompa = 3 A; I_top = 6 A; P = 216 W"
+        }
+      ],
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "position": 0,
+        "text": "I_pompa = 3 A; I_top = 9 A; P = 324 W",
+        "explanation": "Seri bağlı dirençlerde eşdeğer direnç: R_eş = R₁ + R₂ + ... = 2 + 4 = 6 Ω. Mantık: seri bağlı dirençler üst üste konulmuş gibi davranır; toplam uzunluk artar → direnç artar. Karşılaştırma: paralel bağlı olsaydı 1/R_eş = 1/2 + 1/4 = 3/4 → R_eş = 4/3 ≈ 1,33 Ω (A seçeneği). → Cevap: D"
+      }
+    }
+  ]
+}
+</script>
+<!-- /geo:ornek-sorular -->
+
 <h2>Sık sorulan sorular</h2>
 
 <h3>Elektroskop sorularını nasıl hızlı çözerim?</h3>

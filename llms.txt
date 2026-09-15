@@ -6,7 +6,7 @@ Bu dosya, yapay zeka tabanlı cevap motorlarının sitedeki içeriği doğru öz
 
 Site 8. sınıf müfredatının altı dersini kapsar: **58 konu anlatımı sayfası** ve her ders için bir konu listesi sayfası.
 
-Konu anlatımı sayfalarının 21'inde (Türkçe'de 9, Matematik'te 12) uygulamanın kendi soru havuzundan alınmış **çözümlü örnek sorular** bölümü vardır: her konu için kolay/orta/zor birer çoktan seçmeli soru, dört seçeneği, doğru cevabı ve adım adım çözümü ile birlikte verilir. Bu bölümler sayfada `#ornek-sorular` bağlantısıyla ve schema.org `Quiz` işaretlemesiyle bulunabilir. Aşağıdaki listede bu sayfalar **(çözümlü örnek soru)** notuyla işaretlenmiştir. Fen, İnkılap Tarihi, Din Kültürü ve İngilizce sayfalarında bu bölüm henüz yoktur.
+Konu anlatımı sayfalarının 47'sinde uygulamanın kendi soru havuzundan alınmış **çözümlü örnek sorular** bölümü vardır: her konu için kolay/orta/zor birer çoktan seçmeli soru, dört seçeneği, doğru cevabı ve adım adım çözümü ile birlikte verilir (toplam 140 soru). Bu bölümler sayfada `#ornek-sorular` bağlantısıyla ve schema.org `Quiz` işaretlemesiyle bulunabilir. Aşağıdaki listede bu sayfalar **(çözümlü örnek soru)** notuyla işaretlenmiştir. İngilizce ünitelerinin yedisinde bu bölüm henüz yoktur.
 
 ## Temel bilgiler
 
@@ -59,43 +59,43 @@ Konu anlatımı sayfalarının 21'inde (Türkçe'de 9, Matematik'te 12) uygulama
 ## 8. Sınıf Fen Bilimleri konu anlatımı
 
 - [Konu listesi](https://netup.website/8-sinif-fen/)
-- [Mevsimler ve İklim](https://netup.website/8-sinif-fen/mevsimler-ve-iklim/)
-- [DNA ve Genetik Kod](https://netup.website/8-sinif-fen/dna-ve-genetik-kod/)
-- [Kalıtım ve Mendel](https://netup.website/8-sinif-fen/kalitim-ve-mendel/)
-- [Basınç](https://netup.website/8-sinif-fen/basinc/)
-- [Periyodik Sistem](https://netup.website/8-sinif-fen/periyodik-sistem/)
-- [Fiziksel ve Kimyasal Değişim, Asitler ve Bazlar](https://netup.website/8-sinif-fen/fiziksel-kimyasal-degisim/)
-- [Kimyasal Tepkimeler](https://netup.website/8-sinif-fen/kimyasal-tepkimeler/)
-- [Basit Makineler](https://netup.website/8-sinif-fen/basit-makineler/)
-- [Enerji Dönüşümleri ve Çevre Bilimi](https://netup.website/8-sinif-fen/enerji-donusumleri/)
-- [Elektrik Yükleri ve Elektrik Enerjisi](https://netup.website/8-sinif-fen/elektrik-yukleri-ve-enerjisi/)
+- [Mevsimler ve İklim](https://netup.website/8-sinif-fen/mevsimler-ve-iklim/) (çözümlü örnek soru)
+- [DNA ve Genetik Kod](https://netup.website/8-sinif-fen/dna-ve-genetik-kod/) (çözümlü örnek soru)
+- [Kalıtım ve Mendel](https://netup.website/8-sinif-fen/kalitim-ve-mendel/) (çözümlü örnek soru)
+- [Basınç](https://netup.website/8-sinif-fen/basinc/) (çözümlü örnek soru)
+- [Periyodik Sistem](https://netup.website/8-sinif-fen/periyodik-sistem/) (çözümlü örnek soru)
+- [Fiziksel ve Kimyasal Değişim, Asitler ve Bazlar](https://netup.website/8-sinif-fen/fiziksel-kimyasal-degisim/) (çözümlü örnek soru)
+- [Kimyasal Tepkimeler](https://netup.website/8-sinif-fen/kimyasal-tepkimeler/) (çözümlü örnek soru)
+- [Basit Makineler](https://netup.website/8-sinif-fen/basit-makineler/) (çözümlü örnek soru)
+- [Enerji Dönüşümleri ve Çevre Bilimi](https://netup.website/8-sinif-fen/enerji-donusumleri/) (çözümlü örnek soru)
+- [Elektrik Yükleri ve Elektrik Enerjisi](https://netup.website/8-sinif-fen/elektrik-yukleri-ve-enerjisi/) (çözümlü örnek soru)
 
 ## 8. Sınıf T.C. İnkılap Tarihi ve Atatürkçülük konu anlatımı
 
 - [Konu listesi](https://netup.website/8-sinif-inkilap/)
-- [Bir Kahraman Doğuyor](https://netup.website/8-sinif-inkilap/bir-kahraman-doguyor/)
-- [Millî Uyanış](https://netup.website/8-sinif-inkilap/milli-uyanis/)
-- [Genelgeler ve Kongreler](https://netup.website/8-sinif-inkilap/genelgeler-ve-kongreler/)
-- [Kurtuluş Savaşı Cepheleri](https://netup.website/8-sinif-inkilap/kurtulus-savasi-cepheleri/)
-- [Lozan Antlaşması](https://netup.website/8-sinif-inkilap/lozan-antlasmasi/)
-- [Atatürk İnkılapları](https://netup.website/8-sinif-inkilap/ataturk-inkilaplari/)
-- [Atatürk İlkeleri](https://netup.website/8-sinif-inkilap/ataturk-ilkeleri/)
-- [Atatürk Dönemi Türk Dış Politikası](https://netup.website/8-sinif-inkilap/ataturk-donemi-dis-politika/)
+- [Bir Kahraman Doğuyor](https://netup.website/8-sinif-inkilap/bir-kahraman-doguyor/) (çözümlü örnek soru)
+- [Millî Uyanış](https://netup.website/8-sinif-inkilap/milli-uyanis/) (çözümlü örnek soru)
+- [Genelgeler ve Kongreler](https://netup.website/8-sinif-inkilap/genelgeler-ve-kongreler/) (çözümlü örnek soru)
+- [Kurtuluş Savaşı Cepheleri](https://netup.website/8-sinif-inkilap/kurtulus-savasi-cepheleri/) (çözümlü örnek soru)
+- [Lozan Antlaşması](https://netup.website/8-sinif-inkilap/lozan-antlasmasi/) (çözümlü örnek soru)
+- [Atatürk İnkılapları](https://netup.website/8-sinif-inkilap/ataturk-inkilaplari/) (çözümlü örnek soru)
+- [Atatürk İlkeleri](https://netup.website/8-sinif-inkilap/ataturk-ilkeleri/) (çözümlü örnek soru)
+- [Atatürk Dönemi Türk Dış Politikası](https://netup.website/8-sinif-inkilap/ataturk-donemi-dis-politika/) (çözümlü örnek soru)
 
 ## 8. Sınıf Din Kültürü ve Ahlak Bilgisi konu anlatımı
 
 - [Konu listesi](https://netup.website/8-sinif-din-kulturu/)
-- [Kader İnancı](https://netup.website/8-sinif-din-kulturu/kader-inanci/)
-- [Zekât ve Sadaka](https://netup.website/8-sinif-din-kulturu/zekat-ve-sadaka/)
-- [Din ve Hayat](https://netup.website/8-sinif-din-kulturu/din-ve-hayat/)
-- [Hz. Muhammed'in Örnekliği](https://netup.website/8-sinif-din-kulturu/hz-muhammedin-ornekligi/)
-- [Kur'an-ı Kerim ve Özellikleri](https://netup.website/8-sinif-din-kulturu/kuran-i-kerim-ve-ozellikleri/)
+- [Kader İnancı](https://netup.website/8-sinif-din-kulturu/kader-inanci/) (çözümlü örnek soru)
+- [Zekât ve Sadaka](https://netup.website/8-sinif-din-kulturu/zekat-ve-sadaka/) (çözümlü örnek soru)
+- [Din ve Hayat](https://netup.website/8-sinif-din-kulturu/din-ve-hayat/) (çözümlü örnek soru)
+- [Hz. Muhammed'in Örnekliği](https://netup.website/8-sinif-din-kulturu/hz-muhammedin-ornekligi/) (çözümlü örnek soru)
+- [Kur'an-ı Kerim ve Özellikleri](https://netup.website/8-sinif-din-kulturu/kuran-i-kerim-ve-ozellikleri/) (çözümlü örnek soru)
 
 ## 8. Sınıf İngilizce konu anlatımı
 
 - [Ünite listesi](https://netup.website/8-sinif-ingilizce/)
-- [Friendship — 1. Ünite](https://netup.website/8-sinif-ingilizce/friendship/)
-- [Teen Life — 2. Ünite](https://netup.website/8-sinif-ingilizce/teen-life/)
+- [Friendship — 1. Ünite](https://netup.website/8-sinif-ingilizce/friendship/) (çözümlü örnek soru)
+- [Teen Life — 2. Ünite](https://netup.website/8-sinif-ingilizce/teen-life/) (çözümlü örnek soru)
 - [In the Kitchen — 3. Ünite](https://netup.website/8-sinif-ingilizce/in-the-kitchen/)
 - [On the Phone — 4. Ünite](https://netup.website/8-sinif-ingilizce/on-the-phone/)
 - [The Internet — 5. Ünite](https://netup.website/8-sinif-ingilizce/the-internet/)
@@ -103,7 +103,7 @@ Konu anlatımı sayfalarının 21'inde (Türkçe'de 9, Matematik'te 12) uygulama
 - [Tourism — 7. Ünite](https://netup.website/8-sinif-ingilizce/tourism/)
 - [Chores — 8. Ünite](https://netup.website/8-sinif-ingilizce/chores/)
 - [Science — 9. Ünite](https://netup.website/8-sinif-ingilizce/science/)
-- [Natural Forces — 10. Ünite](https://netup.website/8-sinif-ingilizce/natural-forces/)
+- [Natural Forces — 10. Ünite](https://netup.website/8-sinif-ingilizce/natural-forces/) (çözümlü örnek soru)
 
 ## Kurumsal
 
