@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>İspat ve Algoritma — 7. Sınıf Matematik | Net Up</title>
+<meta name="description" content="7. sınıf ispat ve algoritma konu anlatımı: doğrudan ispat, karşı örnekle çürütme, genel gösterimler ve algoritma kurma. Maarif Modeli'nin yeni konusu.">
+<link rel="canonical" href="https://netup.website/7-sinif-matematik/ispat-ve-algoritma/">
+<meta property="og:title" content="İspat ve Algoritma — 7. Sınıf Matematik Konu Anlatımı">
+<meta property="og:description" content="Doğrudan ispat, karşı örnek, genel gösterimler ve algoritma kurma.">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="tr_TR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/ders.css">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Article", "headline": "İspat ve Algoritma — 7. Sınıf Matematik Konu Anlatımı", "description": "Matematiksel ispat turleri, dogrudan ispat, karsi ornekle curutme ve algoritma kurma adimlari.", "inLanguage": "tr-TR", "author": {"@type": "Organization", "name": "Net Up"}, "publisher": {"@type": "Organization", "name": "Net Up"}, "educationalLevel": "7. sınıf", "about": [{"@type": "Thing", "name": "İspat ve Algoritma"}, {"@type": "Thing", "name": "7. Sınıf Matematik"}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Matematiksel ispat nedir?", "acceptedAnswer": {"@type": "Answer", "text": "Bir iddianin her durumda dogru oldugunu, kabul edilmis kurallara dayanarak gosterme islemidir. Ornek vermek ispat degildir; genel gosterim kullanilmasi gerekir."}}, {"@type": "Question", "name": "Ardışık iki tam sayının toplamı neden tektir?", "acceptedAnswer": {"@type": "Answer", "text": "Ardisik iki tam sayi n ve n arti 1 olarak yazilir. Toplami 2n arti 1 olur ve bu ifade tek sayinin genel gosterimidir, yani toplam her zaman tektir."}}, {"@type": "Question", "name": "Karşı örnek nedir ve kaç tane gerekir?", "acceptedAnswer": {"@type": "Answer", "text": "Karsi ornek, bir iddianin yanlis oldugunu gosteren tek bir durumdur. Bir tane yeterlidir. Ornek: her tek sayi asaldir iddiasini 9 sayisi curutur, cunku 9 = 3 carpi 3'tur."}}, {"@type": "Question", "name": "Algoritma nedir?", "acceptedAnswer": {"@type": "Answer", "text": "Bir problemi cozmek icin izlenen, sonlu sayida ve sirasi belli adimlar dizisidir. Girdi, islem ve cikti olmak uzere uc bileseni vardir ve her adim tek anlamli olmalidir."}}, {"@type": "Question", "name": "İspat ve algoritma yeni müfredatta mı var?", "acceptedAnswer": {"@type": "Answer", "text": "Evet. Bu konu Turkiye Yuzyili Maarif Modeli ile 7. sinif matematik programina eklendi, eski kaynaklarda ve eski soru bankalarinda bulunmaz."}}, {"@type": "Question", "name": "Bu konu LGS'de sorulur mu?", "acceptedAnswer": {"@type": "Answer", "text": "LGS sorulari yalnizca 8. sinif kazanimlarindan gelir, bu yuzden dogrudan sorulmaz. Ancak 8. sinifta ozdesliklerin neden dogru oldugunu gosterirken buradaki dogrudan ispat yontemi kullanilir."}}]}
+</script>
+<script defer src="/assets/analytics.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a class="logo" href="/"><img src="/assets/app-icon-nav.png" alt="Net Up" width="30" height="30"> Net Up</a>
+    <a class="btn btn-ghost" style="background:var(--purple-50);color:var(--purple-700);box-shadow:none;padding:10px 20px;font-size:14.5px" href="https://apps.apple.com/app/id6768393770">Ücretsiz indir</a>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="bc"><a href="/7-sinif-matematik/">7. Sınıf Matematik</a> › İspat ve Algoritma</div>
+    <h1>İspat ve Algoritma</h1>
+    <p class="ozet">Doğrudan ispat, karşı örnekle çürütme ve algoritma kurma — Maarif Modeli'nin yeni konusu.</p>
+    <div class="etiketler">
+      <span class="etiket">7. sınıf · Tema 2</span>
+      <span class="etiket">Yeni müfredat konusu</span>
+      <span class="etiket">Cebirsel Düşünme</span>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+<p class="intro">İspat ve algoritma, <strong>Maarif Modeli ile 7. sınıfa yeni gelen</strong> bir konu. Mantığı şu: matematikte bir şeyin doğru olduğunu söylemek yetmez, <em>her durumda</em> doğru olduğunu göstermek gerekir. Bu sayfada harfle ispat yapmayı, tek bir karşı örnekle iddia çürütmeyi ve bir problemi adım adım algoritmaya dökmeyi çalışacağız.</p>
+
+<div class="icindekiler">
+  <b>Bu sayfada</b>
+  <ol>
+    <li><a href="#ispat">Matematiksel ispat nedir?</a></li>
+    <li><a href="#gosterim">Genel gösterimler</a></li>
+    <li><a href="#dogrudan">Doğrudan ispat</a></li>
+    <li><a href="#karsi-ornek">Karşı örnekle çürütme</a></li>
+    <li><a href="#algoritma">Algoritma nedir?</a></li>
+    <li><a href="#obeb">Adım adım: OBEB bulma</a></li>
+    <li><a href="#sinav">Sınavda nasıl sorulur?</a></li>
+    <li><a href="#hatalar">Sık yapılan hatalar</a></li>
+    <li><a href="#8-sinif">8. sınıfta nereye bağlanıyor?</a></li>
+    <li><a href="#test">Kendini test et</a></li>
+  </ol>
+</div>
+
+
+<div class="kutu">
+  <strong>Bu konu yeni.</strong> İspat ve algoritma, <em>Türkiye Yüzyılı Maarif Modeli</em> ile 7. sınıf matematik programına girdi. Eski kaynaklarda ve eski yıllara ait soru bankalarında bu başlığı bulamazsın — bu yüzden konuyu doğrudan programın mantığından çalışmak gerekiyor. Yer aldığı tema: <strong>İşlemlerle Cebirsel Düşünme ve Değişimler</strong>.
+</div>
+
+<h2 id="ispat">1. Matematiksel ispat nedir?</h2>
+
+<div class="tanim">
+  <strong>İspat:</strong> Bir matematiksel iddianın <em>her durumda</em> doğru olduğunu, kabul edilmiş kurallara dayanarak gösterme işlemidir.
+</div>
+
+<p>Buradaki kritik kelime <strong>her durumda</strong>. Üç örnekte doğru çıkması bir ispat değildir; ispat, sonsuz sayıda durumun tamamını kapsar. Bunu sağlamanın yolu da sayı yerine <em>harf</em> kullanmaktır.</p>
+
+<div class="tablo-sar">
+<table>
+  <tr><th>Kavram</th><th>Ne işe yarar</th></tr>
+  <tr><td>Sanı (varsayım)</td><td>Doğru olduğu düşünülen, henüz ispatlanmamış iddia</td></tr>
+  <tr><td>İspat</td><td>İddianın her durumda doğru olduğunu gösterir</td></tr>
+  <tr><td>Karşı örnek</td><td>İddianın <em>yanlış</em> olduğunu tek bir örnekle gösterir</td></tr>
+  <tr><td>Genel terim</td><td>Tüm durumları temsil eden harfli gösterim (n, 2n, 2n+1 gibi)</td></tr>
+</table>
+</div>
+
+<div class="kutu uyari">
+  <strong>Asimetri kuralı:</strong> Bir iddiayı <em>çürütmek</em> için tek bir karşı örnek yeter. Ama <em>doğrulamak</em> için bin örnek bile yetmez — genel bir ispat gerekir. İspatla örnek vermeyi karıştırmamanın püf noktası bu.
+</div>
+
+<h2 id="gosterim">2. Genel gösterimler: harfle konuşmak</h2>
+
+<p>İspatın tamamı, doğru gösterimi seçmekle başlar. Aşağıdaki tablo, 7. sınıfta karşına çıkacak her ispatın anahtarı:</p>
+
+<div class="tablo-sar">
+<table>
+  <tr><th>İfade</th><th>Genel gösterim</th></tr>
+  <tr><td>Herhangi bir tam sayı</td><td>n</td></tr>
+  <tr><td>Çift sayı</td><td>2n</td></tr>
+  <tr><td>Tek sayı</td><td>2n + 1</td></tr>
+  <tr><td>Ardışık iki tam sayı</td><td>n , n + 1</td></tr>
+  <tr><td>Ardışık üç tam sayı</td><td>n − 1 , n , n + 1</td></tr>
+  <tr><td>3'ün katı olan sayı</td><td>3n</td></tr>
+</table>
+</div>
+
+<h2 id="dogrudan">3. Doğrudan ispat</h2>
+
+<p>En yaygın yöntem: iddiayı harfle yaz, işlemi yap, sonucun istenen biçimde olduğunu göster.</p>
+
+<div class="ornek">
+  <div class="soru">İddia: Ardışık iki tam sayının toplamı her zaman tektir. İspatlayalım.</div>
+  <div class="hesap">ardışık iki tam sayı: n  ve  n + 1
+
+toplam = n + (n + 1)
+       = 2n + 1
+
+2n + 1 ifadesi TEK sayının genel gösterimidir.
+→ toplam her zaman tektir.</div>
+  <p><span class="sonuc">İspat tamamlandı.</span> Dikkat: burada hiçbir sayı denemedik; n hangi tam sayı olursa olsun sonuç geçerli.</p>
+</div>
+
+<div class="ornek">
+  <div class="soru">İddia: Ardışık üç tam sayının toplamı 3'ün katıdır. İspatlayalım.</div>
+  <div class="hesap">ardışık üç tam sayı: n − 1 , n , n + 1
+
+toplam = (n − 1) + n + (n + 1)
+       = n − 1 + n + n + 1
+       = 3n
+
+3n ifadesi 3'ün katının genel gösterimidir.
+→ toplam her zaman 3'ün katıdır.
+
+ek bilgi: toplam = 3 · (ortadaki sayı)
+örnek kontrol: 15 + 16 + 17 = 48 = 3 · 16  ✓</div>
+  <p><span class="sonuc">İspat tamamlandı.</span></p>
+</div>
+
+<div class="ornek">
+  <div class="soru">İddia: İki tek sayının toplamı çifttir. İspatlayalım.</div>
+  <div class="hesap">birinci tek sayı: 2a + 1
+ikinci tek sayı:  2b + 1
+
+toplam = (2a + 1) + (2b + 1)
+       = 2a + 2b + 2
+       = 2 · (a + b + 1)
+
+2 ile çarpım hâlinde yazıldı → ÇİFT sayıdır.</div>
+  <p><span class="sonuc">İspat tamamlandı.</span> İki farklı tek sayı için iki farklı harf (a ve b) kullanmak zorunlu; ikisine de n dersen yalnızca eşit tek sayıları ispatlarsın.</p>
+</div>
+
+<div class="kutu">
+  <strong>Doğrudan ispatın üç adımı:</strong> (1) Verilenleri genel gösterimle yaz. (2) İstenen işlemi yap ve sadeleştir. (3) Çıkan sonucu hedef biçime (2n, 2n+1, 3n gibi) benzet. Üçüncü adımı yazmayan ispat yarım kalır.
+</div>
+
+<h2 id="karsi-ornek">4. Karşı örnekle çürütme</h2>
+
+<p>Bir iddianın yanlış olduğunu göstermek için onu bozan <strong>tek bir örnek</strong> bulman yeter. Bu örneğe karşı örnek denir.</p>
+
+<div class="ornek">
+  <div class="soru">İddia: Her tek sayı asaldır. Doğru mu?</div>
+  <div class="hesap">dene: 3 → asal
+      5 → asal
+      7 → asal
+      9 → 9 = 3 · 3
+
+9 tek bir sayı ama asal DEĞİL.
+→ iddia yanlıştır.</div>
+  <p><span class="sonuc">Karşı örnek: 9</span> — ilk üç denemenin doğru çıkması hiçbir şey ispatlamıyordu.</p>
+</div>
+
+<div class="ornek">
+  <div class="soru">İddia: Bütün asal sayılar tektir. Doğru mu?</div>
+  <div class="hesap">2 sayısı asaldır (yalnızca 1 ve kendisine bölünür)
+2 sayısı ÇİFTTİR
+
+→ iddia yanlıştır.</div>
+  <p><span class="sonuc">Karşı örnek: 2</span> — 2, tek çift asal sayıdır.</p>
+</div>
+
+<div class="ornek">
+  <div class="soru">İddia: Ardışık iki çift sayının toplamı 4'ün katıdır. Doğru mu?</div>
+  <div class="hesap">dene: 2 ve 4  →  toplam 6
+      6 ÷ 4 = 1 kalan 2
+
+6 sayısı 4'ün katı DEĞİL.
+→ iddia yanlıştır.
+
+not: 4 ve 6 → 10, o da 4'ün katı değil.</div>
+  <p><span class="sonuc">Karşı örnek: 2 ve 4</span></p>
+</div>
+
+<h2 id="algoritma">5. Algoritma nedir?</h2>
+
+<div class="tanim">
+  <strong>Algoritma:</strong> Bir problemi çözmek için izlenen, <em>sonlu sayıda</em> ve <em>sırası belli</em> adımlar dizisidir. Her adım açık ve tek anlamlı olmalıdır.
+</div>
+
+<p>Algoritmanın üç bileşeni var: <strong>girdi → işlem → çıktı.</strong></p>
+
+<div class="hesap">GİRDİ    : algoritmanın aldığı bilgi
+İŞLEM    : sırayla uygulanan adımlar
+ÇIKTI    : elde edilen sonuç</div>
+
+<div class="ornek">
+  <div class="soru">Verilen bir tam sayının çift mi tek mi olduğunu bulan algoritma.</div>
+  <div class="hesap">1. Başla
+2. Sayıyı al          (girdi: n)
+3. n sayısını 2'ye böl, kalanı bul
+4. Kalan 0 ise "ÇİFT" yaz
+5. Kalan 0 değilse "TEK" yaz
+6. Bitir
+
+deneme: n = 14 → 14 ÷ 2, kalan 0 → ÇİFT
+deneme: n = 9  →  9 ÷ 2, kalan 1 → TEK</div>
+</div>
+
+<div class="ornek">
+  <div class="soru">Üç sayının aritmetik ortalamasını bulan algoritma.</div>
+  <div class="hesap">1. Başla
+2. Üç sayıyı al       (girdi: a, b, c)
+3. Toplam = a + b + c
+4. Ortalama = Toplam ÷ 3
+5. Ortalamayı yaz     (çıktı)
+6. Bitir
+
+deneme: 14 , 22 , 30
+Toplam   = 14 + 22 + 30 = 66
+Ortalama = 66 ÷ 3 = 22</div>
+</div>
+
+<div class="kutu uyari">
+  <strong>Adım sırası değiştirilemez.</strong> Yukarıdaki algoritmada 4. adımı 3. adımdan önce yazarsan işlem çalışmaz, çünkü toplam henüz hesaplanmamıştır. Algoritma sorularında en çok puan kaybedilen yer, adımların mantıksal sırası.
+</div>
+
+<h2 id="obeb">6. Adım adım bir algoritma: OBEB bulma</h2>
+
+<p>Aynı işi tekrar tekrar yapan algoritmalara örnek: iki sayının en büyük ortak bölenini bulma. Büyük sayıdan küçüğün katlarını çıkararak ilerliyoruz.</p>
+
+<div class="ornek">
+  <div class="soru">48 ile 18 sayılarının OBEB'ini algoritma ile bulalım.</div>
+  <div class="hesap">1. Büyük sayıyı küçüğe böl, kalanı bul
+2. Kalan 0 değilse: küçük sayı yeni "büyük",
+   kalan yeni "küçük" olur ve 1. adıma dön
+3. Kalan 0 olduğunda, bölen sayı OBEB'tir
+
+48 ÷ 18  →  48 = 2·18 + 12     kalan 12
+18 ÷ 12  →  18 = 1·12 +  6     kalan  6
+12 ÷  6  →  12 = 2· 6 +  0     kalan  0
+
+kalan 0 oldu, bölen 6
+→ OBEB(48, 18) = 6
+
+kontrol: 48 = 6·8  ve  18 = 6·3   ✓</div>
+  <p><span class="sonuc">OBEB(48, 18) = 6</span></p>
+</div>
+
+<h2 id="sinav">7. Sınavda nasıl sorulur?</h2>
+
+<ul>
+  <li><strong>İspat tamamlama:</strong> İspatın ilk adımı verilir, devamı istenir. Genel gösterimi bilmek yeterli.</li>
+  <li><strong>Karşı örnek bulma:</strong> Yanlış bir iddia verilir, çürütmen istenir. Küçük sayılarla denemeye başla; genelde 0, 1, 2 veya 9 işi çözer.</li>
+  <li><strong>Algoritma sıralama:</strong> Karışık verilen adımların doğru sırası sorulur. Girdi–işlem–çıktı mantığına bak.</li>
+  <li><strong>Algoritma yazma:</strong> "Bir sayının 3'ün katı olup olmadığını bulan algoritmayı yazınız" tipinde. Adımları numaralandır ve "Başla / Bitir" yaz.</li>
+</ul>
+
+<h2 id="hatalar">8. Sık yapılan hatalar</h2>
+
+<div class="kutu uyari">
+  <ul style="margin-bottom:0">
+    <li><strong>Örnek vermeyi ispat sanmak.</strong> Üç sayıda denemek ispat değildir; harfle genel gösterim şart.</li>
+    <li><strong>İki farklı sayıya aynı harfi vermek.</strong> İki tek sayı için 2a+1 ve 2b+1 yazılır; ikisi de 2n+1 olursa sayılar eşit varsayılır.</li>
+    <li><strong>İspatın son adımını yazmamak.</strong> 3n bulup durmak yetmez; "bu, 3'ün katının gösterimidir" cümlesi ispatı tamamlar.</li>
+    <li><strong>Çürütmek için genel ispat aramak.</strong> Yanlış iddiayı bozmak için tek karşı örnek yeter, uğraşma.</li>
+    <li><strong>Algoritmada girdiyi belirtmemek.</strong> Hangi bilgiyle başlandığı yazılmazsa algoritma eksik sayılır.</li>
+    <li><strong>Algoritmayı sonsuz bırakmak.</strong> Her algoritma <em>sonlu</em> adımda bitmelidir; "Bitir" adımı olmalı.</li>
+  </ul>
+</div>
+
+<h2 id="8-sinif">9. 8. sınıfta bu nereye bağlanıyor?</h2>
+
+<p>Bu konu LGS'de doğrudan sorulmuyor; ama 8. sınıfta <strong><a href="/8-sinif-matematik/cebirsel-ifadeler-ozdeslikler/">cebirsel ifadeler ve özdeşlikler</a></strong> bunun üzerine kuruluyor. Özdeşlik zaten "her değer için doğru olan eşitlik" demektir — yani ispatlanmış bir iddia. 8. sınıfta özdeşliklerin <em>neden</em> doğru olduğunu gösterirken tam olarak bu sayfadaki doğrudan ispat yöntemini kullanacaksın.</p>
+
+<div class="ornek">
+  <div class="soru">7'de ispat, 8'de özdeşlik.</div>
+  <div class="hesap">iddia: (a + b)² = a² + 2ab + b²
+
+ispat (doğrudan):
+(a + b)² = (a + b)(a + b)
+         = a·a + a·b + b·a + b·b
+         = a² + ab + ab + b²
+         = a² + 2ab + b²      ✓
+
+kontrol a=3, b=2:  (3+2)² = 25
+                   9 + 12 + 4 = 25   ✓</div>
+  <p>Kontrol adımı ispatın yerine geçmez, sadece hata aramaya yarar. İspat, harfli satırların kendisi.</p>
+</div>
+
+<h2 id="test">10. Kendini test et</h2>
+
+<ol>
+  <li>Ardışık iki tam sayının toplamının tek olduğunu ispatlayınız.</li>
+  <li>Ardışık üç tam sayının toplamının 3'ün katı olduğunu ispatlayınız.</li>
+  <li>"Her tek sayı asaldır" iddiasını çürüten bir karşı örnek veriniz.</li>
+  <li>"Bütün asal sayılar tektir" iddiasını çürütünüz.</li>
+  <li>Üç sayının aritmetik ortalamasını bulan algoritmanın adımlarını yazınız.</li>
+  <li>48 ile 18 sayılarının OBEB'ini adım adım bulunuz.</li>
+</ol>
+
+<details>
+  <summary>Cevapları göster</summary>
+  <div class="hesap">1) sayılar: n , n + 1
+   toplam = n + (n + 1) = 2n + 1
+   2n + 1 tek sayının gösterimidir  →  ispat tamam
+
+2) sayılar: n − 1 , n , n + 1
+   toplam = 3n
+   3n, 3'ün katının gösterimidir  →  ispat tamam
+
+3) 9 sayısı tektir ama 9 = 3 · 3
+   asal değildir  →  karşı örnek: 9
+
+4) 2 sayısı asaldır ve çifttir
+   →  karşı örnek: 2
+
+5) 1. Başla
+   2. a, b, c sayılarını al
+   3. Toplam = a + b + c
+   4. Ortalama = Toplam ÷ 3
+   5. Ortalamayı yaz
+   6. Bitir
+   deneme: (14 + 22 + 30) ÷ 3 = 66 ÷ 3 = 22
+
+6) 48 = 2·18 + 12     kalan 12
+   18 = 1·12 +  6     kalan  6
+   12 = 2· 6 +  0     kalan  0
+   OBEB = 6</div>
+</details>
+
+<h2>Sık sorulan sorular</h2>
+
+<h3>İspat ve algoritma neden yeni bir konu?</h3>
+<p>Türkiye Yüzyılı Maarif Modeli ile matematik programına eklendi. Amaç, sonucu bulmakla yetinmeyip <em>neden doğru olduğunu</em> gösterme ve çözümü adımlara ayırma becerisini kazandırmak. Eski soru bankalarında bu başlık bulunmaz.</p>
+
+<h3>Örnek vermek ispat sayılır mı?</h3>
+<p>Sayılmaz. On örnekte doğru çıkan bir iddia on birincide yanlış çıkabilir. İspat için genel gösterim (n, 2n, 2n+1 gibi) kullanıp her durumu kapsaman gerekir.</p>
+
+<h3>Karşı örnek kaç tane olmalı?</h3>
+<p>Bir tane yeter. Bir iddiayı çürütmek için onu bozan tek bir durum göstermek matematiksel olarak yeterlidir.</p>
+
+<h3>Algoritma ile matematik işleminin farkı nedir?</h3>
+<p>İşlem tek bir hesabı yapar; algoritma ise hangi hesabın hangi sırayla ve hangi koşulda yapılacağını tanımlar. Algoritmanın sonlu adımda bitmesi ve her adımın tek anlamlı olması zorunludur.</p>
+
+
+<div class="cta">
+  <h2>Konuyu öğrendin. Şimdi soru çöz.</h2>
+  <p>İspat ve algoritmada beceri, farklı iddialar üzerinde çalışarak gelişiyor. <strong>Net Up'ı ücretsiz indir:</strong> seviyene göre soru gelir, yanlışların hata defterine düşer, çözünce silinir. Türkçe ve Matematik'te binlerce soru, günlük seri ve lig — hepsi bedava.</p>
+  <div class="magaza-kart magaza">
+    <a href="https://apps.apple.com/app/id6768393770" aria-label="App Store'dan indirin">
+      <img src="/assets/appstore-badge-tr-black.svg" alt="App Store'dan indirin" width="176" height="52">
+    </a>
+    <a href="https://play.google.com/store/apps/details?id=com.netup.app" aria-label="Google Play'den indirin">
+      <img src="/assets/googleplay-badge-tr.svg" alt="Google Play'den indirin" width="175" height="52">
+    </a>
+  </div>
+</div>
+
+<a class="sonraki" href="/7-sinif-matematik/yansima-ve-geometrik-insa/">
+  <span>
+    <span class="et">Sonraki konu</span>
+    <span class="ad">Yansıma ve Geometrik İnşa</span>
+  </span>
+  <span class="ok">→</span>
+</a>
+
+</div>
+</main>
+
+<footer class="alt">
+  <div class="wrap">
+    <p><a href="/7-sinif-matematik/">7. Sınıf Matematik</a> · <a href="/8-sinif-matematik/">8. Sınıf Matematik</a> · <a href="/7-sinif-turkce/">7. Sınıf Türkçe</a></p>
+    <p><strong>Net Up</strong> — LGS hazırlık uygulaması. 6, 7 ve 8. sınıf için Türkçe ve Matematik ücretsiz.</p>
+  </div>
+</footer>
+
+</body>
+</html>

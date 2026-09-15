@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Denklem ve Eşitsizlikler — 7. Sınıf Matematik | Net Up</title>
+<meta name="description" content="7. sınıf denklem ve eşitsizlikler konu anlatımı: birinci dereceden bir bilinmeyenli denklem çözme, problem kurma, eşitsizlikte yön kuralı ve test.">
+<link rel="canonical" href="https://netup.website/7-sinif-matematik/denklem-ve-esitsizlikler/">
+<meta property="og:title" content="Denklem ve Eşitsizlikler — 7. Sınıf Matematik Konu Anlatımı">
+<meta property="og:description" content="Birinci dereceden bir bilinmeyenli denklem ve eşitsizlik çözümleri.">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="tr_TR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/ders.css">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Article", "headline": "Denklem ve Eşitsizlikler — 7. Sınıf Matematik Konu Anlatımı", "description": "Birinci dereceden bir bilinmeyenli denklem cozme, denklem kurarak problem cozme ve esitsizlikler.", "inLanguage": "tr-TR", "author": {"@type": "Organization", "name": "Net Up"}, "publisher": {"@type": "Organization", "name": "Net Up"}, "educationalLevel": "7. sınıf", "about": [{"@type": "Thing", "name": "Denklem ve Eşitsizlikler"}, {"@type": "Thing", "name": "7. Sınıf Matematik"}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Birinci dereceden bir bilinmeyenli denklem nedir?", "acceptedAnswer": {"@type": "Answer", "text": "Icinde bir tane bilinmeyen bulunan ve bilinmeyenin kuvveti 1 olan esitliktir. Ornek: 3x eksi 7 = 14 denkleminin kokü 7'dir."}}, {"@type": "Question", "name": "Denklem nasıl çözülür?", "acceptedAnswer": {"@type": "Answer", "text": "Esitligin bir tarafina yapilan islem diger tarafina da yapilir. Once sabitler bir tarafa, bilinmeyenler diger tarafa toplanir, sonra katsayiya bolunur. Bulunan kok yerine konarak kontrol edilir."}}, {"@type": "Question", "name": "Eşitsizliğin yönü ne zaman ters döner?", "acceptedAnswer": {"@type": "Answer", "text": "Sadece iki taraf negatif bir sayiyla carpildiginda veya bolundugunde. Ornek: eksi 2x buyuk esit 8 ise x kucuk esit eksi 4 olur."}}, {"@type": "Question", "name": "Kesirli denklem nasıl çözülür?", "acceptedAnswer": {"@type": "Answer", "text": "Icler dislar carpimi yapilir. Ornek: 2x eksi 1 bolu 3 ifadesi x arti 4 bolu 2 ifadesine esitse 2 carpi 2x eksi 1 = 3 carpi x arti 4 yazilir ve x = 14 bulunur."}}, {"@type": "Question", "name": "Sayı doğrusunda dolu ve boş nokta ne demek?", "acceptedAnswer": {"@type": "Answer", "text": "Dolu nokta o sayinin cozume dahil oldugunu gosterir ve kucuk esit ile buyuk esit durumlarinda kullanilir. Bos nokta dahil olmadigini gosterir; kucuktur ve buyuktur durumlarinda kullanilir."}}, {"@type": "Question", "name": "Ardışık sayı problemleri nasıl çözülür?", "acceptedAnswer": {"@type": "Answer", "text": "Ortadaki sayiya x denir ve digerleri x eksi 1 ile x arti 1 olarak yazilir. Ornek: ardisik uc tam sayinin toplami 48 ise 3x = 48 olur, x = 16 bulunur ve sayilar 15, 16, 17'dir."}}]}
+</script>
+<script defer src="/assets/analytics.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a class="logo" href="/"><img src="/assets/app-icon-nav.png" alt="Net Up" width="30" height="30"> Net Up</a>
+    <a class="btn btn-ghost" style="background:var(--purple-50);color:var(--purple-700);box-shadow:none;padding:10px 20px;font-size:14.5px" href="https://apps.apple.com/app/id6768393770">Ücretsiz indir</a>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="bc"><a href="/7-sinif-matematik/">7. Sınıf Matematik</a> › Denklem ve Eşitsizlikler</div>
+    <h1>Denklem ve Eşitsizlikler</h1>
+    <p class="ozet">Birinci dereceden denklem çözme, problem kurma ve eşitsizliklerde yön kuralı.</p>
+    <div class="etiketler">
+      <span class="etiket">7. sınıf · Tema 2</span>
+      <span class="etiket">Cebirsel Düşünme</span>
+      <span class="etiket">Doğrusal denklemlerin temeli</span>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+<p class="intro">Denklem çözmenin tek bir kuralı var: <strong>bir tarafa ne yaparsan diğerine de aynısını yap.</strong> Eşitsizliklerde de aynı kural geçerli, sadece bir istisna eklenir — negatifle çarpıp bölerken yön döner. Bu sayfada denklem çözmeyi, problem kurmayı ve tam olarak o yön kuralını çalışacağız.</p>
+
+<div class="icindekiler">
+  <b>Bu sayfada</b>
+  <ol>
+    <li><a href="#denklem">Denklem nedir?</a></li>
+    <li><a href="#terazi">Terazi mantığı</a></li>
+    <li><a href="#parantez">Parantezli ve kesirli denklemler</a></li>
+    <li><a href="#problem">Denklem kurarak problem çözme</a></li>
+    <li><a href="#esitsizlik">Eşitsizlikler</a></li>
+    <li><a href="#yon">Yön ne zaman döner?</a></li>
+    <li><a href="#sinav">Sınavda nasıl sorulur?</a></li>
+    <li><a href="#hatalar">Sık yapılan hatalar</a></li>
+    <li><a href="#8-sinif">8. sınıfta nereye bağlanıyor?</a></li>
+    <li><a href="#test">Kendini test et</a></li>
+  </ol>
+</div>
+
+
+<h2 id="denklem">1. Denklem nedir?</h2>
+
+<div class="tanim">
+  <strong>Birinci dereceden bir bilinmeyenli denklem:</strong> İçinde bir tane bilinmeyen bulunan ve bilinmeyenin kuvveti 1 olan eşitliktir. Örnek: 3x − 7 = 14
+</div>
+
+<p>Denklemi çözmek, eşitliği doğru yapan bilinmeyen değeri bulmak demektir. Bu değere <strong>denklemin kökü</strong> denir.</p>
+
+<div class="tablo-sar">
+<table>
+  <tr><th>İfade</th><th>Denklem mi?</th><th>Neden</th></tr>
+  <tr><td>3x − 7 = 14</td><td>Evet</td><td>Eşitlik var, bilinmeyenin kuvveti 1</td></tr>
+  <tr><td>3x − 7</td><td>Hayır</td><td>Eşitlik yok, bu bir cebirsel ifade</td></tr>
+  <tr><td>x² + 1 = 5</td><td>Hayır (bu düzeyde)</td><td>Bilinmeyenin kuvveti 2, birinci derece değil</td></tr>
+  <tr><td>2x + y = 8</td><td>Hayır (bu düzeyde)</td><td>İki bilinmeyen var</td></tr>
+</table>
+</div>
+
+<h2 id="terazi">2. Terazi mantığı: denklem çözmenin tek kuralı</h2>
+
+<div class="kutu">
+  <strong>Tek kural:</strong> Eşitliğin bir tarafına ne yaparsan, diğer tarafına da aynısını yap. Denklem bir terazidir; iki kefeden birine bir şey ekleyip diğerine eklemezsen denge bozulur.
+</div>
+
+<div class="ornek">
+  <div class="soru">3x − 7 = 14 denkleminin kökü kaçtır?</div>
+  <div class="hesap">3x − 7 = 14
+her iki tarafa +7 ekle:
+3x = 21
+her iki tarafı 3'e böl:
+x = 7
+
+kontrol: 3·7 − 7 = 21 − 7 = 14  ✓</div>
+  <p><span class="sonuc">x = 7</span></p>
+</div>
+
+<div class="ornek">
+  <div class="soru">5x + 3 = 2x + 18 denkleminin kökü kaçtır?</div>
+  <div class="hesap">5x + 3 = 2x + 18
+iki taraftan 2x çıkar:
+3x + 3 = 18
+iki taraftan 3 çıkar:
+3x = 15
+iki tarafı 3'e böl:
+x = 5
+
+kontrol: sol  = 5·5 + 3 = 28
+         sağ  = 2·5 + 18 = 28  ✓</div>
+  <p><span class="sonuc">x = 5</span></p>
+</div>
+
+<div class="kutu">
+  <strong>Her zaman kontrol et.</strong> Bulduğun kökü denklemde yerine yaz; iki taraf eşit çıkmalı. Bu 10 saniyelik alışkanlık, yazılıda kaybettiğin puanların çoğunu kurtarır.
+</div>
+
+<h2 id="parantez">3. Parantezli ve kesirli denklemler</h2>
+
+<div class="ornek">
+  <div class="soru">2(x − 3) = x + 4 denkleminin kökü kaçtır?</div>
+  <div class="hesap">önce parantezi aç (dağılma):
+2x − 6 = x + 4
+iki taraftan x çıkar:
+x − 6 = 4
+iki tarafa 6 ekle:
+x = 10
+
+kontrol: sol = 2·(10 − 3) = 2·7 = 14
+         sağ = 10 + 4 = 14  ✓</div>
+  <p><span class="sonuc">x = 10</span></p>
+</div>
+
+<div class="ornek">
+  <div class="soru">x/3 + 2 = 5 denkleminin kökü kaçtır?</div>
+  <div class="hesap">x/3 + 2 = 5
+iki taraftan 2 çıkar:
+x/3 = 3
+iki tarafı 3 ile çarp:
+x = 9
+
+kontrol: 9/3 + 2 = 3 + 2 = 5  ✓</div>
+  <p><span class="sonuc">x = 9</span></p>
+</div>
+
+<div class="ornek">
+  <div class="soru">(2x − 1)/3 = (x + 4)/2 denkleminin kökü kaçtır?</div>
+  <div class="hesap">içler dışlar çarpımı:
+2 · (2x − 1) = 3 · (x + 4)
+4x − 2 = 3x + 12
+iki taraftan 3x çıkar:
+x − 2 = 12
+iki tarafa 2 ekle:
+x = 14
+
+kontrol: sol = (2·14 − 1)/3 = 27/3 = 9
+         sağ = (14 + 4)/2   = 18/2 = 9  ✓</div>
+  <p><span class="sonuc">x = 14</span></p>
+</div>
+
+<h2 id="problem">4. Denklem kurarak problem çözme</h2>
+
+<p>Adımlar her problemde aynı: <strong>bilinmeyeni adlandır → cümleyi denkleme çevir → çöz → kontrol et.</strong></p>
+
+<div class="ornek">
+  <div class="soru">Bir sayının 3 katının 8 eksiği 25'tir. Bu sayı kaçtır?</div>
+  <div class="hesap">sayı = x
+
+"3 katı"      →  3x
+"8 eksiği"    →  3x − 8
+"25'tir"      →  3x − 8 = 25
+
+3x = 33
+x = 11
+
+kontrol: 3·11 − 8 = 33 − 8 = 25  ✓</div>
+  <p><span class="sonuc">11</span></p>
+</div>
+
+<div class="ornek">
+  <div class="soru">Babanın yaşı 38, oğlunun yaşı 10'dur. Kaç yıl sonra babanın yaşı oğlunun yaşının 3 katı olur?</div>
+  <div class="hesap">geçen süre = x yıl
+
+x yıl sonra:
+baba  = 38 + x
+oğul  = 10 + x
+
+38 + x = 3 · (10 + x)
+38 + x = 30 + 3x
+iki taraftan x çıkar:
+38 = 30 + 2x
+8 = 2x
+x = 4
+
+kontrol: baba 38 + 4 = 42
+         oğul 10 + 4 = 14
+         14 · 3 = 42  ✓</div>
+  <p><span class="sonuc">4 yıl sonra</span></p>
+</div>
+
+<div class="ornek">
+  <div class="soru">Ardışık üç tam sayının toplamı 48'dir. Bu sayıların en küçüğü kaçtır?</div>
+  <div class="hesap">ortadaki sayı = x
+sayılar: x − 1 , x , x + 1
+
+(x − 1) + x + (x + 1) = 48
+3x = 48
+x = 16
+
+sayılar: 15 , 16 , 17
+en küçük = 15
+
+kontrol: 15 + 16 + 17 = 48  ✓</div>
+  <p><span class="sonuc">15</span> — ortadaki sayıya x demek, bu tip soruları tek adıma indirir.</p>
+</div>
+
+<h2 id="esitsizlik">5. Eşitsizlikler</h2>
+
+<div class="tanim">
+  <strong>Eşitsizlik:</strong> Eşittir yerine &lt; , &gt; , ≤ veya ≥ sembolü bulunan matematiksel ifadedir. Çözümü tek bir sayı değil, bir <em>sayı aralığıdır</em>.
+</div>
+
+<div class="tablo-sar">
+<table>
+  <tr><th>Sembol</th><th>Okunuşu</th><th>Sayı doğrusunda uç nokta</th></tr>
+  <tr><td>x &lt; 4</td><td>x, 4'ten küçüktür</td><td>Boş (içi dolu değil) — 4 dâhil değil</td></tr>
+  <tr><td>x &gt; 4</td><td>x, 4'ten büyüktür</td><td>Boş — 4 dâhil değil</td></tr>
+  <tr><td>x ≤ 4</td><td>x, 4'ten küçük veya eşittir</td><td>Dolu — 4 dâhil</td></tr>
+  <tr><td>x ≥ 4</td><td>x, 4'ten büyük veya eşittir</td><td>Dolu — 4 dâhil</td></tr>
+</table>
+</div>
+
+<div class="ornek">
+  <div class="soru">3x − 5 &lt; 7 eşitsizliğinin çözüm kümesi nedir?</div>
+  <div class="hesap">3x − 5 &lt; 7
+iki tarafa +5 ekle:
+3x &lt; 12
+iki tarafı 3'e böl (3 pozitif → yön değişmez):
+x &lt; 4</div>
+  <p><span class="sonuc">x &lt; 4</span> — yani 4'ten küçük tüm sayılar. Kontrol için x = 3 dene: 3·3 − 5 = 4 &lt; 7 ✓</p>
+</div>
+
+<div class="ornek">
+  <div class="soru">4x + 3 ≤ 2x + 11 eşitsizliğinin çözümü nedir?</div>
+  <div class="hesap">4x + 3 ≤ 2x + 11
+iki taraftan 2x çıkar:
+2x + 3 ≤ 11
+iki taraftan 3 çıkar:
+2x ≤ 8
+iki tarafı 2'ye böl:
+x ≤ 4</div>
+  <p><span class="sonuc">x ≤ 4</span> — burada 4 dâhildir: 4·4 + 3 = 19 ve 2·4 + 11 = 19, eşitlik sağlanıyor.</p>
+</div>
+
+<h2 id="yon">6. Eşitsizliğin yönü ne zaman döner?</h2>
+
+<div class="kutu uyari">
+  <strong>Tek kural, ama hayati:</strong> Eşitsizliğin iki tarafını <strong>negatif bir sayıyla</strong> çarparsan ya da bölersen, eşitsizliğin yönü <em>ters döner</em>. Pozitif sayıyla çarpma-bölmede ve toplama-çıkarmada yön değişmez.
+</div>
+
+<div class="ornek">
+  <div class="soru">−2x + 1 ≥ 9 eşitsizliğinin çözümü nedir?</div>
+  <div class="hesap">−2x + 1 ≥ 9
+iki taraftan 1 çıkar:
+−2x ≥ 8
+iki tarafı (−2)'ye böl → YÖN DÖNER:
+x ≤ −4
+
+kontrol x = −5:
+−2·(−5) + 1 = 10 + 1 = 11 ≥ 9  ✓
+kontrol x = 0:
+−2·0 + 1 = 1 ≥ 9  yanlış  ✓ (0 çözümde değil)</div>
+  <p><span class="sonuc">x ≤ −4</span></p>
+</div>
+
+<div class="ornek">
+  <div class="soru">Yönün neden döndüğünü görelim.</div>
+  <div class="hesap">3 &lt; 5                doğru
+iki tarafı (−1) ile çarp:
+−3 ? −5
+sayı doğrusunda −3, −5'in SAĞINDA
+→ −3 &gt; −5           yön döndü</div>
+  <p>Negatifle çarpmak sayı doğrusunda sıralamayı aynalar; bu yüzden yön zorunlu olarak değişir.</p>
+</div>
+
+<h2 id="sinav">7. Sınavda nasıl sorulur?</h2>
+
+<ul>
+  <li><strong>Kök bulma:</strong> Parantezli veya kesirli denklem verilir, x istenir. İçler dışlar çarpımı bilmek yeterli.</li>
+  <li><strong>Problem kurma:</strong> Yaş, ardışık sayı ve para problemleri. En zor kısım denklemi kurmak, çözmek değil.</li>
+  <li><strong>Sayı doğrusu eşleştirme:</strong> Eşitsizlik verilir, gösterimi istenir. Uç noktanın dolu mu boş mu olduğu puanı belirler.</li>
+  <li><strong>Yön döndürme tuzağı:</strong> Negatif katsayılı eşitsizlik. Yönü çevirmeyen öğrenci kesin kaybeder.</li>
+</ul>
+
+<h2 id="hatalar">8. Sık yapılan hatalar</h2>
+
+<div class="kutu uyari">
+  <ul style="margin-bottom:0">
+    <li><strong>Negatifle bölerken yönü çevirmemek.</strong> −2x ≥ 8 ise x ≤ −4'tür, x ≥ −4 değil.</li>
+    <li><strong>Terimi taraf değiştirirken işaretini değiştirmemek.</strong> Sol taraftan sağa geçen +3, sağda −3 olur.</li>
+    <li><strong>Parantezi açmadan taraf değiştirmek.</strong> 2(x − 3) ifadesinde önce dağılma yapılır.</li>
+    <li><strong>Kesirli denklemde tek tarafı çarpmak.</strong> İçler dışlar çarpımında iki taraf da çarpılır.</li>
+    <li><strong>Uç noktayı yanlış işaretlemek.</strong> x &lt; 4'te 4 dâhil değil (boş nokta), x ≤ 4'te dâhil (dolu nokta).</li>
+    <li><strong>Kökü kontrol etmemek.</strong> Yerine koyma, yanlış cevabı saniyeler içinde yakalar.</li>
+  </ul>
+</div>
+
+<h2 id="8-sinif">9. 8. sınıfta bu nereye bağlanıyor?</h2>
+
+<p>Bu konu LGS'de doğrudan sorulmuyor; ama 8. sınıfta <strong><a href="/8-sinif-matematik/dogrusal-denklemler/">doğrusal denklemler</a></strong> ve <strong><a href="/8-sinif-matematik/esitsizlikler/">eşitsizlikler</a></strong> doğrudan bunun devamıdır. 8. sınıfta tek değişiklik, bilinmeyenin sayısının ikiye çıkması ve çözümün bir <em>doğru</em> olarak grafiğe taşınması.</p>
+
+<div class="ornek">
+  <div class="soru">7'de denklem, 8'de doğru grafiği.</div>
+  <div class="hesap">7. sınıf:  2x + 3 = 11  →  x = 4      (tek çözüm)
+
+8. sınıf:  y = 2x + 3
+           x = 0 → y = 3      (0, 3)
+           x = 4 → y = 11     (4, 11)
+           sonsuz çözüm → bir DOĞRU</div>
+  <p>Denklemin çözüm adımları birebir aynı; yalnızca soruya bir ikinci değişken ekleniyor.</p>
+</div>
+
+<h2 id="test">10. Kendini test et</h2>
+
+<ol>
+  <li>3x − 7 = 14 ise x = ?</li>
+  <li>2(x − 3) = x + 4 ise x = ?</li>
+  <li>(2x − 1)/3 = (x + 4)/2 ise x = ?</li>
+  <li>3x − 5 &lt; 7 eşitsizliğinin çözümü nedir?</li>
+  <li>−2x + 1 ≥ 9 eşitsizliğinin çözümü nedir?</li>
+  <li>Bir sayının 3 katının 8 eksiği 25 ise sayı kaçtır?</li>
+</ol>
+
+<details>
+  <summary>Cevapları göster</summary>
+  <div class="hesap">1) 3x = 14 + 7 = 21
+   x = 7
+   kontrol: 3·7 − 7 = 14  ✓
+
+2) 2x − 6 = x + 4
+   x = 10
+   kontrol: 2·(10 − 3) = 14 ve 10 + 4 = 14  ✓
+
+3) 2(2x − 1) = 3(x + 4)
+   4x − 2 = 3x + 12
+   x = 14
+   kontrol: 27/3 = 9 ve 18/2 = 9  ✓
+
+4) 3x &lt; 12
+   x &lt; 4          (4 dâhil DEĞİL)
+
+5) −2x ≥ 8
+   x ≤ −4         (negatifle bölündü, yön döndü)
+
+6) 3x − 8 = 25
+   3x = 33
+   x = 11</div>
+</details>
+
+<h2>Sık sorulan sorular</h2>
+
+<h3>Denklem ile cebirsel ifade arasındaki fark nedir?</h3>
+<p>Cebirsel ifadede eşittir yoktur, bu yüzden çözülmez, sadece sadeleştirilir veya değeri hesaplanır. Denklemde eşittir vardır ve bilinmeyenin değeri bulunur.</p>
+
+<h3>Eşitsizliğin yönü ne zaman değişir?</h3>
+<p>Yalnızca iki tarafı negatif bir sayıyla çarparken veya bölerken. Toplama, çıkarma ve pozitif sayıyla çarpma-bölme yönü değiştirmez.</p>
+
+<h3>Eşitsizliğin çözümü neden tek sayı değil?</h3>
+<p>Çünkü eşitsizlik bir aralık belirtir. x &lt; 4 eşitsizliğini 3, 0, −7 ve 3,99 gibi sonsuz sayıda değer sağlar. Denklemin çözümü ise genellikle tek bir sayıdır.</p>
+
+<h3>Sayı doğrusunda dolu ve boş nokta ne anlama gelir?</h3>
+<p>Dolu nokta, o sayının çözüme <strong>dâhil</strong> olduğunu gösterir ve ≤ ile ≥ durumlarında kullanılır. Boş nokta dâhil olmadığını gösterir; &lt; ve &gt; durumlarında kullanılır.</p>
+
+
+<div class="cta">
+  <h2>Konuyu öğrendin. Şimdi soru çöz.</h2>
+  <p>Denklem kurmak bir refleks; bu refleks yalnızca problem çözerek oturuyor. <strong>Net Up'ı ücretsiz indir:</strong> seviyene göre soru gelir, yanlışların hata defterine düşer, çözünce silinir. Türkçe ve Matematik'te binlerce soru, günlük seri ve lig — hepsi bedava.</p>
+  <div class="magaza-kart magaza">
+    <a href="https://apps.apple.com/app/id6768393770" aria-label="App Store'dan indirin">
+      <img src="/assets/appstore-badge-tr-black.svg" alt="App Store'dan indirin" width="176" height="52">
+    </a>
+    <a href="https://play.google.com/store/apps/details?id=com.netup.app" aria-label="Google Play'den indirin">
+      <img src="/assets/googleplay-badge-tr.svg" alt="Google Play'den indirin" width="175" height="52">
+    </a>
+  </div>
+</div>
+
+<a class="sonraki" href="/7-sinif-matematik/ispat-ve-algoritma/">
+  <span>
+    <span class="et">Sonraki konu</span>
+    <span class="ad">İspat ve Algoritma</span>
+  </span>
+  <span class="ok">→</span>
+</a>
+
+</div>
+</main>
+
+<footer class="alt">
+  <div class="wrap">
+    <p><a href="/7-sinif-matematik/">7. Sınıf Matematik</a> · <a href="/8-sinif-matematik/">8. Sınıf Matematik</a> · <a href="/7-sinif-turkce/">7. Sınıf Türkçe</a></p>
+    <p><strong>Net Up</strong> — LGS hazırlık uygulaması. 6, 7 ve 8. sınıf için Türkçe ve Matematik ücretsiz.</p>
+  </div>
+</footer>
+
+</body>
+</html>

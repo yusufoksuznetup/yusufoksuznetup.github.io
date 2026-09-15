@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veri Analizi — 7. Sınıf Matematik | Net Up</title>
+<meta name="description" content="7. sınıf veri analizi konu anlatımı: kategorik ve nicel veri, çizgi grafiği, ortalama-ortanca-mod, açıklık ve ortalama mutlak sapma. Çözümlü örnekler.">
+<link rel="canonical" href="https://netup.website/7-sinif-matematik/veri-analizi/">
+<meta property="og:title" content="Veri Analizi — 7. Sınıf Matematik Konu Anlatımı">
+<meta property="og:description" content="Veri türleri, çizgi grafiği, merkezî eğilim ölçüleri ve ortalama mutlak sapma.">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="tr_TR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/ders.css">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Article", "headline": "Veri Analizi — 7. Sınıf Matematik Konu Anlatımı", "description": "Kategorik ve nicel veri, cizgi grafigi, ortalama, ortanca, mod, aciklik ve ortalama mutlak sapma.", "inLanguage": "tr-TR", "author": {"@type": "Organization", "name": "Net Up"}, "publisher": {"@type": "Organization", "name": "Net Up"}, "educationalLevel": "7. sınıf", "about": [{"@type": "Thing", "name": "Veri Analizi"}, {"@type": "Thing", "name": "7. Sınıf Matematik"}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Kategorik ve nicel veri nedir?", "acceptedAnswer": {"@type": "Answer", "text": "Kategorik veri sayi ile olculmeyen, gruplara ayrilan veridir; goz rengi gibi. Nicel veri sayi ile olculen veridir; boy ve sinav puani gibi. Forma numarasi sayi olsa da kategoriktir, cunku ortalamasi anlamsizdir."}}, {"@type": "Question", "name": "Ortanca nasıl bulunur?", "acceptedAnswer": {"@type": "Answer", "text": "Veriler once siralanir, sonra ortadaki deger alinir. Veri sayisi cift ise ortadaki iki degerin ortalamasi alinir. Ornek: 2, 4, 4, 6, 9, 11 verilerinde ortanca 4 arti 6 bolu 2 = 5'tir."}}, {"@type": "Question", "name": "Açıklık nasıl hesaplanır?", "acceptedAnswer": {"@type": "Answer", "text": "En buyuk veriden en kucuk veri cikarilir. Ornek: 4, 7, 7, 9, 13 verilerinde aciklik 13 eksi 4 = 9'dur."}}, {"@type": "Question", "name": "Ortalama mutlak sapma nasıl bulunur?", "acceptedAnswer": {"@type": "Answer", "text": "Once ortalama bulunur, sonra her verinin ortalamaya mutlak uzakligi yazilir, bu uzakliklarin toplami veri sayisina bolunur. Ornek: 4, 7, 7, 9, 13 verilerinde ortalama 8, uzakliklar toplami 12 ve OMS 12 bolu 5 = 2,4'tur."}}, {"@type": "Question", "name": "Ortalama mutlak sapma neden mutlak değerle hesaplanır?", "acceptedAnswer": {"@type": "Answer", "text": "Cunku isaretli farklar toplanirsa sonuc her zaman sifir cikar; ortalamanin altindaki ve ustundeki farklar birbirini goturur. Mutlak deger uzakliklari isaretten bagimsiz toplamayi saglar."}}, {"@type": "Question", "name": "İki grubun ortalaması aynıysa hangisi daha tutarlıdır?", "acceptedAnswer": {"@type": "Answer", "text": "Ortalama mutlak sapmasi kucuk olan grup daha tutarlidir. Ornek: 48, 49, 51, 52 grubunun OMS'si 1,5; 40, 45, 55, 60 grubunun OMS'si 7,5'tir. Ikisinin de ortalamasi 50 olmasina ragmen birinci grup cok daha tutarlidir."}}]}
+</script>
+<script defer src="/assets/analytics.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a class="logo" href="/"><img src="/assets/app-icon-nav.png" alt="Net Up" width="30" height="30"> Net Up</a>
+    <a class="btn btn-ghost" style="background:var(--purple-50);color:var(--purple-700);box-shadow:none;padding:10px 20px;font-size:14.5px" href="https://apps.apple.com/app/id6768393770">Ücretsiz indir</a>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="bc"><a href="/7-sinif-matematik/">7. Sınıf Matematik</a> › Veri Analizi</div>
+    <h1>Veri Analizi</h1>
+    <p class="ozet">Kategorik ve nicel veri, çizgi grafiği, merkezî eğilim ölçüleri ve ortalama mutlak sapma.</p>
+    <div class="etiketler">
+      <span class="etiket">7. sınıf · Tema 6</span>
+      <span class="etiket">İstatistiksel Araştırma</span>
+      <span class="etiket">Histogramın temeli</span>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+<p class="intro">Veri analizinde ortalamayı herkes bilir; konuyu ayıran kısım <strong>ortalama mutlak sapma</strong>. İki grubun ortalaması aynı olabilir ama biri tutarlı, diğeri dağınık — bunu gösteren ölçü OMS. Bu sayfada veri türlerinden başlayıp adım adım OMS hesabına ve yorumuna geçeceğiz.</p>
+
+<div class="icindekiler">
+  <b>Bu sayfada</b>
+  <ol>
+    <li><a href="#veri-turu">Kategorik ve nicel veri</a></li>
+    <li><a href="#grafik">Çizgi grafiği</a></li>
+    <li><a href="#merkezi">Merkezî eğilim ölçüleri</a></li>
+    <li><a href="#aciklik">Açıklık</a></li>
+    <li><a href="#oms">Ortalama mutlak sapma</a></li>
+    <li><a href="#karsilastirma">Aynı ortalama, farklı dağılım</a></li>
+    <li><a href="#sinav">Sınavda nasıl sorulur?</a></li>
+    <li><a href="#hatalar">Sık yapılan hatalar</a></li>
+    <li><a href="#8-sinif">8. sınıfta nereye bağlanıyor?</a></li>
+    <li><a href="#test">Kendini test et</a></li>
+  </ol>
+</div>
+
+
+<h2 id="veri-turu">1. Veri türleri: kategorik ve nicel</h2>
+
+<div class="tanim">
+  <strong>Kategorik (nitel) veri:</strong> Sayı ile ölçülmeyen, gruplara ayrılan veridir. Örnek: göz rengi, tutulan takım, kan grubu.<br>
+  <strong>Nicel (sayısal) veri:</strong> Sayı ile ölçülen veridir. Örnek: boy, ağırlık, sınav puanı, kardeş sayısı.
+</div>
+
+<div class="kutu uyari">
+  <strong>Sayı görmek nicel yapmaz.</strong> Forma numarası, sınıf şubesi veya telefon numarası sayılarla yazılır ama bunlar <em>kategorik</em> veridir — çünkü ortalamaları alınamaz. Ölçüt tek soru: "bu sayının ortalamasını almak anlamlı mı?"
+</div>
+
+<div class="tablo-sar">
+<table>
+  <tr><th>Veri</th><th>Türü</th><th>Neden</th></tr>
+  <tr><td>Boy (cm)</td><td>Nicel</td><td>Ölçülür, ortalaması anlamlı</td></tr>
+  <tr><td>Kardeş sayısı</td><td>Nicel</td><td>Sayılır, ortalaması anlamlı</td></tr>
+  <tr><td>Göz rengi</td><td>Kategorik</td><td>Gruplara ayrılır</td></tr>
+  <tr><td>Forma numarası</td><td>Kategorik</td><td>Sayı ama ortalaması anlamsız</td></tr>
+  <tr><td>Doğum ayı</td><td>Kategorik</td><td>Sıralı grup, ölçüm değil</td></tr>
+</table>
+</div>
+
+<h2 id="grafik">2. Çizgi grafiği</h2>
+
+<div class="tanim">
+  <strong>Çizgi grafiği:</strong> Bir verinin <em>zaman içindeki değişimini</em> göstermek için kullanılır. Noktalar işaretlenip doğru parçalarıyla birleştirilir.
+</div>
+
+<div class="tablo-sar">
+<table>
+  <tr><th>Grafik</th><th>Ne için uygun</th></tr>
+  <tr><td>Çizgi grafiği</td><td>Zamana bağlı değişim (aylık sıcaklık, yıllık satış)</td></tr>
+  <tr><td>Sütun grafiği</td><td>Kategorileri karşılaştırma (sınıf mevcutları)</td></tr>
+  <tr><td>Daire grafiği</td><td>Bütün içindeki pay (bütçe dağılımı)</td></tr>
+  <tr><td>Sıklık tablosu</td><td>Her değerin kaç kez tekrarlandığı</td></tr>
+</table>
+</div>
+
+<div class="ornek">
+  <div class="soru">Bir haftalık sıcaklık verisi: 18, 21, 19, 24, 22, 25, 23 (°C). Grafikten ne okunur?</div>
+  <div class="hesap">en yüksek : 25 °C
+en düşük  : 18 °C
+açıklık   : 25 − 18 = 7 °C
+
+en büyük artış: 19 → 24 arasında, 5 °C
+
+toplam   = 18+21+19+24+22+25+23 = 152
+ortalama = 152 / 7 ≈ 21,71 °C</div>
+  <p>Çizgi grafiğinde <strong>eğimin dikliği</strong> değişimin hızını gösterir: çizgi ne kadar dik yükseliyorsa artış o kadar fazladır.</p>
+</div>
+
+<h2 id="merkezi">3. Merkezî eğilim ölçüleri</h2>
+
+<div class="tablo-sar">
+<table>
+  <tr><th>Ölçü</th><th>Nasıl bulunur</th></tr>
+  <tr><td>Aritmetik ortalama</td><td>Tüm veriler toplanır, veri sayısına bölünür</td></tr>
+  <tr><td>Ortanca (medyan)</td><td>Veriler <em>sıralanır</em>, ortadaki değer alınır</td></tr>
+  <tr><td>Mod (tepe değer)</td><td>En çok tekrarlanan değerdir</td></tr>
+</table>
+</div>
+
+<div class="kutu uyari">
+  <strong>Ortanca bulmadan önce sırala.</strong> Veri sıralanmadan ortadaki sayıyı almak en sık yapılan hatadır. Veri sayısı çift ise ortadaki <em>iki</em> değerin ortalaması alınır.
+</div>
+
+<div class="ornek">
+  <div class="soru">4, 7, 7, 9, 13 verileri için ortalama, ortanca, mod ve açıklık nedir?</div>
+  <div class="hesap">veriler sıralı: 4 , 7 , 7 , 9 , 13
+veri sayısı: 5  (tek)
+
+ortalama = (4+7+7+9+13) / 5
+         = 40 / 5
+         = 8
+
+ortanca  = 3. sıradaki değer = 7
+mod      = en çok tekrarlanan = 7
+açıklık  = 13 − 4 = 9</div>
+  <p><span class="sonuc">Ortalama 8 · Ortanca 7 · Mod 7 · Açıklık 9</span></p>
+</div>
+
+<div class="ornek">
+  <div class="soru">2, 4, 4, 6, 9, 11 verileri için ortalama ve ortanca nedir?</div>
+  <div class="hesap">veri sayısı: 6  (ÇİFT)
+
+ortalama = (2+4+4+6+9+11) / 6
+         = 36 / 6
+         = 6
+
+ortanca: ortadaki iki değer 4 ve 6
+       = (4 + 6) / 2
+       = 5
+
+mod     = 4
+açıklık = 11 − 2 = 9</div>
+  <p><span class="sonuc">Ortalama 6 · Ortanca 5</span> — dikkat: ortanca, veri listesinde <em>bulunmayan</em> bir sayı olabilir.</p>
+</div>
+
+<h2 id="aciklik">4. Açıklık</h2>
+
+<div class="tanim">
+  <strong>Açıklık:</strong> En büyük veri ile en küçük veri arasındaki farktır. Verinin ne kadar yayıldığını kaba biçimde gösterir.
+  <div class="hesap" style="margin-bottom:0">Açıklık = en büyük veri − en küçük veri</div>
+</div>
+
+<div class="kutu">
+  <strong>Açıklığın zayıf yanı:</strong> Yalnızca iki uç değere bakar, aradaki verileri hiç dikkate almaz. Bu yüzden aynı açıklığa sahip iki veri grubu çok farklı dağılmış olabilir. İşte bu eksiği kapatmak için <em>ortalama mutlak sapma</em> kullanılır.
+</div>
+
+<h2 id="oms">5. Ortalama mutlak sapma</h2>
+
+<div class="tanim">
+  <strong>Ortalama mutlak sapma (OMS):</strong> Her verinin ortalamadan uzaklığının ortalamasıdır. Verilerin ortalama etrafında ne kadar dağınık olduğunu gösterir.
+  <div class="hesap" style="margin-bottom:0">OMS = (her verinin ortalamaya uzaklığı toplamı) / veri sayısı</div>
+</div>
+
+<p>Üç adımda hesaplanır: <strong>ortalamayı bul → her verinin ortalamaya mutlak uzaklığını yaz → bu uzaklıkların ortalamasını al.</strong></p>
+
+<div class="ornek">
+  <div class="soru">4, 7, 7, 9, 13 verilerinin ortalama mutlak sapmasını bulalım.</div>
+  <div class="hesap">1. adım: ortalama
+   (4+7+7+9+13) / 5 = 40 / 5 = 8
+
+2. adım: her verinin 8'e uzaklığı
+   |4  − 8| = 4
+   |7  − 8| = 1
+   |7  − 8| = 1
+   |9  − 8| = 1
+   |13 − 8| = 5
+   toplam   = 4+1+1+1+5 = 12
+
+3. adım: uzaklıkların ortalaması
+   OMS = 12 / 5 = 2,4</div>
+  <p><span class="sonuc">OMS = 2,4</span> — yani veriler ortalamadan ortalama olarak 2,4 birim uzakta.</p>
+</div>
+
+<div class="ornek">
+  <div class="soru">10, 12, 14, 16, 18 verilerinin ortalama mutlak sapmasını bulalım.</div>
+  <div class="hesap">ortalama = (10+12+14+16+18) / 5 = 70 / 5 = 14
+
+uzaklıklar:
+|10 − 14| = 4
+|12 − 14| = 2
+|14 − 14| = 0
+|16 − 14| = 2
+|18 − 14| = 4
+toplam    = 12
+
+OMS = 12 / 5 = 2,4
+açıklık = 18 − 10 = 8</div>
+  <p><span class="sonuc">OMS = 2,4</span> — ilginç: bu grubun OMS'si de 2,4 ama açıklığı 8, önceki grubun açıklığı 9'du. İki ölçü farklı şeyler söylüyor.</p>
+</div>
+
+<div class="kutu uyari">
+  <strong>Mutlak değeri atlamak.</strong> Uzaklıklar toplanırken işaretler dikkate alınmaz. İşaretli farkları toplarsan sonuç <em>her zaman 0</em> çıkar, çünkü ortalamanın tanımı bunu gerektirir. Bu yüzden mutlak değer şarttır.
+</div>
+
+<h2 id="karsilastirma">6. Aynı ortalama, farklı dağılım</h2>
+
+<p>OMS'nin neden gerekli olduğunu görmenin en net yolu, ortalamaları eşit iki grubu karşılaştırmak:</p>
+
+<div class="ornek">
+  <div class="soru">A grubu: 48, 49, 51, 52 · B grubu: 40, 45, 55, 60. Hangi grup daha tutarlı?</div>
+  <div class="hesap">A grubu:
+ortalama = (48+49+51+52)/4 = 200/4 = 50
+uzaklıklar: 2 , 1 , 1 , 2  → toplam 6
+OMS = 6 / 4 = 1,5
+açıklık = 52 − 48 = 4
+
+B grubu:
+ortalama = (40+45+55+60)/4 = 200/4 = 50
+uzaklıklar: 10 , 5 , 5 , 10  → toplam 30
+OMS = 30 / 4 = 7,5
+açıklık = 60 − 40 = 20</div>
+  <p>İki grubun ortalaması da <strong>50</strong>. Ama A grubunun OMS'si 1,5, B grubunun 7,5. <span class="sonuc">A grubu çok daha tutarlı (dağınıklığı az).</span></p>
+</div>
+
+<div class="kutu">
+  <strong>Yorum cümlesi kurmayı öğren:</strong> "OMS küçükse veriler ortalamaya yakın toplanmıştır, yani grup tutarlıdır; OMS büyükse veriler dağınıktır." Sınavda hesap doğru olsa bile bu yorum istenirse yazılmalı.
+</div>
+
+<h2 id="sinav">7. Sınavda nasıl sorulur?</h2>
+
+<ul>
+  <li><strong>Grafik okuma:</strong> Çizgi grafiği verilir, en büyük artış veya açıklık sorulur. Hesap yok, okuma var.</li>
+  <li><strong>Üçlü hesap:</strong> Bir veri grubu verilir, ortalama-ortanca-mod birlikte istenir. Ortanca için sıralama şart.</li>
+  <li><strong>OMS hesabı:</strong> Adımları yazmadan sonucu bulmak riskli; tablo hâlinde yazmak puanı garantiler.</li>
+  <li><strong>Karşılaştırma ve yorum:</strong> İki grup verilir, hangisinin daha tutarlı olduğu sorulur. Cevap OMS'nin küçük olduğu gruptur.</li>
+</ul>
+
+<h2 id="hatalar">8. Sık yapılan hatalar</h2>
+
+<div class="kutu uyari">
+  <ul style="margin-bottom:0">
+    <li><strong>Ortanca için sıralamamak.</strong> Veri sıralanmadan ortadaki değer alınamaz.</li>
+    <li><strong>Çift veri sayısında tek değer almak.</strong> Ortadaki iki değerin ortalaması alınır.</li>
+    <li><strong>OMS'de mutlak değeri atlamak.</strong> İşaretli farkların toplamı her zaman 0 çıkar.</li>
+    <li><strong>OMS'yi veri sayısına bölmeyi unutmak.</strong> Uzaklık toplamı OMS değildir; bölmek gerekir.</li>
+    <li><strong>Sayıyla yazılan her veriyi nicel saymak.</strong> Forma numarası kategoriktir.</li>
+    <li><strong>Modun tek olduğunu sanmak.</strong> Bir veri grubunda birden fazla mod olabilir; hiç mod olmayabilir de.</li>
+  </ul>
+</div>
+
+<h2 id="8-sinif">9. 8. sınıfta bu nereye bağlanıyor?</h2>
+
+<p>Bu konu LGS'de doğrudan sorulmuyor; ama 8. sınıfta <strong><a href="/8-sinif-matematik/veri-analizi/">veri analizi</a></strong> doğrudan bunun devamıdır. 8. sınıfta eklenen yeni şey <em>histogram</em> ve gruplandırılmış veridir; merkezî eğilim ölçüleri ise aynen kullanılmaya devam eder.</p>
+
+<div class="ornek">
+  <div class="soru">7'de ortalama, 8'de gruplandırılmış veri.</div>
+  <div class="hesap">7. sınıf: her veri ayrı ayrı bilinir
+   4, 7, 7, 9, 13  →  ortalama = 40/5 = 8
+
+8. sınıf: veriler aralıklara gruplanır
+   0-10 aralığı: 5 öğrenci
+   10-20 aralığı: 3 öğrenci
+   → histogramla gösterilir
+
+ortalama mantığı değişmez, sadece
+her aralığın orta değeri kullanılır</div>
+  <p>Ortalama, ortanca ve açıklık tanımları aynı kalıyor; yalnızca verinin sunum biçimi değişiyor.</p>
+</div>
+
+<h2 id="test">10. Kendini test et</h2>
+
+<ol>
+  <li>4, 7, 7, 9, 13 verilerinin ortalaması, ortancası ve modu kaçtır?</li>
+  <li>Aynı verilerin açıklığı kaçtır?</li>
+  <li>Aynı verilerin ortalama mutlak sapması kaçtır?</li>
+  <li>2, 4, 4, 6, 9, 11 verilerinin ortancası kaçtır?</li>
+  <li>10, 12, 14, 16, 18 verilerinin OMS'si kaçtır?</li>
+  <li>A: 48, 49, 51, 52 ve B: 40, 45, 55, 60 gruplarından hangisi daha tutarlıdır?</li>
+</ol>
+
+<details>
+  <summary>Cevapları göster</summary>
+  <div class="hesap">1) ortalama = 40 / 5 = 8
+   ortanca  = 7   (3. sıradaki değer)
+   mod      = 7   (2 kez tekrarlandı)
+
+2) açıklık = 13 − 4 = 9
+
+3) uzaklıklar: 4, 1, 1, 1, 5
+   toplam = 12
+   OMS = 12 / 5 = 2,4
+
+4) veri sayısı 6, çift
+   ortadaki iki değer 4 ve 6
+   ortanca = (4 + 6) / 2 = 5
+
+5) ortalama = 70 / 5 = 14
+   uzaklıklar: 4, 2, 0, 2, 4  → toplam 12
+   OMS = 12 / 5 = 2,4
+
+6) A: ortalama 50 , OMS = 6/4 = 1,5
+   B: ortalama 50 , OMS = 30/4 = 7,5
+   → A grubu daha tutarlı (OMS küçük)</div>
+</details>
+
+<h2>Sık sorulan sorular</h2>
+
+<h3>Kategorik ve nicel veri nasıl ayırt edilir?</h3>
+<p>Ortalamasını almak anlamlıysa nicel, değilse kategoriktir. Boy ve puan niceldir; göz rengi ve forma numarası kategoriktir — forma numaraları sayı olsa bile ortalaması bir şey ifade etmez.</p>
+
+<h3>Ortanca bulurken veri sayısı çift olursa ne yapılır?</h3>
+<p>Ortadaki iki değerin aritmetik ortalaması alınır. Örneğin 2, 4, 4, 6, 9, 11 verilerinde ortanca (4 + 6) / 2 = 5'tir ve bu sayı veri listesinde yer almaz.</p>
+
+<h3>Ortalama mutlak sapma neden mutlak değerle hesaplanır?</h3>
+<p>Çünkü işaretli farklar toplanırsa sonuç her zaman sıfır çıkar; ortalamanın altındaki ve üstündeki farklar birbirini götürür. Mutlak değer, uzaklıkları işaretten bağımsız toplamayı sağlar.</p>
+
+<h3>Açıklık ile ortalama mutlak sapma arasındaki fark nedir?</h3>
+<p>Açıklık yalnızca iki uç değere bakar, aradaki verileri hiç görmez. OMS ise her verinin ortalamaya uzaklığını hesaba katar, bu yüzden dağılımı daha doğru anlatır.</p>
+
+
+<div class="cta">
+  <h2>Konuyu öğrendin. Şimdi soru çöz.</h2>
+  <p>Veri sorularında hesap kolay, yorum kısmı pratikle geliyor. <strong>Net Up'ı ücretsiz indir:</strong> seviyene göre soru gelir, yanlışların hata defterine düşer, çözünce silinir. Türkçe ve Matematik'te binlerce soru, günlük seri ve lig — hepsi bedava.</p>
+  <div class="magaza-kart magaza">
+    <a href="https://apps.apple.com/app/id6768393770" aria-label="App Store'dan indirin">
+      <img src="/assets/appstore-badge-tr-black.svg" alt="App Store'dan indirin" width="176" height="52">
+    </a>
+    <a href="https://play.google.com/store/apps/details?id=com.netup.app" aria-label="Google Play'den indirin">
+      <img src="/assets/googleplay-badge-tr.svg" alt="Google Play'den indirin" width="175" height="52">
+    </a>
+  </div>
+</div>
+
+<a class="sonraki" href="/7-sinif-matematik/olasilik/">
+  <span>
+    <span class="et">Sonraki konu</span>
+    <span class="ad">Olasılık</span>
+  </span>
+  <span class="ok">→</span>
+</a>
+
+</div>
+</main>
+
+<footer class="alt">
+  <div class="wrap">
+    <p><a href="/7-sinif-matematik/">7. Sınıf Matematik</a> · <a href="/8-sinif-matematik/">8. Sınıf Matematik</a> · <a href="/7-sinif-turkce/">7. Sınıf Türkçe</a></p>
+    <p><strong>Net Up</strong> — LGS hazırlık uygulaması. 6, 7 ve 8. sınıf için Türkçe ve Matematik ücretsiz.</p>
+  </div>
+</footer>
+
+</body>
+</html>

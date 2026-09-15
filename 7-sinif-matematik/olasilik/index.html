@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Olasılık — 7. Sınıf Matematik | Net Up</title>
+<meta name="description" content="7. sınıf olasılık konu anlatımı: örnek uzay, teorik olasılık, tümleyen olay, ayrık ve ayrık olmayan olaylar. Adım adım çözümlü örnekler ve test.">
+<link rel="canonical" href="https://netup.website/7-sinif-matematik/olasilik/">
+<meta property="og:title" content="Olasılık — 7. Sınıf Matematik Konu Anlatımı">
+<meta property="og:description" content="Örnek uzay, teorik olasılık, tümleyen olay ve ayrık olaylar.">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="tr_TR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/ders.css">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Article", "headline": "Olasılık — 7. Sınıf Matematik Konu Anlatımı", "description": "Ornek uzay, teorik olasilik, tumleyen olay, ayrik ve ayrik olmayan olaylar.", "inLanguage": "tr-TR", "author": {"@type": "Organization", "name": "Net Up"}, "publisher": {"@type": "Organization", "name": "Net Up"}, "educationalLevel": "7. sınıf", "about": [{"@type": "Thing", "name": "Olasılık"}, {"@type": "Thing", "name": "7. Sınıf Matematik"}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Teorik olasılık nasıl hesaplanır?", "acceptedAnswer": {"@type": "Answer", "text": "Istenen cikti sayisi, tum cikti sayisina bolunur. Ornek: bir zar atildiginda asal sayi gelme olasiligi 3 bolu 6 = 1/2'dir, cunku asallar 2, 3 ve 5'tir."}}, {"@type": "Question", "name": "Örnek uzay nedir?", "acceptedAnswer": {"@type": "Answer", "text": "Bir deneyin tum olasi sonuclarinin kumesidir. Zar atmada 6 cikti, iki zar atmada 6 carpi 6 = 36 cikti, iki para atmada 4 cikti vardir."}}, {"@type": "Question", "name": "Tümleyen olay nedir?", "acceptedAnswer": {"@type": "Answer", "text": "Bir olayin gerceklesmedigi durumlarin olusturdugu olaydir. Bir olay ile tumleyeninin olasiliklari toplami 1'dir. Ornek: zarda 4'ten buyuk gelme olasiligi 1/3 ise gelmeme olasiligi 2/3'tur."}}, {"@type": "Question", "name": "Ayrık olaylar ne demek?", "acceptedAnswer": {"@type": "Answer", "text": "Ayni anda gerceklesemeyen, ortak ciktisi olmayan olaylardir. Ornek: zarda tek sayi gelmesi ile 4 gelmesi ayriktir. Ayrik olaylarda olasiliklar toplanabilir."}}, {"@type": "Question", "name": "En az bir koşulu olan sorular nasıl çözülür?", "acceptedAnswer": {"@type": "Answer", "text": "Tumleyen kullanilir. Ornek: bir para iki kez atildiginda en az bir yazi gelme olasiligi, hic yazi gelmeme olasiligi olan 1/4 degerinin 1'den cikarilmasiyla 3/4 bulunur."}}, {"@type": "Question", "name": "Olasılık 1'den büyük olabilir mi?", "acceptedAnswer": {"@type": "Answer", "text": "Olamaz. Her olasilik degeri 0 ile 1 arasindadir; 0 imkansiz olayi, 1 kesin olayi gosterir. 1'den buyuk bir sonuc bulunmussa hesapta hata vardir."}}]}
+</script>
+<script defer src="/assets/analytics.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a class="logo" href="/"><img src="/assets/app-icon-nav.png" alt="Net Up" width="30" height="30"> Net Up</a>
+    <a class="btn btn-ghost" style="background:var(--purple-50);color:var(--purple-700);box-shadow:none;padding:10px 20px;font-size:14.5px" href="https://apps.apple.com/app/id6768393770">Ücretsiz indir</a>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="bc"><a href="/7-sinif-matematik/">7. Sınıf Matematik</a> › Olasılık</div>
+    <h1>Olasılık</h1>
+    <p class="ozet">Örnek uzay, teorik olasılık, tümleyen olay ve ayrık olaylar — çözümlü örneklerle.</p>
+    <div class="etiketler">
+      <span class="etiket">7. sınıf · Tema 7</span>
+      <span class="etiket">Veriden Olasılığa</span>
+      <span class="etiket">8. sınıf olasılığın temeli</span>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+<p class="intro">Olasılıkta formül tek satır: <strong>istenen çıktı sayısı bölü tüm çıktı sayısı</strong>. Zorluk hesapta değil, <em>örnek uzayı doğru yazmakta</em> — özellikle iki zar veya iki para atma sorularında. Bu sayfada örnek uzaydan başlayıp tümleyen olay ve ayrık olaylara kadar gideceğiz.</p>
+
+<div class="icindekiler">
+  <b>Bu sayfada</b>
+  <ol>
+    <li><a href="#kavram">Temel kavramlar</a></li>
+    <li><a href="#teorik">Teorik olasılık</a></li>
+    <li><a href="#tumleyen">Tümleyen olay</a></li>
+    <li><a href="#ayrik">Ayrık ve ayrık olmayan olaylar</a></li>
+    <li><a href="#iki-zar">İki zar atma</a></li>
+    <li><a href="#sinav">Sınavda nasıl sorulur?</a></li>
+    <li><a href="#hatalar">Sık yapılan hatalar</a></li>
+    <li><a href="#8-sinif">8. sınıfta nereye bağlanıyor?</a></li>
+    <li><a href="#test">Kendini test et</a></li>
+  </ol>
+</div>
+
+
+<h2 id="kavram">1. Temel kavramlar</h2>
+
+<div class="tanim">
+  <strong>Örnek uzay:</strong> Bir deneyin <em>tüm olası sonuçlarının</em> kümesidir.<br>
+  <strong>Olay:</strong> Örnek uzayın bir alt kümesidir.<br>
+  <strong>Çıktı:</strong> Örnek uzayın tek bir elemanıdır.
+</div>
+
+<div class="hesap">bir zar atma deneyi:
+örnek uzay = {1, 2, 3, 4, 5, 6}     → 6 çıktı
+
+olay örnekleri:
+"asal sayı gelmesi"   = {2, 3, 5}   → 3 çıktı
+"4'ten büyük gelmesi" = {5, 6}      → 2 çıktı
+"çift gelmesi"        = {2, 4, 6}   → 3 çıktı</div>
+
+<div class="tablo-sar">
+<table>
+  <tr><th>Deney</th><th>Örnek uzay</th><th>Çıktı sayısı</th></tr>
+  <tr><td>Para atma</td><td>{Yazı, Tura}</td><td>2</td></tr>
+  <tr><td>Zar atma</td><td>{1, 2, 3, 4, 5, 6}</td><td>6</td></tr>
+  <tr><td>İki para atma</td><td>{YY, YT, TY, TT}</td><td>4</td></tr>
+  <tr><td>İki zar atma</td><td>(1,1) … (6,6)</td><td>36</td></tr>
+</table>
+</div>
+
+<h2 id="teorik">2. Teorik olasılık</h2>
+
+<div class="tanim">
+  <strong>Teorik olasılık:</strong> Bir olayın gerçekleşme olasılığı, o olayın çıktı sayısının örnek uzayın çıktı sayısına oranıdır.
+  <div class="hesap" style="margin-bottom:0">P(A) = istenen çıktı sayısı / tüm çıktı sayısı</div>
+</div>
+
+<p>Bir olasılık değeri her zaman <strong>0 ile 1 arasındadır</strong>. 0 imkânsız olayı, 1 kesin olayı gösterir.</p>
+
+<div class="ornek">
+  <div class="soru">Bir zar atıldığında asal sayı gelme olasılığı kaçtır?</div>
+  <div class="hesap">örnek uzay = {1, 2, 3, 4, 5, 6}   →  6 çıktı
+asal olanlar = {2, 3, 5}          →  3 çıktı
+
+P(asal) = 3/6 = 1/2</div>
+  <p><span class="sonuc">1/2</span> — dikkat: 1 asal sayı <em>değildir</em>, 2 ise asaldır.</p>
+</div>
+
+<div class="ornek">
+  <div class="soru">Bir zar atıldığında 4'ten büyük gelme olasılığı kaçtır?</div>
+  <div class="hesap">4'ten büyük olanlar = {5, 6}   →  2 çıktı
+
+P(4'ten büyük) = 2/6 = 1/3</div>
+  <p><span class="sonuc">1/3</span> — "4'ten büyük" ifadesinde 4 dâhil değildir. "4 ve daha büyük" olsaydı {4, 5, 6} olurdu.</p>
+</div>
+
+<div class="ornek">
+  <div class="soru">Bir torbada 4 kırmızı, 6 mavi ve 5 yeşil bilye var. Rastgele çekilen bir bilyenin mavi olma olasılığı kaçtır?</div>
+  <div class="hesap">toplam bilye = 4 + 6 + 5 = 15
+
+P(mavi) = 6/15 = 2/5</div>
+  <p><span class="sonuc">2/5</span></p>
+</div>
+
+<div class="kutu uyari">
+  <strong>Toplamı hesaplamayı atlamak.</strong> Yukarıdaki soruda payda 6 veya 15 değil, <em>15</em>'tir ve bu sayıyı bulmak için üç rengi toplaman gerekir. Torba sorularında en çok kaybedilen puan burada.
+</div>
+
+<h2 id="tumleyen">3. Tümleyen olay</h2>
+
+<div class="tanim">
+  <strong>Tümleyen olay:</strong> Bir olayın gerçekleşmediği durumların oluşturduğu olaydır. A olayının tümleyeni A' ile gösterilir.
+  <div class="hesap" style="margin-bottom:0">P(A) + P(A') = 1        →        P(A') = 1 − P(A)</div>
+</div>
+
+<div class="ornek">
+  <div class="soru">Bir zar atıldığında 4'ten büyük gelmeme olasılığı kaçtır?</div>
+  <div class="hesap">P(4'ten büyük) = 2/6 = 1/3
+
+tümleyen:
+P(4'ten büyük değil) = 1 − 1/3
+                     = 3/3 − 1/3
+                     = 2/3
+
+doğrudan sayarak kontrol:
+4'ten büyük olmayanlar = {1, 2, 3, 4}  →  4 çıktı
+4/6 = 2/3  ✓ aynı</div>
+  <p><span class="sonuc">2/3</span></p>
+</div>
+
+<div class="ornek">
+  <div class="soru">4 kırmızı, 6 mavi, 5 yeşil bilye olan torbadan çekilen bilyenin kırmızı olmama olasılığı kaçtır?</div>
+  <div class="hesap">toplam = 15
+P(kırmızı) = 4/15
+
+P(kırmızı değil) = 1 − 4/15
+                 = 15/15 − 4/15
+                 = 11/15
+
+kontrol: kırmızı olmayanlar = 6 + 5 = 11
+11/15  ✓</div>
+  <p><span class="sonuc">11/15</span></p>
+</div>
+
+<div class="kutu">
+  <strong>Tümleyen ne zaman kullanılır?</strong> Soruda "en az bir", "hiç ... olmama" veya "... değil" ifadeleri varsa tümleyenle çözmek neredeyse her zaman daha kısadır. İstenmeyeni hesaplayıp 1'den çıkarmak, tek tek saymaktan hızlıdır.
+</div>
+
+<div class="ornek">
+  <div class="soru">Bir para iki kez atıldığında en az bir yazı gelme olasılığı kaçtır?</div>
+  <div class="hesap">örnek uzay = {YY, YT, TY, TT}  →  4 çıktı
+
+"en az bir yazı" ifadesinin TÜMLEYENİ:
+"hiç yazı gelmemesi" = {TT}  →  1 çıktı
+P(hiç yazı yok) = 1/4
+
+P(en az bir yazı) = 1 − 1/4 = 3/4
+
+doğrudan sayarak kontrol:
+yazı içerenler = {YY, YT, TY}  →  3 çıktı
+3/4  ✓</div>
+  <p><span class="sonuc">3/4</span></p>
+</div>
+
+<h2 id="ayrik">4. Ayrık ve ayrık olmayan olaylar</h2>
+
+<div class="tanim">
+  <strong>Ayrık olaylar:</strong> Aynı anda gerçekleşemeyen olaylardır; ortak çıktıları yoktur. Kesişimleri boş kümedir.<br>
+  <strong>Ayrık olmayan olaylar:</strong> Ortak çıktısı bulunan olaylardır.
+</div>
+
+<div class="ornek">
+  <div class="soru">Zar atma deneyinde "tek sayı gelmesi" ile "4 gelmesi" olayları ayrık mıdır?</div>
+  <div class="hesap">tek sayı = {1, 3, 5}
+4 gelmesi = {4}
+
+ortak eleman var mı? YOK
+kesişim = boş küme
+
+→ bu iki olay AYRIKTIR</div>
+  <p><span class="sonuc">Ayrık olaylardır.</span></p>
+</div>
+
+<div class="ornek">
+  <div class="soru">Zar atma deneyinde "tek sayı gelmesi" ile "asal sayı gelmesi" olayları ayrık mıdır?</div>
+  <div class="hesap">tek sayı  = {1, 3, 5}
+asal sayı = {2, 3, 5}
+
+ortak elemanlar: 3 ve 5
+kesişim = {3, 5}  →  boş değil
+
+→ bu iki olay AYRIK DEĞİLDİR</div>
+  <p><span class="sonuc">Ayrık değildir.</span></p>
+</div>
+
+<div class="kutu">
+  <strong>Ayrık olaylarda toplama kuralı:</strong> İki olay ayrıksa, birinin <em>veya</em> diğerinin gerçekleşme olasılığı, olasılıkların toplamına eşittir.
+  <div class="hesap" style="margin-bottom:0">A ve B ayrık ise:   P(A veya B) = P(A) + P(B)</div>
+</div>
+
+<div class="ornek">
+  <div class="soru">Bir zar atıldığında tek sayı veya 4 gelme olasılığı kaçtır?</div>
+  <div class="hesap">bu iki olay ayrık (ortak çıktı yok)
+
+P(tek) = 3/6 = 1/2
+P(4)   = 1/6
+
+P(tek veya 4) = 3/6 + 1/6
+              = 4/6
+              = 2/3
+
+doğrudan sayarak kontrol:
+{1, 3, 5} ∪ {4} = {1, 3, 4, 5}  →  4 çıktı
+4/6 = 2/3  ✓</div>
+  <p><span class="sonuc">2/3</span></p>
+</div>
+
+<div class="kutu uyari">
+  <strong>Ayrık olmayan olaylarda olasılıkları doğrudan toplama.</strong> "Tek veya asal" olasılığı 3/6 + 3/6 = 1 değildir; çünkü 3 ve 5 iki kez sayılır. Doğrusu: {1, 3, 5} ∪ {2, 3, 5} = {1, 2, 3, 5}, yani 4 çıktı, olasılık 4/6 = 2/3. Ayrık olmayan olaylarda çıktıları saymak en güvenli yol.
+</div>
+
+<h2 id="iki-zar">5. İki zar atma</h2>
+
+<p>İki zar atıldığında örnek uzay 6 · 6 = <strong>36</strong> çıktıdan oluşur. Toplam soruları için istenen toplamı veren çiftleri saymak yeter.</p>
+
+<div class="ornek">
+  <div class="soru">İki zar atıldığında üst yüzlerdeki sayıların toplamının 7 olma olasılığı kaçtır?</div>
+  <div class="hesap">örnek uzay = 6 · 6 = 36 çıktı
+
+toplamı 7 yapan çiftler:
+(1,6) (2,5) (3,4) (4,3) (5,2) (6,1)
+→ 6 çıktı
+
+P(toplam 7) = 6/36 = 1/6</div>
+  <p><span class="sonuc">1/6</span> — 7, iki zarda en olası toplamdır.</p>
+</div>
+
+<div class="ornek">
+  <div class="soru">İki zar atıldığında toplamın 9 olma olasılığı kaçtır?</div>
+  <div class="hesap">toplamı 9 yapan çiftler:
+(3,6) (4,5) (5,4) (6,3)
+→ 4 çıktı
+
+P(toplam 9) = 4/36 = 1/9</div>
+  <p><span class="sonuc">1/9</span></p>
+</div>
+
+<div class="ornek">
+  <div class="soru">İki zar atıldığında her iki zarın da çift gelme olasılığı kaçtır?</div>
+  <div class="hesap">birinci zar çift: {2, 4, 6}  →  3 seçenek
+ikinci zar çift: {2, 4, 6}  →  3 seçenek
+
+istenen çıktı sayısı = 3 · 3 = 9
+
+P = 9/36 = 1/4</div>
+  <p><span class="sonuc">1/4</span></p>
+</div>
+
+<h2 id="sinav">6. Sınavda nasıl sorulur?</h2>
+
+<ul>
+  <li><strong>Torba soruları:</strong> Renkli bilye sayıları verilir, olasılık istenir. Toplamı doğru bulmak her şeyi belirliyor.</li>
+  <li><strong>Tümleyen soruları:</strong> "En az bir" veya "hiç" ifadesi görürsen 1'den çıkarma yöntemini kullan.</li>
+  <li><strong>Ayrık olma sorgusu:</strong> İki olay verilir, ayrık olup olmadığı sorulur. Kesişimi yazmak yeterli.</li>
+  <li><strong>İki zar ve toplam:</strong> Payda 36'dır; istenen toplamı veren çiftleri listeleyerek saymak en güvenli yöntem.</li>
+</ul>
+
+<h2 id="hatalar">7. Sık yapılan hatalar</h2>
+
+<div class="kutu uyari">
+  <ul style="margin-bottom:0">
+    <li><strong>Torbada toplamı yanlış bulmak.</strong> Payda tüm bilye sayısıdır; renkleri toplaman gerekir.</li>
+    <li><strong>1'i asal sanmak.</strong> 1 asal değildir; zar için asallar {2, 3, 5}'tir.</li>
+    <li><strong>"4'ten büyük" ile "4 ve daha büyük"ü karıştırmak.</strong> Birincisinde 4 dâhil değildir.</li>
+    <li><strong>Ayrık olmayan olayların olasılıklarını toplamak.</strong> Ortak çıktılar iki kez sayılır; bu yanlıştır.</li>
+    <li><strong>İki zarda paydayı 12 sanmak.</strong> Doğru payda 6 · 6 = 36'dır.</li>
+    <li><strong>Olasılığı 1'den büyük bulmak.</strong> Sonuç 1'i geçtiyse mutlaka hata yapmışsın demektir.</li>
+  </ul>
+</div>
+
+<h2 id="8-sinif">8. 8. sınıfta bu nereye bağlanıyor?</h2>
+
+<p>Bu konu LGS'de doğrudan sorulmuyor; ama 8. sınıfta <strong><a href="/8-sinif-matematik/olasilik/">olasılık</a></strong> doğrudan bunun devamıdır. 8. sınıfta eklenen şey <em>bağımlı ve bağımsız olaylar</em> ile birden fazla olayın <em>birlikte</em> gerçekleşme olasılığı. Örnek uzayı doğru yazamayan öğrenci, orada hiç ilerleyemez.</p>
+
+<div class="ornek">
+  <div class="soru">7'de tek olay, 8'de birlikte olasılık.</div>
+  <div class="hesap">torba: 4 kırmızı, 6 mavi, 5 yeşil  (toplam 15)
+
+7. sınıf: bir bilye çekilir
+P(mavi) = 6/15 = 2/5
+
+8. sınıf: iki bilye çekilir, ilki geri atılır (bağımsız)
+P(ikisi de mavi) = (6/15) · (6/15)
+                 = (2/5) · (2/5)
+                 = 4/25</div>
+  <p>İkinci adım eklendi ama tek bilye olasılığını bulmak yine ilk iş.</p>
+</div>
+
+<h2 id="test">9. Kendini test et</h2>
+
+<ol>
+  <li>Bir zar atıldığında asal sayı gelme olasılığı kaçtır?</li>
+  <li>Bir zar atıldığında 4'ten büyük gelmeme olasılığı kaçtır?</li>
+  <li>4 kırmızı, 6 mavi, 5 yeşil bilyeli torbadan mavi çekme olasılığı kaçtır?</li>
+  <li>Aynı torbadan kırmızı olmayan bir bilye çekme olasılığı kaçtır?</li>
+  <li>İki zar atıldığında toplamın 9 olma olasılığı kaçtır?</li>
+  <li>Bir para iki kez atıldığında en az bir yazı gelme olasılığı kaçtır?</li>
+</ol>
+
+<details>
+  <summary>Cevapları göster</summary>
+  <div class="hesap">1) örnek uzay 6 çıktı
+   asallar {2, 3, 5} → 3 çıktı
+   P = 3/6 = 1/2
+
+2) P(4'ten büyük) = 2/6 = 1/3
+   tümleyen: 1 − 1/3 = 2/3
+   kontrol: {1,2,3,4} → 4/6 = 2/3  ✓
+
+3) toplam = 4 + 6 + 5 = 15
+   P(mavi) = 6/15 = 2/5
+
+4) P(kırmızı) = 4/15
+   P(kırmızı değil) = 1 − 4/15 = 11/15
+   kontrol: 6 + 5 = 11 → 11/15  ✓
+
+5) örnek uzay 36 çıktı
+   toplam 9: (3,6)(4,5)(5,4)(6,3) → 4 çıktı
+   P = 4/36 = 1/9
+
+6) örnek uzay {YY, YT, TY, TT} → 4 çıktı
+   tümleyen "hiç yazı yok" = {TT} → 1/4
+   P = 1 − 1/4 = 3/4</div>
+</details>
+
+<h2>Sık sorulan sorular</h2>
+
+<h3>Örnek uzay nedir?</h3>
+<p>Bir deneyin tüm olası sonuçlarının kümesidir. Zar atmada {1, 2, 3, 4, 5, 6} olmak üzere 6 çıktı, iki zar atmada 6 · 6 = 36 çıktı vardır.</p>
+
+<h3>Olasılık 1'den büyük olabilir mi?</h3>
+<p>Olamaz. Her olasılık değeri 0 ile 1 arasındadır; 0 imkânsız olayı, 1 kesin olayı gösterir. 1'den büyük bir sonuç bulduysan hesapta hata vardır.</p>
+
+<h3>Tümleyen olay ne zaman kullanılır?</h3>
+<p>Soruda "en az bir", "hiç" veya "... değil" ifadeleri varsa. İstenmeyen durumun olasılığını bulup 1'den çıkarmak, tek tek saymaktan çok daha hızlıdır.</p>
+
+<h3>Ayrık olaylarda olasılıklar toplanır mı?</h3>
+<p>Evet, ayrık olaylarda P(A veya B) = P(A) + P(B) yazılabilir. Ama olaylar ayrık değilse ortak çıktılar iki kez sayılacağı için bu toplama yanlış sonuç verir.</p>
+
+
+<div class="cta">
+  <h2>Konuyu öğrendin. Şimdi soru çöz.</h2>
+  <p>Olasılıkta örnek uzayı hızlı yazmak, ancak bol soru çözerek oturuyor. <strong>Net Up'ı ücretsiz indir:</strong> seviyene göre soru gelir, yanlışların hata defterine düşer, çözünce silinir. Türkçe ve Matematik'te binlerce soru, günlük seri ve lig — hepsi bedava.</p>
+  <div class="magaza-kart magaza">
+    <a href="https://apps.apple.com/app/id6768393770" aria-label="App Store'dan indirin">
+      <img src="/assets/appstore-badge-tr-black.svg" alt="App Store'dan indirin" width="176" height="52">
+    </a>
+    <a href="https://play.google.com/store/apps/details?id=com.netup.app" aria-label="Google Play'den indirin">
+      <img src="/assets/googleplay-badge-tr.svg" alt="Google Play'den indirin" width="175" height="52">
+    </a>
+  </div>
+</div>
+
+<a class="sonraki" href="/7-sinif-matematik/">
+  <span>
+    <span class="et">Konu listesine dön</span>
+    <span class="ad">7. Sınıf Matematik — Tüm Konular</span>
+  </span>
+  <span class="ok">→</span>
+</a>
+
+</div>
+</main>
+
+<footer class="alt">
+  <div class="wrap">
+    <p><a href="/7-sinif-matematik/">7. Sınıf Matematik</a> · <a href="/8-sinif-matematik/">8. Sınıf Matematik</a> · <a href="/7-sinif-turkce/">7. Sınıf Türkçe</a></p>
+    <p><strong>Net Up</strong> — LGS hazırlık uygulaması. 6, 7 ve 8. sınıf için Türkçe ve Matematik ücretsiz.</p>
+  </div>
+</footer>
+
+</body>
+</html>
