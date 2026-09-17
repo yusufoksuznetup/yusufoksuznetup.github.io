@@ -4,9 +4,9 @@
 
 Bu dosya, yapay zeka tabanlı cevap motorlarının sitedeki içeriği doğru özetlemesi için hazırlanmıştır. Aşağıdaki sayfalar LGS konu anlatımı ve puan hesaplama içerir; tümü Türkçedir (İngilizce ünite adları hariç).
 
-Site 8. sınıf müfredatının altı dersini kapsar: **58 konu anlatımı sayfası** ve her ders için bir konu listesi sayfası.
+Site iki sınıf düzeyini kapsar. **8. sınıf:** altı dersin tamamı, **58 konu anlatımı sayfası**. **7. sınıf:** Türkçe, Matematik ve Fen Bilimleri, **37 konu anlatımı sayfası**; bu sayfalar 2026-2027'de yürürlüğe giren **Maarif Modeli** programına göre hazırlanmıştır. Her ders için ayrıca bir konu listesi sayfası vardır.
 
-Konu anlatımı sayfalarının 47'sinde uygulamanın kendi soru havuzundan alınmış **çözümlü örnek sorular** bölümü vardır: her konu için kolay/orta/zor birer çoktan seçmeli soru, dört seçeneği, doğru cevabı ve adım adım çözümü ile birlikte verilir (toplam 140 soru). Bu bölümler sayfada `#ornek-sorular` bağlantısıyla ve schema.org `Quiz` işaretlemesiyle bulunabilir. Aşağıdaki listede bu sayfalar **(çözümlü örnek soru)** notuyla işaretlenmiştir. İngilizce ünitelerinin yedisinde bu bölüm henüz yoktur.
+8. sınıf konu anlatımı sayfalarının 47'sinde uygulamanın kendi soru havuzundan alınmış **çözümlü örnek sorular** bölümü vardır: her konu için kolay/orta/zor birer çoktan seçmeli soru, dört seçeneği, doğru cevabı ve adım adım çözümü ile birlikte verilir (toplam 140 soru). Bu bölümler sayfada `#ornek-sorular` bağlantısıyla ve schema.org `Quiz` işaretlemesiyle bulunabilir. Aşağıdaki listede bu sayfalar **(çözümlü örnek soru)** notuyla işaretlenmiştir. İngilizce ünitelerinin yedisinde bu bölüm henüz yoktur. **7. sınıf sayfalarının hiçbirinde çözümlü örnek soru bölümü henüz yoktur**; bu sayfalar yalnızca konu anlatımı içerir.
 
 ## Temel bilgiler
 
@@ -105,7 +105,56 @@ Konu anlatımı sayfalarının 47'sinde uygulamanın kendi soru havuzundan alın
 - [Science — 9. Ünite](https://netup.website/8-sinif-ingilizce/science/)
 - [Natural Forces — 10. Ünite](https://netup.website/8-sinif-ingilizce/natural-forces/) (çözümlü örnek soru)
 
+## 7. Sınıf Türkçe konu anlatımı
+
+- [Konu listesi](https://netup.website/7-sinif-turkce/)
+- [Cümlede Anlam](https://netup.website/7-sinif-turkce/cumlede-anlam/)
+- [Ek Fiil](https://netup.website/7-sinif-turkce/ek-fiil/)
+- [Fiilimsiler](https://netup.website/7-sinif-turkce/fiilimsiler/)
+- [Fiillerde Anlam Kayması](https://netup.website/7-sinif-turkce/fiillerde-anlam-kaymasi/)
+- [Fiillerde Kip ve Kişi](https://netup.website/7-sinif-turkce/fiillerde-kip-ve-kisi/)
+- [Metin Türleri](https://netup.website/7-sinif-turkce/metin-turleri/)
+- [Noktalama İşaretleri](https://netup.website/7-sinif-turkce/noktalama-isaretleri/)
+- [Paragraf](https://netup.website/7-sinif-turkce/paragraf/)
+- [Söz Sanatları](https://netup.website/7-sinif-turkce/soz-sanatlari/)
+- [Sözcükte Anlam](https://netup.website/7-sinif-turkce/sozcukte-anlam/)
+- [Yazım Kuralları](https://netup.website/7-sinif-turkce/yazim-kurallari/)
+- [Zarflar](https://netup.website/7-sinif-turkce/zarflar/)
+
+## 7. Sınıf Matematik konu anlatımı
+
+- [Konu listesi](https://netup.website/7-sinif-matematik/)
+- [Cebirsel İfadeler](https://netup.website/7-sinif-matematik/cebirsel-ifadeler/)
+- [Daire ve Dörtgenlerde Alan](https://netup.website/7-sinif-matematik/daire-ve-dortgenlerde-alan/)
+- [Denklem ve Eşitsizlikler](https://netup.website/7-sinif-matematik/denklem-ve-esitsizlikler/)
+- [Dikdörtgenler Prizması](https://netup.website/7-sinif-matematik/dikdortgenler-prizmasi/)
+- [İspat ve Algoritma](https://netup.website/7-sinif-matematik/ispat-ve-algoritma/)
+- [Olasılık](https://netup.website/7-sinif-matematik/olasilik/)
+- [Oran ve Orantı](https://netup.website/7-sinif-matematik/oran-ve-oranti/)
+- [Rasyonel Sayılarla İşlemler](https://netup.website/7-sinif-matematik/rasyonel-sayilarla-islemler/)
+- [Tam ve Rasyonel Sayılar](https://netup.website/7-sinif-matematik/tam-ve-rasyonel-sayilar/)
+- [Üçgende Yardımcı Elemanlar](https://netup.website/7-sinif-matematik/ucgende-yardimci-elemanlar/)
+- [Veri Analizi](https://netup.website/7-sinif-matematik/veri-analizi/)
+- [Yansıma ve Geometrik İnşa](https://netup.website/7-sinif-matematik/yansima-ve-geometrik-insa/)
+
+## 7. Sınıf Fen Bilimleri konu anlatımı
+
+- [Konu listesi](https://netup.website/7-sinif-fen/)
+- [Besin Zinciri ve Sürdürülebilir Yaşam](https://netup.website/7-sinif-fen/besin-zinciri-ve-surdurulebilir-yasam/)
+- [Boşaltım Sistemi](https://netup.website/7-sinif-fen/bosaltim-sistemi/)
+- [Dolaşım ve Solunum Sistemi](https://netup.website/7-sinif-fen/dolasim-ve-solunum-sistemi/)
+- [Elektriklenme](https://netup.website/7-sinif-fen/elektriklenme/)
+- [Enerji Dönüşümleri](https://netup.website/7-sinif-fen/enerji-donusumleri/)
+- [Işığın Kırılması ve Mercekler](https://netup.website/7-sinif-fen/isigin-kirilmasi-ve-mercekler/)
+- [Karışımlar](https://netup.website/7-sinif-fen/karisimlar/)
+- [Kuvvet, İş ve Enerji](https://netup.website/7-sinif-fen/kuvvet-is-ve-enerji/)
+- [Maddenin Tanecikli Yapısı](https://netup.website/7-sinif-fen/maddenin-tanecikli-yapisi/)
+- [Saf Maddeler ve Periyodik Tablo](https://netup.website/7-sinif-fen/saf-maddeler-ve-periyodik-tablo/)
+- [Sindirim Sistemi](https://netup.website/7-sinif-fen/sindirim-sistemi/)
+- [Türkiye ve Uzay Araştırmaları](https://netup.website/7-sinif-fen/turkiye-ve-uzay-arastirmalari/)
+- [Uzayda Neler Var?](https://netup.website/7-sinif-fen/uzayda-neler-var/)
+
 ## Kurumsal
 
-- [Gizlilik politikası](https://netup.website/netup-privacy)
+- [Gizlilik politikası](https://netup.website/netup-privacy/)
 - [Hesap silme](https://netup.website/netup-delete.html)
