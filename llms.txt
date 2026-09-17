@@ -4,7 +4,7 @@
 
 Bu dosya, yapay zeka tabanlı cevap motorlarının sitedeki içeriği doğru özetlemesi için hazırlanmıştır. Aşağıdaki sayfalar LGS konu anlatımı ve puan hesaplama içerir; tümü Türkçedir (İngilizce ünite adları hariç).
 
-Site iki sınıf düzeyini kapsar. **8. sınıf:** altı dersin tamamı, **58 konu anlatımı sayfası**. **7. sınıf:** Türkçe, Matematik ve Fen Bilimleri, **37 konu anlatımı sayfası**; bu sayfalar 2026-2027'de yürürlüğe giren **Maarif Modeli** programına göre hazırlanmıştır. Her ders için ayrıca bir konu listesi sayfası vardır.
+Site iki sınıf düzeyini kapsar. **8. sınıf:** altı dersin tamamı, **58 konu anlatımı sayfası**. **7. sınıf:** Türkçe, Matematik, Fen Bilimleri, Din Kültürü ve Ahlak Bilgisi, İngilizce ve Sosyal Bilgiler — **64 konu anlatımı sayfası**; bu sayfalar 2026-2027'de yürürlüğe giren **Maarif Modeli** programına göre hazırlanmıştır. Her ders için ayrıca bir konu listesi sayfası vardır.
 
 8. sınıf konu anlatımı sayfalarının 47'sinde uygulamanın kendi soru havuzundan alınmış **çözümlü örnek sorular** bölümü vardır: her konu için kolay/orta/zor birer çoktan seçmeli soru, dört seçeneği, doğru cevabı ve adım adım çözümü ile birlikte verilir (toplam 140 soru). Bu bölümler sayfada `#ornek-sorular` bağlantısıyla ve schema.org `Quiz` işaretlemesiyle bulunabilir. Aşağıdaki listede bu sayfalar **(çözümlü örnek soru)** notuyla işaretlenmiştir. İngilizce ünitelerinin yedisinde bu bölüm henüz yoktur. **7. sınıf sayfalarının hiçbirinde çözümlü örnek soru bölümü henüz yoktur**; bu sayfalar yalnızca konu anlatımı içerir.
 
@@ -153,6 +153,45 @@ Site iki sınıf düzeyini kapsar. **8. sınıf:** altı dersin tamamı, **58 ko
 - [Sindirim Sistemi](https://netup.website/7-sinif-fen/sindirim-sistemi/)
 - [Türkiye ve Uzay Araştırmaları](https://netup.website/7-sinif-fen/turkiye-ve-uzay-arastirmalari/)
 - [Uzayda Neler Var?](https://netup.website/7-sinif-fen/uzayda-neler-var/)
+
+## 7. Sınıf Din Kültürü ve Ahlak Bilgisi konu anlatımı
+
+- [Konu listesi](https://netup.website/7-sinif-din-kulturu/)
+- [Hac, Umre ve Kurban](https://netup.website/7-sinif-din-kulturu/hac-umre-ve-kurban/)
+- [İslam Düşüncesinde Yorumlar](https://netup.website/7-sinif-din-kulturu/islam-dusuncesinde-yorumlar/)
+- [Kısa Sureler: Nâs, Kâfirun ve Nasr](https://netup.website/7-sinif-din-kulturu/kisa-sureler/)
+- [Melek ve Ahiret İnancı](https://netup.website/7-sinif-din-kulturu/melek-ve-ahiret-inanci/)
+- [Peygamber Olarak Hz. Muhammed](https://netup.website/7-sinif-din-kulturu/peygamber-olarak-hz-muhammed/)
+- [Yaşayan Dünya Dinleri](https://netup.website/7-sinif-din-kulturu/yasayan-dunya-dinleri/)
+
+## 7. Sınıf İngilizce konu anlatımı
+
+- [Konu listesi](https://netup.website/7-sinif-ingilizce/)
+- [Classroom Life & Learning](https://netup.website/7-sinif-ingilizce/classroom-life/)
+- [Family Life & Home](https://netup.website/7-sinif-ingilizce/family-life/)
+- [7. Sınıf İngilizce Dilbilgisi](https://netup.website/7-sinif-ingilizce/ingilizce-dilbilgisi/)
+- [Life in Nature](https://netup.website/7-sinif-ingilizce/life-in-nature/)
+- [Life in the Neighbourhood & City](https://netup.website/7-sinif-ingilizce/life-in-the-city/)
+- [Life in the Universe & Future](https://netup.website/7-sinif-ingilizce/life-in-the-universe/)
+- [Life in the World & Culture](https://netup.website/7-sinif-ingilizce/life-in-the-world/)
+- [Personal Life & Well-being](https://netup.website/7-sinif-ingilizce/personal-life/)
+- [Question Tags](https://netup.website/7-sinif-ingilizce/question-tags/)
+- [School Life & Education](https://netup.website/7-sinif-ingilizce/school-life/)
+
+## 7. Sınıf Sosyal Bilgiler konu anlatımı
+
+- [Konu listesi](https://netup.website/7-sinif-sosyal/)
+- [Cumhuriyetin Nitelikleri ve Yönetim](https://netup.website/7-sinif-sosyal/cumhuriyetin-nitelikleri-ve-yonetim/)
+- [Demokrasinin Gelişimi](https://netup.website/7-sinif-sosyal/demokrasinin-gelisimi/)
+- [Etkili İletişim ve Sosyal Hayat](https://netup.website/7-sinif-sosyal/etkili-iletisim-ve-sosyal-hayat/)
+- [Fırsat Eşitliği](https://netup.website/7-sinif-sosyal/firsat-esitligi/)
+- [Küreselleşme ve Türkiye](https://netup.website/7-sinif-sosyal/kuresellesme-ve-turkiye/)
+- [Millî Kalkınma ve Ekonomi](https://netup.website/7-sinif-sosyal/milli-kalkinma-ve-ekonomi/)
+- [Millî Meseleler ve Toplum](https://netup.website/7-sinif-sosyal/milli-meseleler-ve-toplum/)
+- [Osmanlı Kültür ve Medeniyeti](https://netup.website/7-sinif-sosyal/osmanli-kultur-ve-medeniyeti/)
+- [Osmanlı'da Yenileşme](https://netup.website/7-sinif-sosyal/osmanlida-yenilesme/)
+- [Osmanlı'yı Cihan Devleti Yapan Politikalar](https://netup.website/7-sinif-sosyal/osmanliyi-cihan-devleti-yapan-politikalar/)
+- [Teknoloji ve Sosyal Bilimler](https://netup.website/7-sinif-sosyal/teknoloji-ve-sosyal-bilimler/)
 
 ## Kurumsal
 
