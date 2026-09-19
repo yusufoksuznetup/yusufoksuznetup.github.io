@@ -47,3 +47,4 @@ User-agent: meta-externalagent
 Allow: /
 
 Sitemap: https://netup.website/sitemap.xml
+Sitemap: https://netup.website/sitemap-1.xml
