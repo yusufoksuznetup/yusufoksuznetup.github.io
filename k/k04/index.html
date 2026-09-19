@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, follow">
+<title>Net Up — Ücretsiz LGS Hazırlık</title>
+<meta name="description" content="Net Up ile LGS hazırlığı: Türkçe ve Matematik'te binlerce ücretsiz soru, otomatik hata defteri, günlük seri ve lig.">
+<link rel="canonical" href="https://netup.website/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/ders.css">
+<script defer src="/assets/analytics.js"></script>
+<style>
+  .kbox{max-width:560px;margin:0 auto;text-align:center}
+  .kbox h1{font-size:34px;line-height:1.15;letter-spacing:-.02em;margin:0 0 14px}
+  .kbox .alt{font-size:17px;color:var(--ink-500);margin:0 0 26px}
+  .ozet-liste{list-style:none;padding:0;margin:0 0 28px;display:inline-block;text-align:left}
+  .ozet-liste li{font-size:16px;margin:8px 0;padding-left:26px;position:relative}
+  .ozet-liste li::before{content:"";position:absolute;left:0;top:7px;width:10px;height:10px;
+    border-radius:50%;background:var(--purple-500)}
+  .kkod{font-size:12px;color:var(--ink-300);margin-top:28px}
+  .neto{display:block;margin:0 auto 6px;width:132px;height:auto}
+  @media (max-width:520px){.neto{width:106px}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a class="logo" href="/"><img src="/assets/app-icon-nav.png" alt="Net Up" width="30" height="30"> Net Up</a>
+  </div>
+</div>
+
+<main>
+<div class="wrap">
+<div class="kbox">
+
+  <img class="neto" src="/assets/neto.png" alt="Net Up maskotu Neto" width="589" height="1268">
+  <h1>Binlerce soru. Sıfır ücret.</h1>
+  <p class="alt">Karekodu okuttuğun için teşekkürler. Net Up, 6, 7 ve 8. sınıf için LGS hazırlık uygulaması.</p>
+
+  <ul class="ozet-liste">
+    <li>Türkçe ve Matematik'te binlerce <strong>ücretsiz</strong> soru</li>
+    <li>Yanlışların otomatik <strong>hata defterine</strong> düşer, çözünce silinir</li>
+    <li>Seviyene göre soru gelir — kolay gelirse zorlaşır</li>
+    <li>Günlük seri ve lig ile düzenli çalışma alışkanlığı</li>
+  </ul>
+
+  <div class="magaza-kart magaza">
+    <a href="https://apps.apple.com/app/id6768393770?ct=kirtasiye-k04&mt=8" aria-label="App Store'dan indirin">
+      <img src="/assets/appstore-badge-tr-black.svg" alt="App Store'dan indirin" width="176" height="52">
+    </a>
+    <a href="https://play.google.com/store/apps/details?id=com.netup.app&referrer=utm_source%3Dkirtasiye%26utm_medium%3Dqr%26utm_campaign%3Dk04" aria-label="Google Play'den indirin">
+      <img src="/assets/googleplay-badge-tr.svg" alt="Google Play'den indirin" width="175" height="52">
+    </a>
+  </div>
+
+  <div class="kutu" style="margin-top:34px;text-align:left">
+    <strong>Önce konuyu öğrenmek istersen:</strong> 7 ve 8. sınıf müfredatının tamamı
+    sitede ücretsiz — <a href="/8-sinif-turkce/">8. sınıf Türkçe</a>,
+    <a href="/8-sinif-matematik/">Matematik</a>, <a href="/8-sinif-fen/">Fen</a>,
+    <a href="/8-sinif-inkilap/">İnkılap Tarihi</a>,
+    <a href="/8-sinif-din-kulturu/">Din Kültürü</a>,
+    <a href="/8-sinif-ingilizce/">İngilizce</a> ve
+    <a href="/7-sinif-turkce/">7. sınıf konuları</a>.
+  </div>
+
+  <p class="kkod">K04</p>
+
+</div>
+</div>
+</main>
+
+<footer class="alt">
+  <div class="wrap">
+    <p><a href="/">netup.website</a></p>
+    <p><strong>Net Up</strong> — LGS hazırlık uygulaması. 6, 7 ve 8. sınıf için binlerce soru.</p>
+  </div>
+</footer>
+
+<script>
+  // Onay verilmisse GA4'e kaynak kodunu bildir. Onay yoksa analytics.js
+  // gtag cagrisini sessizce dusurur -> onaysiz olcum yapilmaz.
+  (function () {
+    var kod = 'K04';
+    function gonder() {
+      if (typeof gtag === 'function') {
+        gtag('event', 'kirtasiye_qr', { kaynak_kodu: kod, kanal: 'kirtasiye_basili' });
+      }
+    }
+    if (document.readyState === 'complete') { setTimeout(gonder, 800); }
+    else { window.addEventListener('load', function () { setTimeout(gonder, 800); }); }
+  })();
+</script>
+
+</body>
+</html>

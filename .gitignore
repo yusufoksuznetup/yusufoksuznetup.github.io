@@ -1,2 +1,4 @@
 .yedek/
 .DS_Store
+# gorsel optimizasyonu oncesi yedekler (repoya girmesin)
+assets/_yedek/
