@@ -12,8 +12,293 @@
 <meta property="og:locale" content="tr_TR">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/ders.css">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"></noscript>
+<style>/* ============================================================
+   Net Up — Ders / Konu Anlatımı Sayfaları
+   Tasarım token'ları index.html ile BİREBİR aynı.
+   Yeni ders sayfası eklerken sadece bu dosyayı link'le.
+   ============================================================ */
+
+:root{
+  /* --- index.html ile aynı --- */
+  --purple-900:#2E1A6B;
+  --purple-700:#4C2EAA;
+  --purple-600:#5B3FB8;
+  --purple-500:#7C5CE0;
+  --purple-400:#A78BFA;
+  --purple-50:#F5F3FF;
+  --orange:#F59E0B;
+  --orange-dark:#D97706;
+  --green:#10B981;
+  --bg:#FAFAFA;
+  --surface:#FFFFFF;
+  --ink-900:#0F0A2E;
+  --ink-700:#2D2554;
+  --ink-500:#5B5680;
+  --ink-300:#B8B5CC;
+  --line:#E8E5F2;
+  --shadow-sm:0 2px 8px rgba(46,26,107,.06);
+  --shadow-md:0 8px 24px rgba(46,26,107,.10);
+  --shadow-lg:0 24px 48px rgba(46,26,107,.18);
+  --radius-sm:10px;
+  --radius-md:16px;
+  --radius-lg:24px;
+  --radius-xl:32px;
+  /* --- ders sayfasına özel --- */
+  --okuma:760px;          /* makale okuma genişliği */
+  --red:#EF4444;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,system-ui,sans-serif;
+  font-size:17px;line-height:1.7;color:var(--ink-700);background:var(--bg);
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+}
+.wrap{max-width:var(--okuma);margin:0 auto;padding:0 22px}
+
+/* ---------- Üst bar ---------- */
+.topbar{background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+.logo{display:flex;align-items:center;gap:9px;text-decoration:none;color:var(--ink-900);font-weight:800;letter-spacing:-.02em;font-size:18px}
+.logo img{width:30px;height:30px;border-radius:9px;display:block;flex-shrink:0}
+.logo .dot{width:26px;height:26px;border-radius:8px;background:linear-gradient(135deg,var(--purple-600),var(--purple-500));display:inline-block}
+
+/* ---------- Hero ---------- */
+.hero{background:linear-gradient(135deg,var(--purple-900) 0%,var(--purple-700) 55%,var(--purple-600) 100%);color:#fff;padding:46px 0 42px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-90px;top:-90px;width:280px;height:280px;border-radius:50%;background:rgba(167,139,250,.16)}
+.hero .wrap{position:relative;z-index:1}
+.bc{font-size:14px;opacity:.8;margin-bottom:12px;letter-spacing:-.01em}
+.bc a{color:#fff;text-decoration:none;opacity:.9}
+.bc a:hover{opacity:1;text-decoration:underline}
+.hero h1{font-size:38px;line-height:1.15;font-weight:800;letter-spacing:-.03em;margin-bottom:12px}
+.hero .ozet{font-size:17.5px;opacity:.9;max-width:600px}
+.etiketler{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.etiket{background:rgba(255,255,255,.14);backdrop-filter:blur(4px);border-radius:999px;padding:5px 13px;font-size:13.5px;font-weight:600}
+
+/* ---------- Tipografi ---------- */
+main{padding:34px 0 70px}
+h2{font-size:26px;font-weight:800;color:var(--ink-900);letter-spacing:-.025em;margin:44px 0 14px;line-height:1.25}
+h2:first-child{margin-top:0}
+h3{font-size:19.5px;font-weight:700;color:var(--ink-900);letter-spacing:-.015em;margin:30px 0 10px}
+p{margin-bottom:16px}
+a{color:var(--purple-600)}
+strong{color:var(--ink-900);font-weight:700}
+ul,ol{margin:0 0 18px 24px}
+li{margin-bottom:8px}
+.intro{font-size:19px;color:var(--ink-500);line-height:1.65;margin-bottom:6px}
+
+/* ---------- İçindekiler ---------- */
+.icindekiler{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-lg);padding:22px 26px;margin:26px 0;box-shadow:var(--shadow-sm)}
+.icindekiler b{display:block;margin-bottom:12px;font-size:12.5px;text-transform:uppercase;letter-spacing:.09em;color:var(--purple-600);font-weight:800}
+.icindekiler ol{margin:0;padding-left:20px;font-size:16px;columns:2;column-gap:28px}
+.icindekiler li{margin-bottom:7px;break-inside:avoid}
+.icindekiler a{color:var(--ink-700);text-decoration:none}
+.icindekiler a:hover{color:var(--purple-600)}
+@media(max-width:560px){.icindekiler ol{columns:1}}
+
+/* ---------- Kutular ---------- */
+.tanim,.kutu,.ornek,details,.kisayol{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-lg);
+  padding:22px 24px;margin:22px 0;box-shadow:var(--shadow-sm);
+}
+.tanim{border-left:4px solid var(--purple-500)}
+.tanim strong{color:var(--purple-700)}
+.kutu{border-left:4px solid var(--orange)}
+/* WCAG AA: --orange-dark (#D97706) beyaz üzerinde 3.19 idi (eşik 4.5).
+   #B45309 -> 4.70. Kenarlıkta ve koyu zeminde --orange kalabilir;
+   sorun yalnızca beyaz üzerindeki METİNDE. */
+.kutu strong{color:#B45309}
+.uyari{border-left-color:var(--red);background:#FEF5F4}
+.uyari strong{color:#C0392B}
+.kisayol{border-left:4px solid var(--green);background:#F4FDF8}
+.kisayol strong{color:#0B7A4B}
+.kisayol a{font-weight:700;color:#0B7A4B}
+
+/* ---------- Örnek ---------- */
+.ornek{border-top:3px solid var(--purple-400)}
+.ornek .soru{font-weight:700;color:var(--ink-900);margin-bottom:12px;font-size:17.5px}
+.ornek .soru::before{
+  content:"ÖRNEK";display:inline-block;font-size:11px;letter-spacing:.11em;
+  color:var(--purple-600);font-weight:800;background:var(--purple-50);
+  padding:4px 10px;border-radius:999px;margin-bottom:10px;
+}
+.ornek .soru::before{display:block;width:fit-content}
+.ornek p:last-child{margin-bottom:0}
+
+/* ---------- Hesap / cümle blokları ---------- */
+.hesap{
+  font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,monospace;
+  background:var(--purple-50);border:1px solid #E9E3FE;border-radius:var(--radius-md);
+  padding:16px 18px;margin:12px 0;font-size:15px;line-height:1.75;
+  overflow-x:auto;white-space:pre-wrap;color:var(--ink-900);
+}
+.cumle{background:var(--purple-50);border-radius:var(--radius-md);padding:14px 18px;margin:12px 0;font-size:17px;color:var(--ink-900)}
+.cumle em{font-style:normal;background:#FDE9B8;padding:2px 7px;border-radius:6px;font-weight:700;color:#7A4E00}
+.sonuc{color:#0B7A4B;font-weight:800}
+
+/* ---------- Tablo ---------- */
+.tablo-sar{overflow-x:auto;margin:20px 0;border:1px solid var(--line);border-radius:var(--radius-lg);background:var(--surface);box-shadow:var(--shadow-sm)}
+table{width:100%;border-collapse:collapse;font-size:16px}
+th,td{text-align:left;padding:13px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:none}
+th{background:var(--purple-50);font-weight:700;color:var(--ink-900);font-size:14.5px;letter-spacing:.01em}
+td code{background:var(--purple-50);color:var(--purple-700);padding:2px 8px;border-radius:6px;font-size:14.5px;font-weight:600;font-family:ui-monospace,Menlo,monospace}
+
+/* ---------- Açılır cevap ---------- */
+details{padding:18px 24px}
+details[open]{box-shadow:var(--shadow-md)}
+summary{font-weight:700;cursor:pointer;color:var(--purple-700);font-size:16.5px;list-style:none;display:flex;align-items:center;gap:9px}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"▸";color:var(--purple-500);font-size:15px;transition:transform .15s ease}
+details[open] summary::before{transform:rotate(90deg)}
+details>*:not(summary){margin-top:14px}
+
+/* ---------- CTA ---------- */
+.cta{
+  background:linear-gradient(135deg,var(--purple-900),var(--purple-700));
+  color:#fff;border-radius:var(--radius-xl);padding:38px 30px;margin:48px 0 16px;
+  text-align:center;box-shadow:var(--shadow-lg);position:relative;overflow:hidden;
+}
+.cta::after{content:"";position:absolute;left:-60px;bottom:-80px;width:220px;height:220px;border-radius:50%;background:rgba(245,158,11,.14)}
+.cta>*{position:relative;z-index:1}
+.cta h2{color:#fff;margin:0 0 12px;font-size:25px;letter-spacing:-.025em}
+.cta p{opacity:.9;font-size:16.5px;margin-bottom:24px;max-width:520px;margin-left:auto;margin-right:auto}
+.cta strong{color:var(--orange)}
+.btnlar{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  padding:15px 28px;border-radius:999px;font-weight:700;font-size:16px;
+  letter-spacing:-.01em;border:none;cursor:pointer;text-decoration:none;
+  transition:transform .15s ease,box-shadow .15s ease,background .15s ease;
+  font-family:inherit;
+}
+.btn-light{background:#fff;color:var(--purple-700);box-shadow:0 6px 18px rgba(15,10,46,.25)}
+.btn-light:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(15,10,46,.32)}
+.btn-ghost{background:rgba(255,255,255,.13);color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.22)}
+.btn-ghost:hover{background:rgba(255,255,255,.2);transform:translateY(-2px)}
+
+/* ---------- Mağaza badge'leri ----------
+   Resmî Türkçe badge'ler. Apple: TR_blk (siyah) / TR_wht (beyaz) varyantı var.
+   Google Play: yalnızca resmî "color" (siyah zeminli) varyant vardır — beyaz
+   versiyonu YOKTUR ve badge yeniden renklendirilemez (marka kuralı).
+   Bu yüzden koyu zeminde badge'ler BEYAZ bir alanın içine konur; badge'in
+   kendisine dokunulmaz. İkisi de kenara kadar grafik olduğu için EŞİT
+   yükseklikte gösterilir.                                                   */
+.magaza{display:inline-flex;gap:14px;align-items:center;flex-wrap:wrap;justify-content:center}
+.magaza a{display:inline-flex;transition:transform .15s ease,filter .15s ease}
+.magaza a:hover{transform:translateY(-2px);filter:brightness(1.08)}
+.magaza img{height:52px;width:auto;display:block}
+
+/* koyu zemin (CTA) için beyaz indirme alanı */
+.magaza-kart{
+  background:#fff;border-radius:var(--radius-lg);padding:18px 22px;
+  display:inline-flex;gap:14px;align-items:center;flex-wrap:wrap;justify-content:center;
+  box-shadow:0 10px 30px rgba(15,10,46,.30);
+}
+
+/* ---------- Sonraki konu / footer ---------- */
+.sonraki{
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-lg);
+  padding:22px 26px;margin:28px 0;text-decoration:none;box-shadow:var(--shadow-sm);
+  transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
+}
+.sonraki:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:var(--purple-400)}
+.sonraki .et{font-size:12.5px;text-transform:uppercase;letter-spacing:.09em;color:var(--purple-600);font-weight:800;display:block;margin-bottom:4px}
+.sonraki .ad{font-size:19px;font-weight:750;color:var(--ink-900);letter-spacing:-.02em}
+.sonraki .ok{font-size:24px;color:var(--purple-500);flex-shrink:0}
+
+footer.alt{border-top:1px solid var(--line);background:var(--surface);padding:30px 0;font-size:15px;color:var(--ink-500)}
+footer.alt p{margin-bottom:8px}
+footer.alt p:last-child{margin-bottom:0}
+footer.alt a{color:var(--purple-600);text-decoration:none;font-weight:600}
+footer.alt a:hover{text-decoration:underline}
+
+/* ---------- Klavye odağı (erişilebilirlik) ----------
+   Hover durumları vardı ama odak göstergesi yoktu: Tab ile gezen kullanıcı
+   nerede olduğunu göremiyordu. :focus-visible yalnızca klavye/erişilebilirlik
+   girdisinde görünür, fare tıklamasında çıkmaz.                            */
+a:focus-visible,
+summary:focus-visible,
+.magaza a:focus-visible,
+.sonraki:focus-visible{
+  outline:3px solid var(--purple-500);
+  outline-offset:3px;
+  border-radius:6px;
+}
+.hero a:focus-visible,
+.cta a:focus-visible{outline-color:#fff}
+
+/* ---------- Hareket tercihi ----------
+   Kullanıcı işletim sisteminde "hareketi azalt" seçtiyse kalkma/kayma
+   efektlerini kapat; işlevsellik aynı kalır.                              */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    transition-duration:.01ms !important;
+    animation-duration:.01ms !important;
+    animation-iteration-count:1 !important;
+    scroll-behavior:auto !important;
+  }
+  .magaza a:hover,.sonraki:hover,.btn-light:hover,.btn-ghost:hover{transform:none}
+}
+
+/* ---------- Mobil ---------- */
+@media(max-width:560px){
+  body{font-size:16.5px}
+  .hero{padding:34px 0 32px}
+  .hero h1{font-size:29px}
+  .hero .ozet{font-size:16.5px}
+  h2{font-size:22px;margin-top:36px}
+  h3{font-size:18px}
+  .intro{font-size:17.5px}
+  .tanim,.kutu,.ornek,details,.kisayol{padding:18px 18px}
+  .cta{padding:30px 20px;border-radius:var(--radius-lg)}
+  .cta h2{font-size:21px}
+  .btn{width:100%}
+  .sonraki{flex-direction:column;align-items:flex-start}
+  .magaza img{height:46px}
+  .magaza-kart{padding:14px 16px;gap:10px;border-radius:var(--radius-md)}
+}
+
+/* ---------- Havuzdan çözümlü örnek soru (GEO bloğu) ---------- */
+.ornek-soru{
+  background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--purple-500);
+  border-radius:var(--radius-lg);padding:22px 24px;margin:22px 0;box-shadow:var(--shadow-sm);
+}
+.ornek-soru .rozet{
+  display:inline-block;font-size:11px;letter-spacing:.11em;font-weight:800;
+  padding:4px 10px;border-radius:999px;margin-bottom:12px;
+}
+.rozet.z1{background:#E8F9F1;color:#0B7A4B}
+.rozet.z2{background:#FDF3E0;color:#B45309}
+.rozet.z3{background:#FDE9EC;color:#C0392B}
+.ornek-soru .kok{font-weight:700;color:var(--ink-900);font-size:17.5px;margin:0 0 12px}
+.ornek-soru .kok:last-of-type{margin-bottom:14px}
+.secenekler{list-style:none;margin:0;padding:0}
+.secenekler li{
+  border:1px solid var(--line);border-radius:var(--radius-md);padding:11px 15px;
+  margin-bottom:8px;font-size:16.5px;color:var(--ink-700);overflow:hidden;
+}
+.secenekler li .h{font-weight:800;color:var(--purple-600);margin-right:8px}
+.secenekler li.dogru{background:#F4FDF8;border-color:#A7E8C8}
+.secenekler li.dogru .h{color:#0B7A4B}
+.secenekler li.dogru::after{
+  content:"✓ doğru";float:right;font-size:12.5px;font-weight:800;
+  color:#0B7A4B;letter-spacing:.04em;margin-left:10px;
+}
+.ornek-soru details{margin:14px 0 0;padding:14px 18px;background:var(--purple-50);border-color:#E9E3FE}
+.cozum p{margin:0 0 9px;font-size:16px}
+.cozum p.adim{padding-left:2px;color:var(--ink-700)}
+.cozum p:last-child{margin-bottom:0}
+@media(max-width:560px){
+  .ornek-soru{padding:18px 18px}
+  .secenekler li.dogru::after{content:"✓";float:right}
+}
+</style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Article",
 "headline":"Cümle Türleri — 8. Sınıf Konu Anlatımı",

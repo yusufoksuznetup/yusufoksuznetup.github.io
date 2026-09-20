@@ -125,6 +125,37 @@
     });
   }
 
+  // --- MAGAZA TIKLAMASI OLCUMU -------------------------------------
+  // 134 ders sayfasinda magaza rozetine basilip basilmadigi olculmuyordu;
+  // "sayfa -> indirme" oranini bilmeden ucretli trafik almak anlamsiz.
+  // Delegasyonla dinliyoruz: sayfalara satir ici kod eklemeye gerek yok.
+  // Onay yoksa yukarudaki gtag kilifi cagriyi sessizce dusurur.
+  function sayfaTipi(yol) {
+    if (yol === '/' || yol === '/index.html') return 'anasayfa';
+    if (yol.indexOf('/k/') === 0)             return 'kirtasiye_qr';
+    if (/^\/[78]-sinif-[^\/]+\/?$/.test(yol)) return 'ders_pillar';
+    if (/^\/[78]-sinif-[^\/]+\/.+/.test(yol)) return 'ders_konu';
+    return 'diger';
+  }
+
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+    if (!a) return;
+    var href = a.getAttribute('href') || '';
+    var magaza = href.indexOf('apps.apple.com') > -1 ? 'app_store'
+               : href.indexOf('play.google.com') > -1 ? 'google_play' : null;
+    if (!magaza) return;
+    var yol = location.pathname;
+    // Anasayfada ZATEN satir ici store_click var (index.html ~2111) -> cift
+    // saymamak icin orayi atliyoruz; bu dinleyici eksik olan yerleri kapatiyor.
+    if (sayfaTipi(yol) === 'anasayfa') return;
+    gtag('event', 'store_click', {
+      magaza:     magaza,
+      sayfa_yolu: yol,
+      sayfa_tipi: sayfaTipi(yol)
+    });
+  }, true);
+
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
   } else {
