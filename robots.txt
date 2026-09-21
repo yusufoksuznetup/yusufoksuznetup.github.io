@@ -1,6 +1,31 @@
 User-agent: *
 Allow: /
 
+# --- Uygulama koprü sayfaları: ac / duello / reset (21 Eyl 2026) ---
+# Bu üç sayfa JS ile com.netup.app:// şemasına yönlendiriyor; Googlebot o şemayı
+# izleyemediği için GSC "Yeniden yönlendirme hatası" üretiyordu.
+#
+# ÇÖZÜM: sayfaların <head>'ine <meta name="robots" content="noindex, follow">
+# konuldu. BURAYA BİLEREK "Disallow" YAZILMADI. Üç nedenle:
+#
+#  1) robots.txt ile engellenen sayfa TARANMAZ; taranmayan sayfadaki noindex
+#     HİÇBİR ZAMAN GÖRÜLMEZ. İkisi birlikte kullanılırsa noindex ölü koda döner
+#     ve URL dizinde snippet'siz olarak asılı kalabilir. (Google'ın belgelenmiş
+#     davranışı.) Dizinden gerçekten çıkarmanın tek yolu taramaya İZİN VERMEK.
+#
+#  2) GitHub Pages aynı dosyayı hem /duello hem /duello.html adresinde sunuyor
+#     ve uygulamanın paylaştığı biçim UZANTISIZ olan (kDuelLinkBase =
+#     https://netup.website/duello). Disallow her yolu ayrı ayrı listelemek
+#     zorunda; noindex ikisini de otomatik kapsar.
+#
+#  3) duello.html düello davetinin WhatsApp/Telegram önizlemesini üretiyor
+#     (og:title, og:description) ve o tarayıcılar robots.txt'e UYAR. Buraya
+#     konacak bir Disallow "*" grubuna taşınırsa davet linkinin önizlemesi
+#     sessizce bozulur. Hiç Disallow olmaması bu riski kökten kaldırır.
+#
+# ⚠️ Bu sayfalar için robots.txt'e Disallow EKLEMEYİN. Arama sonucundan
+#    uzak tutan şey sayfalardaki noindex etiketidir.
+
 # --- Yapay zeka cevap motorları (GEO) ---
 # Not: yukarıdaki "*" kuralı bunların hepsini ZATEN kapsıyor; aşağıdaki bloklar
 # niyeti açık kılmak ve ileride yanlışlıkla konacak toptan bir Disallow'a karşı
@@ -47,4 +72,3 @@ User-agent: meta-externalagent
 Allow: /
 
 Sitemap: https://netup.website/sitemap.xml
-Sitemap: https://netup.website/sitemap-1.xml
