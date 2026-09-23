@@ -2108,11 +2108,18 @@ document.querySelectorAll('#navLinks a').forEach(a => {
     link.addEventListener('click', function() {
       var store = link.href.indexOf('apple.com') > -1 ? 'app_store' : 'google_play';
       var location = link.closest('.hero') ? 'hero' : (link.closest('.final-cta') ? 'final_cta' : (link.closest('.header') ? 'header' : 'other'));
+      // 'magaza' ve 'sayfa_tipi' assets/analytics.js'teki delege dinleyiciyle
+      // AYNI şemadır; sitedeki tüm store_click olayları tek dille okunabilsin
+      // diye buraya da eklendi. Eski alanlar (store/location/event_*) geçmiş
+      // veriyle sürekliliği bozmamak için KORUNDU — silmeyin.
       ga('store_click', {
         'event_category': 'cta',
         'event_label': store + '_' + location,
         'store': store,
-        'location': location
+        'location': location,
+        'magaza': store,
+        'sayfa_tipi': 'anasayfa',
+        'sayfa_yolu': window.location.pathname
       });
     });
   });
