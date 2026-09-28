@@ -140,10 +140,14 @@
     <div class="code-box">
       <div class="code-label">MEYDAN KODU</div>
       <div class="code" id="code-text-1">------</div>
-      <div class="copy-hint">Uygulamayı açınca “Kodla Katıl” bölümüne yaz.</div>
+      <div class="copy-hint" id="copy-hint-1">Uygulamayı açınca “Kodla Katıl” bölümüne yaz.</div>
     </div>
+    <!-- 28 Eyl 2026 (#78-B): iPhone'da mağaza linki referrer taşımaz; kod panoya
+         kopyalanırsa uygulama ilk girişte panoyu okuyup düelloyu kendisi açar.
+         Pano yazımı iOS Safari'de yalnız kullanıcı dokunuşuyla çalışır → buton. -->
+    <button class="btn" id="copy-btn" onclick="copyCode()">Kodu kopyala</button>
     <div class="store-links">
-      <a href="https://play.google.com/store/apps/details?id=com.netup.app" onclick="duelEvent('duel_store_click',{store:'play'})">Google Play</a>
+      <a class="play-link" href="https://play.google.com/store/apps/details?id=com.netup.app" onclick="duelEvent('duel_store_click',{store:'play'})">Google Play</a>
       <a href="https://apps.apple.com/tr/app/id6768393770" onclick="duelEvent('duel_store_click',{store:'appstore'})">App Store</a>
     </div>
     <button class="btn btn-secondary" style="margin-top:14px" onclick="tryOpen()">Uygulamam var, tekrar dene</button>
@@ -160,7 +164,7 @@
       <div class="copy-hint">Telefonunda Net Up'ı aç → “Kodla Katıl”.</div>
     </div>
     <div class="store-links">
-      <a href="https://play.google.com/store/apps/details?id=com.netup.app" onclick="duelEvent('duel_store_click',{store:'play'})">Google Play</a>
+      <a class="play-link" href="https://play.google.com/store/apps/details?id=com.netup.app" onclick="duelEvent('duel_store_click',{store:'play'})">Google Play</a>
       <a href="https://apps.apple.com/tr/app/id6768393770" onclick="duelEvent('duel_store_click',{store:'appstore'})">App Store</a>
     </div>
   </div>
@@ -188,6 +192,31 @@
     document.getElementById(id).classList.remove('hidden');
   }
 
+  // Android: Install Referrer ile kod kurulumdan sonra uygulamaya taşınır
+  // (utm_source=duel → attribution 'duel', utm_content=duel_KOD → otomatik katılım).
+  function setPlayReferrer() {
+    var ref = encodeURIComponent('utm_source=duel&utm_medium=invite&utm_content=duel_' + code);
+    var links = document.getElementsByClassName('play-link');
+    for (var i = 0; i < links.length; i++) {
+      links[i].href = 'https://play.google.com/store/apps/details?id=com.netup.app&referrer=' + ref;
+    }
+  }
+
+  function copyCode() {
+    var done = function() {
+      document.getElementById('copy-btn').textContent = 'Kopyalandı ✓';
+      document.getElementById('copy-hint-1').textContent = 'Uygulamayı kurup giriş yapınca meydan okuma kendiliğinden açılır.';
+      duelEvent('duel_code_copied');
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(code).then(done).catch(function() { fallbackCopy(); done(); });
+    } else { fallbackCopy(); done(); }
+  }
+  function fallbackCopy() {
+    var ta = document.createElement('textarea'); ta.value = code; document.body.appendChild(ta);
+    ta.select(); try { document.execCommand('copy'); } catch (e) {} document.body.removeChild(ta);
+  }
+
   function tryOpen() {
     show('state-loading');
     window.location.href = 'com.netup.app://duel?kod=' + encodeURIComponent(code);
@@ -205,6 +234,7 @@
   } else {
     document.getElementById('code-text-1').textContent = code;
     document.getElementById('code-text-2').textContent = code;
+    setPlayReferrer();
     duelEvent('duel_link_opened', { device: isMobile ? 'mobile' : 'desktop' });
     if (!isMobile) {
       show('state-desktop');
