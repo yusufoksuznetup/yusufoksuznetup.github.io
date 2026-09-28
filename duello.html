@@ -23,6 +23,19 @@
   <meta property="og:url" content="https://netup.website/duello" />
   <meta property="og:locale" content="tr_TR" />
   <meta name="twitter:card" content="summary_large_image" />
+  <!-- 28 Eyl 2026: düello davet zincirinin tek ölçülemeyen halkası "paylaşıldı → link açıldı"ydı.
+       Uygulama bunu göremez; sayfa görür. Olaylar: duel_link_opened (kod, cihaz) →
+       duel_app_opened | duel_no_app | duel_store_click(store) | duel_desktop | duel_invalid_link.
+       Aynı web mülkü (G-XE7YQ3V03H); kod 6 harf, kişisel veri değil. -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XE7YQ3V03H', { 'page_title': 'Net Up — Meydan Okuma', 'send_page_view': true, 'anonymize_ip': true });
+    var _ga = document.createElement('script'); _ga.async = true;
+    _ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-XE7YQ3V03H'; document.head.appendChild(_ga);
+    function duelEvent(name, extra) { try { gtag('event', name, Object.assign({ 'kod': window.__duelKod || '' }, extra || {})); } catch (e) {} }
+  </script>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&display=swap" rel="stylesheet" />
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -130,8 +143,8 @@
       <div class="copy-hint">Uygulamayı açınca “Kodla Katıl” bölümüne yaz.</div>
     </div>
     <div class="store-links">
-      <a href="https://play.google.com/store/apps/details?id=com.netup.app">Google Play</a>
-      <a href="https://apps.apple.com/tr/app/id6768393770">App Store</a>
+      <a href="https://play.google.com/store/apps/details?id=com.netup.app" onclick="duelEvent('duel_store_click',{store:'play'})">Google Play</a>
+      <a href="https://apps.apple.com/tr/app/id6768393770" onclick="duelEvent('duel_store_click',{store:'appstore'})">App Store</a>
     </div>
     <button class="btn btn-secondary" style="margin-top:14px" onclick="tryOpen()">Uygulamam var, tekrar dene</button>
   </div>
@@ -147,8 +160,8 @@
       <div class="copy-hint">Telefonunda Net Up'ı aç → “Kodla Katıl”.</div>
     </div>
     <div class="store-links">
-      <a href="https://play.google.com/store/apps/details?id=com.netup.app">Google Play</a>
-      <a href="https://apps.apple.com/tr/app/id6768393770">App Store</a>
+      <a href="https://play.google.com/store/apps/details?id=com.netup.app" onclick="duelEvent('duel_store_click',{store:'play'})">Google Play</a>
+      <a href="https://apps.apple.com/tr/app/id6768393770" onclick="duelEvent('duel_store_click',{store:'appstore'})">App Store</a>
     </div>
   </div>
 
@@ -166,6 +179,7 @@
   var code    = (params.get('kod') || params.get('code') || '').trim().toUpperCase();
   var isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
   var appOpened = false;
+  window.__duelKod = code;
 
   function show(id) {
     ['state-loading','state-success','state-no-app','state-desktop','state-invalid'].forEach(function(s) {
@@ -177,21 +191,24 @@
   function tryOpen() {
     show('state-loading');
     window.location.href = 'com.netup.app://duel?kod=' + encodeURIComponent(code);
-    setTimeout(function() { if (!appOpened) show('state-no-app'); }, 2500);
+    setTimeout(function() { if (!appOpened) { show('state-no-app'); duelEvent('duel_no_app'); } }, 2500);
   }
 
   // Uygulama açılınca sekme arka plana düşer
   document.addEventListener('visibilitychange', function() {
-    if (document.hidden) { appOpened = true; show('state-success'); }
+    if (document.hidden && !appOpened) { appOpened = true; show('state-success'); duelEvent('duel_app_opened'); }
   });
 
   if (!code || code.length !== 6) {
     show('state-invalid');
+    duelEvent('duel_invalid_link');
   } else {
     document.getElementById('code-text-1').textContent = code;
     document.getElementById('code-text-2').textContent = code;
+    duelEvent('duel_link_opened', { device: isMobile ? 'mobile' : 'desktop' });
     if (!isMobile) {
       show('state-desktop');
+      duelEvent('duel_desktop');
     } else {
       tryOpen();
     }
