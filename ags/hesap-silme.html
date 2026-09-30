@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hesap silme · Net Up AGS</title>
+<meta name="description" content="Net Up AGS — AGS'ye günde 20 dakika. Hesap silme.">
+<meta name="theme-color" content="#FFFFFF">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stil.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<header class="cubuk">
+  <div class="cubuk-ic">
+    <a class="marka" href="index.html"><span class="isaret">AGS</span>Net Up AGS</a>
+    <nav aria-label="Sayfalar"><a href="destek.html">Destek</a><a href="gizlilik.html">Gizlilik</a><a href="kosullar.html" class="ikincil">Koşullar</a></nav>
+  </div>
+</header>
+
+<main class="kabuk"><h1>Hesabını silmek</h1>
+<p class="giris">Hesabını istediğin an, bize sormadan silebilirsin.</p>
+
+<div class="kart">
+  <h2>Uygulamadan (önerilen)</h2>
+  <p><b>Profil</b> sekmesini aç → en alta in → <b>"Hesabımı sil"</b> → onayla.</p>
+  <p>İşlem anında yapılır; onaydan sonra geri alınamaz.</p>
+</div>
+
+<div class="kart">
+  <h2>Telefonun elinde değilse</h2>
+  <p>Hesabına kayıtlı numarayı yazarak <a href="mailto:destek@netup.website?subject=Hesap%20silme%20talebi">destek@netup.website</a> adresine talep gönderebilirsin. Kimliğini doğrulamak için hesabına bir kod göndeririz; doğruladıktan sonra <b>en geç 30 gün içinde</b> sileriz.</p>
+</div>
+
+<h2>Ne siliniyor</h2>
+<ul>
+  <li>Hesabın ve giriş bilgilerin (telefon numaran, Apple/Google bağlantın)</li>
+  <li>Profilin: branşın, sınav tarihin, günlük süren, ÖABT/YDS tahminin, hatırlatma saatin</li>
+  <li>Tüm çalışma geçmişin: cevapların, setlerin, tekrar kuyruğun, konu ustalığın, serin</li>
+  <li>Lig kaydın ve lig puanın</li>
+  <li>Uygulama içi olay kayıtların</li>
+</ul>
+
+<h2>Ne kalıyor</h2>
+<ul>
+  <li><b>Hata bildirimlerin</b> — içeriği düzeltmek için gereklidir; kimliğinden koparılarak, yani hangi kullanıcıdan geldiği silinerek saklanır.</li>
+  <li><b>Satın alma kayıtların</b> — bu kayıtlar bizde değil, Apple ve Google tarafında tutulur; onların kendi saklama süreleri geçerlidir.</li>
+</ul>
+
+<div class="uyari">
+  <b>Silmek aboneliği iptal etmez</b>
+  <p>Aylık aboneliğin varsa önce mağaza hesabından iptal et, sonra hesabını sil. Yoksa abonelik yenilenmeye devam eder. Adımlar <a href="destek.html">Destek</a> sayfasında.</p>
+</div>
+
+<p>Silinen veri geri getirilemez. Daha sonra yeniden kaydolursan sıfırdan başlarsın.</p>
+</main>
+<footer class="alt">
+  <div class="alt-ic">
+    <div class="dipnot">
+      <p>Tahmini puan, uygulamada çözdüğün sorulara dayanan bir tahmindir; sınavda alacağın puanın garantisi değildir. Ekran görüntüleri temsilidir.</p>
+      <p>Net Up AGS bağımsız bir uygulamadır. MEB ya da ÖSYM ile bağlantılı değildir, bu kurumlar tarafından onaylanmamıştır. App Store, Apple Inc.'in; Google Play, Google LLC'nin ticari markasıdır.</p>
+    </div>
+    <div class="alt-satir">
+      <p>© 2026 Yusuf ÖKSÜZ</p>
+      <nav aria-label="Alt bilgi"><a href="index.html">Ana sayfa</a><a href="destek.html">Destek</a><a href="gizlilik.html">Gizlilik</a><a href="kosullar.html">Koşullar</a><a href="hesap-silme.html">Hesap silme</a></nav>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var ogeler=document.querySelectorAll('.belir');
+  if(!('IntersectionObserver' in window)){ogeler.forEach(function(o){o.classList.add('gorundu')});return}
+  var g=new IntersectionObserver(function(k){k.forEach(function(e){if(e.isIntersecting){e.target.classList.add('gorundu');g.unobserve(e.target)}})},{rootMargin:'0px 0px -10% 0px'});
+  ogeler.forEach(function(o){g.observe(o)});
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+/* Net Up AGS web — Apple ürün sayfası dilinde: sistem yazı tipi, geniş boşluk, gri karolar,
+   koyu bölüm, buzlu üst çubuk. Vurgu rengi uygulamanın petrolü (CLAUDE.md §3.1 accent);
+   koyu zemindeki vurgu, karanlık temanın accent tokenı. Nötr griler web'e özgü. */
+:root{
+  --beyaz:#FFFFFF; --gri:#F5F5F7; --metin:#1D1D1F; --ikincil:#6E6E73; --ucuncul:#86868B;
+  --cizgi:#D2D2D7; --koyu:#000000; --koyuMetin:#F5F5F7; --koyuIkincil:#A1A1A6;
+  --accent:#1F4E5F; --accentPressed:#163A47; --accentBg:#E3EEF1; --accentKoyu:#7FB5C7;
+  --warning:#9A6A12; --warningBg:#F6ECD9;
+  --yazi:-apple-system,BlinkMacSystemFont,"SF Pro Text","Instrument Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --baslik:-apple-system,BlinkMacSystemFont,"SF Pro Display","Instrument Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--beyaz);color:var(--metin);font-family:var(--yazi);
+  font-size:17px;line-height:1.47;letter-spacing:-.022em;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* Üst çubuk — buzlu cam, 48 px */
+.cubuk{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.72);
+  -webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);
+  border-bottom:1px solid rgba(0,0,0,.08)}
+.cubuk-ic{max-width:1024px;margin:0 auto;height:48px;padding:0 22px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.marka{display:flex;align-items:center;gap:8px;color:var(--metin);font-weight:600;font-size:15px;letter-spacing:-.01em}
+.marka:hover{text-decoration:none}
+.isaret{width:24px;height:24px;border-radius:6px;background:var(--accent);color:#fff;display:flex;
+  align-items:center;justify-content:center;font-size:9px;font-weight:800;letter-spacing:.02em}
+.cubuk nav{display:flex;gap:26px}
+.cubuk nav a{font-size:12px;color:var(--metin);opacity:.8;letter-spacing:-.01em}
+.cubuk nav a:hover{opacity:1;text-decoration:none}
+.cubuk nav a[aria-current]{opacity:1;font-weight:600}
+
+.taslak{background:var(--warningBg);color:var(--metin);font-size:13px;text-align:center;padding:10px 22px;line-height:1.4}
+.taslak b{color:var(--warning)}
+
+/* ---------- Tanıtım sayfası ---------- */
+section{padding:96px 22px;text-align:center;overflow:hidden}
+.ic{max-width:980px;margin:0 auto}
+.ust-baslik{font-size:21px;font-weight:600;color:var(--accent);margin:0 0 8px;letter-spacing:.004em}
+.koyu .ust-baslik{color:var(--accentKoyu)}
+.dev{font-family:var(--baslik);font-size:clamp(40px,7.2vw,80px);line-height:1.05;font-weight:700;letter-spacing:-.015em;margin:0}
+.bolum{font-family:var(--baslik);font-size:clamp(32px,5vw,56px);line-height:1.07;font-weight:700;letter-spacing:-.005em;margin:0}
+.alt-baslik{font-size:clamp(19px,2.2vw,24px);line-height:1.35;font-weight:500;color:var(--ikincil);max-width:640px;margin:20px auto 0;letter-spacing:.009em}
+.koyu .alt-baslik{color:var(--koyuIkincil)}
+.eylemler{display:flex;gap:28px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:32px}
+.hap{display:inline-block;background:var(--accent);color:#fff;border-radius:980px;padding:12px 24px;font-size:17px;font-weight:500;letter-spacing:-.02em}
+.hap:hover{background:var(--accentPressed);text-decoration:none}
+.ok{font-size:17px;font-weight:500}
+.ok::after{content:" ›";font-size:1.15em}
+.koyu .ok{color:var(--accentKoyu)}
+
+.kahraman{padding-top:72px;padding-bottom:0;background:linear-gradient(var(--beyaz) 55%,var(--gri))}
+.kahraman h1{font-family:var(--baslik);font-size:clamp(48px,9vw,96px);line-height:1.02;font-weight:700;letter-spacing:-.02em;margin:0}
+
+.telefon{margin:64px auto 0;width:min(320px,78vw);border-radius:52px;padding:11px;background:#1D1D1F;
+  box-shadow:0 0 0 2px #3A3A3C,0 40px 80px -20px rgba(0,0,0,.35)}
+.telefon img{border-radius:42px;width:100%}
+.kahraman .telefon{margin-bottom:-120px}
+.kahraman + section{padding-top:200px}
+
+.koyu{background:var(--koyu);color:var(--koyuMetin)}
+.aralik{font-family:var(--baslik);font-size:clamp(96px,20vw,220px);font-weight:800;letter-spacing:-.04em;line-height:1;margin:48px 0 8px;
+  font-variant-numeric:tabular-nums;color:var(--accentKoyu)}
+.aralik-not{font-size:14px;color:var(--koyuIkincil);margin:0}
+
+.sayilar{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:760px;margin:64px auto 0}
+.sayi b{display:block;font-family:var(--baslik);font-size:clamp(56px,8vw,88px);font-weight:700;line-height:1;letter-spacing:-.03em;color:var(--accent)}
+.sayi span{display:block;margin-top:10px;font-size:17px;font-weight:600}
+.sayi small{display:block;margin-top:4px;font-size:14px;color:var(--ikincil);line-height:1.4;letter-spacing:-.01em}
+
+.karolar{padding:12px 12px 96px;background:var(--beyaz)}
+.izgara{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.karo{background:var(--gri);border-radius:28px;padding:56px 40px 0;display:flex;flex-direction:column;align-items:center;overflow:hidden;min-height:560px}
+.karo.genis{grid-column:1/-1}
+.karo.metin{padding-bottom:56px;justify-content:center;min-height:0}
+.karo.koyu{background:var(--koyu)}
+.karo h3{font-family:var(--baslik);font-size:clamp(28px,3.4vw,40px);line-height:1.1;font-weight:700;letter-spacing:-.01em;margin:0}
+.karo p{font-size:17px;color:var(--ikincil);max-width:460px;margin:14px auto 0}
+.karo.koyu p{color:var(--koyuIkincil)}
+.karo .telefon{margin-top:40px;width:min(290px,70vw);margin-bottom:-160px}
+.karo.genis .telefon{margin-bottom:-220px}
+.adimlar{display:flex;align-items:baseline;justify-content:center;gap:clamp(8px,2vw,18px);margin:40px 0 0;
+  font-family:var(--baslik);font-weight:700;letter-spacing:-.03em;color:var(--accent)}
+.adimlar b{font-size:clamp(48px,7vw,80px);line-height:1}
+.adimlar i{font-style:normal;font-size:clamp(24px,3vw,36px);color:var(--ucuncul)}
+.adimlar-not{font-size:14px!important;margin-top:8px!important}
+
+.manifesto .dev{line-height:1.1}
+.manifesto .dev span{color:var(--ucuncul)}
+.gri{background:var(--gri)}
+.gri .hap{margin-top:32px}
+
+/* Kaydırınca beliren içerik — JS yoksa ya da hareket azaltılmışsa her şey baştan görünür */
+.js .belir{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.js .belir.gorundu{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .belir{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* ---------- Metin sayfaları (gizlilik, koşullar, destek, hesap silme) ---------- */
+.kabuk{max-width:692px;margin:0 auto;padding:0 22px 96px}
+.kabuk h1{font-family:var(--baslik);font-size:clamp(36px,6vw,48px);line-height:1.08;font-weight:700;letter-spacing:-.015em;margin:64px 0 16px}
+.kabuk h2{font-family:var(--baslik);font-size:24px;line-height:1.17;font-weight:700;letter-spacing:.009em;margin:48px 0 12px}
+.kabuk h3{font-size:19px;font-weight:600;letter-spacing:.012em;margin:32px 0 6px}
+.kabuk p,.kabuk li{color:var(--metin)}
+.kabuk ul{padding-left:22px}
+.kabuk li{margin:6px 0}
+.giris{font-size:21px;line-height:1.38;color:var(--ikincil)!important;letter-spacing:.011em}
+.tarih{font-size:14px;color:var(--ucuncul)!important;margin:64px 0 -48px;font-weight:600}
+.kart{background:var(--gri);border-radius:18px;padding:28px;margin:24px 0}
+.kart h2,.kart h3{margin-top:0}
+.kart p:last-child{margin-bottom:0}
+.ozet{background:var(--accentBg);border-radius:18px;padding:28px;margin:32px 0}
+.ozet h2{margin-top:0}
+.ozet ul{margin:8px 0 0}
+.uyari{background:var(--warningBg);border-radius:18px;padding:22px 28px;margin:24px 0}
+.uyari b{color:var(--warning)}
+.uyari p{margin:6px 0 0}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px;letter-spacing:-.01em}
+th,td{text-align:left;vertical-align:top;padding:12px 12px 12px 0;border-bottom:1px solid var(--cizgi)}
+th{font-weight:600;font-size:13px;color:var(--ikincil);text-transform:uppercase;letter-spacing:.03em}
+td{color:var(--metin)}
+.sar{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.dugme{display:inline-block;background:var(--accent);color:#fff;border-radius:980px;padding:12px 24px;font-size:17px;font-weight:500}
+.dugme:hover{background:var(--accentPressed);text-decoration:none}
+.eksik{color:var(--warning);font-weight:600}
+code{font-size:.9em;background:rgba(0,0,0,.05);padding:1px 5px;border-radius:5px}
+
+/* Alt bilgi — Apple'ın gri, küçük yazılı ayağı */
+footer.alt{background:var(--gri);font-size:12px;line-height:1.33;color:var(--ikincil);letter-spacing:-.01em}
+.alt-ic{max-width:980px;margin:0 auto;padding:20px 22px 24px}
+.dipnot{padding-bottom:16px;border-bottom:1px solid var(--cizgi);margin:0 0 14px}
+.dipnot p{margin:0 0 8px}
+.alt-satir{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.alt-satir nav a{color:var(--metin);opacity:.8;padding:0 10px;border-left:1px solid var(--cizgi)}
+.alt-satir nav a:first-child{padding-left:0;border-left:0}
+.alt-satir p{margin:0}
+
+@media (max-width:734px){
+  section{padding:72px 20px}
+  .kahraman{padding-top:56px;padding-bottom:0}
+  .kahraman + section{padding-top:170px}
+  .cubuk nav{gap:16px}
+  .izgara{grid-template-columns:1fr}
+  .karo{padding:44px 24px 0;min-height:500px}
+  .karo.metin{padding-bottom:44px}
+  .sayilar{grid-template-columns:1fr;gap:36px;margin-top:48px}
+  .kabuk h1{margin-top:44px}
+  .tarih{margin:44px 0 -28px}
+  .kart,.ozet{padding:22px}
+  .alt-satir{flex-direction:column}
+  .alt-satir nav{display:flex;flex-wrap:wrap;row-gap:8px}
+}
+@media (max-width:420px){
+  .cubuk nav a.ikincil{display:none}
+}
+@media (max-width:734px){
+  .alt-satir nav{column-gap:16px}
+  .alt-satir nav a{padding:0;border-left:0}
+}

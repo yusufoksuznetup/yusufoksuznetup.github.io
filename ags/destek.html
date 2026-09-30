@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Destek · Net Up AGS</title>
+<meta name="description" content="Net Up AGS — AGS'ye günde 20 dakika. Destek.">
+<meta name="theme-color" content="#FFFFFF">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stil.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<header class="cubuk">
+  <div class="cubuk-ic">
+    <a class="marka" href="index.html"><span class="isaret">AGS</span>Net Up AGS</a>
+    <nav aria-label="Sayfalar"><a href="destek.html" aria-current="page">Destek</a><a href="gizlilik.html">Gizlilik</a><a href="kosullar.html" class="ikincil">Koşullar</a></nav>
+  </div>
+</header>
+
+<main class="kabuk"><h1>Destek</h1>
+<p class="giris">Takıldığın bir yer varsa yaz. Mesajları tek tek okuyoruz ve genellikle <b>iki iş günü içinde</b> dönüyoruz.</p>
+
+<div class="kart">
+  <h2>Bize yaz</h2>
+  <p>E-posta: <a href="mailto:destek@netup.website">destek@netup.website</a></p>
+  <p>Yazarken şunları eklersen daha hızlı çözeriz: telefonun modeli, uygulamanın sürümü (Profil ekranının en altında yazar) ve sorunun ekran görüntüsü.</p>
+</div>
+
+<h2>Sık sorulanlar</h2>
+
+<h3>Giriş kodu gelmiyor</h3>
+<p>Numaranı başında sıfır olmadan, ülke kodunu seçerek girdiğinden emin ol. Kod bir dakika içinde gelmezse "Yeniden gönder" sayacının bitmesini bekle. İkinci denemede de gelmiyorsa bize yaz.</p>
+
+<h3>Satın aldım ama paket açılmadı</h3>
+<p>Satın alma ekranındaki <b>"Satın alımı geri yükle"</b> düğmesine bas. Aynı Apple/Google hesabıyla giriş yaptığından emin ol — satın alma o hesaba bağlıdır. Yine açılmazsa mağazadan gelen makbuzla birlikte bize yaz.</p>
+
+<h3>Aboneliğimi nasıl iptal ederim?</h3>
+<p>İptal uygulamadan değil, mağaza hesabından yapılır:</p>
+<ul>
+  <li><b>iPhone:</b> Ayarlar → (en üstte adın) → Abonelikler → Net Up AGS → Aboneliği İptal Et</li>
+  <li><b>Android:</b> Google Play → profil simgesi → Ödemeler ve abonelikler → Abonelikler → Net Up AGS → İptal</li>
+</ul>
+<p>İptal ettiğinde ödediğin dönemin sonuna kadar paketi kullanmaya devam edersin. Sezon Paketi zaten otomatik yenilenmez.</p>
+
+<h3>Soruda bir hata gördüm</h3>
+<p>Soru ekranının sağ üstündeki <b>⋯</b> menüsünden ya da açıklama ekranındaki <b>"Hata bildir"</b> bağlantısından bildir. Bildirimler içerik ekibine düşer; doğrulanan hata düzeltilir ve gerekirse soru havuzdan çıkarılır.</p>
+
+<h3>Serim kırıldı ama her gün çalıştım</h3>
+<p>Gün sınırı telefonunun saat diliminde, gece yarısında biter. Haftada bir kez otomatik <b>dinlenme hakkın</b> var: bir gün kaçırırsan bu hak kendiliğinden kullanılır ve serin korunur. İki gün üst üste boş kalırsa seri sıfırlanır.</p>
+
+<h3>Tahmini puanım neden bir aralık?</h3>
+<p>Çünkü tek bir sayı, elimizdeki veriden daha kesin bir şey söylemek olurdu. Az soru çözdüğünde aralık geniş, çok çözdükçe daralır. Ayrıntısı uygulamadaki "Puan nasıl hesaplanıyor?" ekranında.</p>
+
+<h3>Hesabımı silmek istiyorum</h3>
+<p>Adımlar <a href="hesap-silme.html">Hesap silme</a> sayfasında.</p>
+</main>
+<footer class="alt">
+  <div class="alt-ic">
+    <div class="dipnot">
+      <p>Tahmini puan, uygulamada çözdüğün sorulara dayanan bir tahmindir; sınavda alacağın puanın garantisi değildir. Ekran görüntüleri temsilidir.</p>
+      <p>Net Up AGS bağımsız bir uygulamadır. MEB ya da ÖSYM ile bağlantılı değildir, bu kurumlar tarafından onaylanmamıştır. App Store, Apple Inc.'in; Google Play, Google LLC'nin ticari markasıdır.</p>
+    </div>
+    <div class="alt-satir">
+      <p>© 2026 Yusuf ÖKSÜZ</p>
+      <nav aria-label="Alt bilgi"><a href="index.html">Ana sayfa</a><a href="destek.html">Destek</a><a href="gizlilik.html">Gizlilik</a><a href="kosullar.html">Koşullar</a><a href="hesap-silme.html">Hesap silme</a></nav>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var ogeler=document.querySelectorAll('.belir');
+  if(!('IntersectionObserver' in window)){ogeler.forEach(function(o){o.classList.add('gorundu')});return}
+  var g=new IntersectionObserver(function(k){k.forEach(function(e){if(e.isIntersecting){e.target.classList.add('gorundu');g.unobserve(e.target)}})},{rootMargin:'0px 0px -10% 0px'});
+  ogeler.forEach(function(o){g.observe(o)});
+})();
+</script>
+</body>
+</html>
