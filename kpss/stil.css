@@ -1,10 +1,10 @@
-/* Net Up AGS web — Apple ürün sayfası dilinde: sistem yazı tipi, geniş boşluk, gri karolar,
-   koyu bölüm, buzlu üst çubuk. Vurgu rengi uygulamanın petrolü (CLAUDE.md §3.1 accent);
+/* Net Up KPSS web — Apple ürün sayfası dilinde: sistem yazı tipi, geniş boşluk, gri karolar,
+   koyu bölüm, buzlu üst çubuk. Vurgu rengi uygulamanın çini mavisi (CLAUDE.md §3.1 accent);
    koyu zemindeki vurgu, karanlık temanın accent tokenı. Nötr griler web'e özgü. */
 :root{
   --beyaz:#FFFFFF; --gri:#F5F5F7; --metin:#1D1D1F; --ikincil:#6E6E73; --ucuncul:#86868B;
   --cizgi:#D2D2D7; --koyu:#000000; --koyuMetin:#F5F5F7; --koyuIkincil:#A1A1A6;
-  --accent:#1F4E5F; --accentPressed:#163A47; --accentBg:#E3EEF1; --accentKoyu:#7FB5C7;
+  --accent:#1A5A96; --accentPressed:#134674; --accentBg:#E1ECF6; --accentKoyu:#8DBDEB;
   --warning:#9A6A12; --warningBg:#F6ECD9;
   --yazi:-apple-system,BlinkMacSystemFont,"SF Pro Text","Instrument Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
   --baslik:-apple-system,BlinkMacSystemFont,"SF Pro Display","Instrument Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
