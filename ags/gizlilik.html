@@ -29,7 +29,7 @@
   <h2>Kısaca</h2>
   <ul>
     <li>Reklam göstermiyoruz ve verini reklam amacıyla kimseyle paylaşmıyoruz.</li>
-    <li>Üçüncü taraf analitik aracı (Google Analytics, Firebase, Facebook SDK vb.) kullanmıyoruz. Kullanım ölçümü kendi veritabanımızda kalıyor.</li>
+    <li>Üçüncü taraf analitik aracı (Google Analytics, Facebook SDK vb.) kullanmıyoruz. Kullanım ölçümü kendi veritabanımızda kalıyor. Yalnız uygulama çökünce, hatayı düzeltebilmek için kimliksiz bir çökme raporu Google'ın Firebase Crashlytics hizmetine gider.</li>
     <li>Verin Almanya'daki (Frankfurt) sunucularda tutuluyor.</li>
     <li>Telefon numaran lig tablosunda ya da başka bir kullanıcıya görünen hiçbir yerde gösterilmiyor.</li>
     <li>Hesabını uygulamanın içinden tek dokunuşla silebilirsin; verilerin silinir.</li>
@@ -51,6 +51,7 @@
   <tr><td>Soru cevapların, hangi şıkkı seçtiğin, ne kadar sürede cevapladığın, set sonuçların, serin</td><td>Tahmini puanını ve zayıf konularını hesaplamak, tekrar kuyruğunu kurmak, lig puanını üretmek</td><td>Sözleşmenin ifası (5/2-c)</td></tr>
   <tr><td>Hatırlatma saatin</td><td>Telefonunun günlük hatırlatmayı doğru saatte göstermesi</td><td>Sözleşmenin ifası (5/2-c)</td></tr>
   <tr><td>Uygulama içi olay kayıtları (hangi ekranı açtın, set başladı/bitti, ödeme ekranı göründü)</td><td>Uygulamanın hangi adımda tıkandığını görmek ve düzeltmek</td><td>Meşru menfaat (5/2-f)</td></tr>
+  <tr><td>Çökme raporları: uygulama çöktüğünde ya da bir ekran hata verdiğinde hatanın teknik ayrıntısı, uygulama sürümü, telefon modeli ve işletim sistemi sürümü. Adın, e-postan, telefon numaran ya da hesap kimliğin eklenmez</td><td>Çökmeleri bulup düzeltmek</td><td>Meşru menfaat (5/2-f)</td></tr>
   <tr><td>Hata bildirimlerin (soruyla ilgili yazdığın not)</td><td>Yanlış ya da bozuk soruyu düzeltmek</td><td>Meşru menfaat (5/2-f)</td></tr>
   <tr><td>Geri bildirim mesajın (uygulamanın sorduğu "işine yarıyor mu?" kartında verdiğin puan ve yazdığın mesaj), hesabının e-posta adresi, uygulama sürümü ve telefonunun türü (iOS/Android)</td><td>Uygulamayı geliştirmek ve gerekirse sana yanıt yazmak. Mesaj destek kutumuza e-posta olarak gelir; mağazada yayınlanmaz</td><td>Meşru menfaat (5/2-f)</td></tr>
   <tr><td>Abonelik durumun (ücretsiz / aylık / sezon, bitiş tarihi)</td><td>Ücretli özellikleri açmak</td><td>Sözleşmenin ifası (5/2-c)</td></tr>
@@ -72,13 +73,14 @@
   <tr><td>Apple Inc. / Google LLC</td><td>Apple ve Google ile giriş; uygulama mağazası ve ödeme</td><td>Kimlik bilgisi ve satın alma kaydı</td></tr>
   <tr><td>RevenueCat, Inc. (ABD) + Apple App Store / Google Play</td><td>Aboneliğin geçerli olup olmadığını doğrulamak</td><td>Anonim kullanıcı kimliği ve satın alma durumu</td></tr>
   <tr><td>Resend, Inc. (ABD)</td><td>Geri bildirim mesajını destek kutumuza e-posta olarak iletmek</td><td>Geri bildirim mesajın, puanın, hesabının e-posta adresi, uygulama sürümü ve telefon türü</td></tr>
+  <tr><td>Google LLC (Firebase Crashlytics)</td><td>Çökme raporlarını toplamak</td><td>Kimliksiz çökme raporu: hata ayrıntısı, uygulama sürümü, telefon modeli, işletim sistemi sürümü, Firebase kurulum kimliği</td></tr>
   <tr><td>Vercel Inc. (ABD)</td><td>netup.website/ags sitesinin yayını</td><td>Standart sunucu erişim kayıtları (IP adresi)</td></tr>
 </table>
 </div>
 <p>Bunların dışında, yalnızca hukuken zorunlu olduğumuz hâllerde (mahkeme kararı, resmî makam talebi) yetkili kurumlarla paylaşırız.</p>
 
 <h2>5. Yurt dışına aktarım</h2>
-<p>Veritabanımız Almanya'da (Frankfurt) bulunuyor; ödeme doğrulama, geri bildirim e-postası ve site yayını sağlayıcılarımız ABD merkezli. Bu nedenle kişisel verilerin KVKK m.9 kapsamında yurt dışına aktarılıyor. Aktarım, hizmetin kurulabilmesi ve sözleşmenin ifası için zorunlu olduğu ölçüde ve sağlayıcılarla yapılan sözleşmelerdeki koruma taahhütleri çerçevesinde yapılıyor. Bu aktarımı kabul etmek istemiyorsan uygulamayı kullanamazsın; hesabını istediğin an silebilirsin.</p>
+<p>Veritabanımız Almanya'da (Frankfurt) bulunuyor; ödeme doğrulama, geri bildirim e-postası, çökme raporu ve site yayını sağlayıcılarımız ABD merkezli. Bu nedenle kişisel verilerin KVKK m.9 kapsamında yurt dışına aktarılıyor. Aktarım, hizmetin kurulabilmesi ve sözleşmenin ifası için zorunlu olduğu ölçüde ve sağlayıcılarla yapılan sözleşmelerdeki koruma taahhütleri çerçevesinde yapılıyor. Bu aktarımı kabul etmek istemiyorsan uygulamayı kullanamazsın; hesabını istediğin an silebilirsin.</p>
 
 <h2>6. Ne kadar süre saklıyoruz</h2>
 <ul>
